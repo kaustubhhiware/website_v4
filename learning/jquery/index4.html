@@ -1,0 +1,64 @@
+<!doctype html>	
+<html>	
+<head>	
+<title>Webpage 4.3</title>	
+	
+<meta charset="utf-8" />	
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />	
+<meta name="viewport" content="width=device-width, initial-scale=1" />	
+	
+<script type="text/javascript" src="jquery.min.js"></script>	
+	
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/
+libs/jqueryui/1.10.4/jquery-ui.min.js"></script>	
+<script type="text/javascript" src="jquery-ui-1.11.4/jquery.min.js"></script>	
+
+<style>	
+	
+	#draggable {	
+		height:200px;	
+		width:200px;	
+		background-color:red;	
+		position: relative;
+		top : 400px;
+	}	
+	
+	#resizable {
+		width: 150px;
+		height: 150px; 
+		padding: 0.5em; 
+		background-color: yellow;
+		float:left;
+	}	
+	
+	h3 {
+		text-align: center; 
+		margin: 0; 
+	}	
+</style>		
+</head>	
+	
+<body>	
+	
+	
+<div id="resizable"><h3>Resizable</h3>	
+</div>	
+
+<div id="draggable"><h3>Drag me around</h3></div>	
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/
+libs/jqueryui/1.10.4/jquery-ui.min.js"></script>	
+<script type="text/javascript" src="jquery-ui-1.11.4/jquery.min.js"></script>	
+<script>	
+	
+	$("#draggable").draggable();	
+	
+	$( "#resizable" ).resizable();	
+</script>	
+	
+	
+	
+	
+</body>	
+</html>	

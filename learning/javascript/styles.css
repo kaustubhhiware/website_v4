@@ -1,0 +1,50 @@
+	
+	body{
+		font-family:Verdana, Geneva, sans-serif;
+	}
+
+	#box{
+		width: 200px;
+		height: 200px;
+		background-color: yellow;
+		display:none;
+		position:relative;
+	}
+
+	#timing{
+		position: relative;
+		top:400px;
+		float:right;
+		top:140px;
+		right:750px;
+	}
+
+	a{
+		text-decoration: none;
+	}
+
+	a:hover{
+		text-decoration: underline;
+		font-size: 1.3em;
+	}
+
+	.bold{
+		font-weight: bold;
+	}
+
+	li{
+		list-style: none;
+		font-size: 1.3em;
+	}
+
+	#further{
+		position:fixed;
+		left:930px;
+		top:550px;
+		padding: 10px;
+	}
+
+	#further a{
+		text-decoration: none;
+		font-size: 1.3em;
+	}

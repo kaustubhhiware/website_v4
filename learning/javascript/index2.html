@@ -1,0 +1,158 @@
+<!doctype html>	
+<html>	
+<head>	
+<title>Webpage 3.1</title>	
+
+<meta charset="utf-8" />	
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />	
+<meta name="viewport" content="width=device-width, initial-scale=1" />	
+
+<style type="text/css">
+	
+	a{
+		text-decoration: none;
+	}
+
+	a:hover{
+		text-decoration: underline;
+		font-size: 1.2em;
+	}
+
+</style>>
+</head>	
+
+<body>	
+
+<input id="myInput" type="text" placeholder="test" />
+
+<button id="StylesChanger">Change this text</button>
+
+<div id="firstDiv">I don't wannaa ...</div>
+
+<p>Console - Ctrl+Shift+I.
+
+<br /><br />Splice - splice(2,3); - start from (2+1)th , remove 3
+<br />splice(2,0,"mane") - start from 3rd , do not remove , add mane..alternately , add more words.
+<br />how long ? arrayname.length;
+
+<br /><br />x=5 , 5^3 = Math.pow(x,3)
+
+
+</p>
+<hr />
+
+<p>How is the weather ?</p>
+
+<input id="weather" />
+<button id="submitButton">Submit</button>
+
+<hr />
+
+<!-- covers math , while , functions-->
+<p>How many fingers am I metaphorically holding up ?</p>
+
+<input id="fingers" />
+<button id="submitFinger">Submit</button>
+
+<hr />
+<!-- covers for loop-->
+<button id="Gurukul">Gurukul</button>
+<p>Gurukul ke 4(for) niti hai</p>
+<div id="NitiDiv"></div>
+
+<hr />
+
+<p><a href="project.html">Head on to the project !</a>  </p>
+<script type="text/javascript">
+	
+
+	var myArray = new Array();
+	myArray[0] = "1";
+	myArray[1] = "0";
+
+	//console.log(myArray);
+
+	arrayArrayArray=["brain","rain","insane","pain","isobutane"];
+
+	arrayArrayArray.push("lane");
+	arrayArrayArray.splice(2,2);
+	arrayArrayArray.splice(2,0,"mane")
+	console.log(arrayArrayArray);
+
+	var newText=document.getElementById("myInput").value;
+
+	document.getElementById("StylesChanger").onclick=function(){
+
+		newText=document.getElementById("myInput").value;
+		
+		document.getElementById("firstDiv").innerHTML=newText;
+
+	}
+
+
+	document.getElementById("submitButton").onclick=function(){
+
+		if (document.getElementById("weather").value=="rain")
+		{
+			alert("It's raining?");
+		}
+		else{
+			alert("No precipitation");
+
+		}
+
+	}
+
+	function alertCorrect(x,tries)
+	{
+		alert("It was indeed a "+x +" & it took you "+tries+" attempts");
+	}
+
+
+	document.getElementById("submitFinger").onclick=function(){
+
+		var gotIt=false;
+		var tries=1;
+
+		while(gotIt==false)
+		{
+			var x = Math.random();
+
+			x = 6*x;
+			//why 6, well #options is 6 - 0 to 5
+			x = Math.floor(x);
+
+			if (document.getElementById("fingers").value==x)
+			{
+				gotIt=true;
+				alertCorrect(x,tries);
+				//alert("It was indeed a "+x +" & it took you "+tries+" attempts");
+			}
+			else{
+				tries++;
+				if(tries>10){
+					alert('Get out !');
+					gotIt=true;
+				}
+			}
+		}
+		tries=1;
+	}
+
+
+
+
+	document.getElementById("Gurukul").onclick=function(){
+
+		var niti = ["Izzat","Pratishta","Parampara","Weed"];
+		var nitis="";
+		for (var i = 0; i < niti.length; i++)
+		 {
+			nitis=nitis+niti[i]+" ";
+		}
+		document.getElementById("NitiDiv").innerHTML=nitis;
+	}
+
+</script>
+</body>
+</html>

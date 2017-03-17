@@ -1,0 +1,102 @@
+<!doctype html>	
+<html>	
+<head>	
+<title>Webpage 3.0</title>	
+
+<meta charset="utf-8" />	
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />	
+<meta name="viewport" content="width=device-width, initial-scale=1" />	
+
+<style>
+	#circle{
+		width:200px;
+		height:200px;
+		border-radius:100px;
+		background-color:red;
+	}
+
+</style>
+
+</head>	
+
+<body>	
+<button onclick="alert('B**ch')">Do not click me !!!</button>
+<p id="text">Lorem ipsum dor sumet</p>
+
+
+<p>
+	NOTE:
+	<br />
+	script tells the browser that javascript is used in the making of this page
+	<br />prefer to write script part at the end of body or head
+
+	<br /><br />document is the html file
+
+	<br /><br />javascript has similiar commenting style - / /  or / * * / without spaces 
+	<br />same goes for ==
+</p>
+
+
+<div id="nameDiv">Say.My.Name</div>
+
+<button id="brBad">I have no idea.</button>
+<hr />
+
+<div id="appendDiv">what is that up the sky ?</div>
+
+<button id="Appy">What ?</button>
+<hr />
+
+<button id="Creator">What are you doing these days ?</button>
+
+<div id="emptyDiv"></div>
+<hr />
+
+<div id="circle"></div>
+<div id="vegan">Get this meat out of here!</div>
+
+<p>It's time to get serious coding , <a href="index2.html">go here</a> then.</p>
+
+
+<script type="text/javascript">
+	
+	alert('Page Loaded');
+
+	alert(document.getElementById("text").innerHTML);
+
+	document.getElementById("text").innerHTML="Lora ipsum not seeme";
+
+	//comments like C , Java
+	/*
+	comments like 
+	C,Java
+	*/
+	document.getElementById("brBad").onclick=function()
+	{
+		document.getElementById("nameDiv").innerHTML="Heisenberg";
+		document.getElementById("brBad").innerHTML="omg no";
+	}
+
+	document.getElementById("Appy").onclick=function()
+	{
+		document.getElementById("appendDiv").innerHTML=document.getElementById("appendDiv").innerHTML
+														+" Captain Fat Belly ";
+	}
+
+	document.getElementById("Creator").onclick=function()
+	{
+		document.getElementById("emptyDiv").innerHTML="<ul><li>Run</li><li>Code</li><li>Your mum</li></ul>";
+	}
+
+	document.getElementById("circle").onclick=function()
+	{
+		document.getElementById("circle").style.display="none";
+		document.getElementById("vegan").innerHTML="Join us , we are vegans!"
+	}
+
+
+</script>
+
+</body>	
+
+</html>	

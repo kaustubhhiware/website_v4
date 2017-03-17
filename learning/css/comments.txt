@@ -1,0 +1,23 @@
+	<!--
+	Body margin 0 so that top sticks to top , as body has def. margin
+
+	classwidth used more than once
+
+	margin auto makes it centered
+
+	logodiv floats left as next div shouldn't go below this div
+
+	topmenudiv list style is none to remove bullets
+
+	break class separates the 2 bars
+
+	jugaad : bbc logo too big - border extending so increase topbar height by 5px
+
+	!important is used if we wish to overrule some existing bounds , for specific items
+
+	have a look at opacity
+	
+	prefer dark gray over black for websites
+
+	For paddings & margins , first set it to 0 , Then try adjusting it
+	-->

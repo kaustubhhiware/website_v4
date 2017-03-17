@@ -1,0 +1,152 @@
+<!doctype html>	
+<html>	
+<head>	
+<title>Webpage4.0</title>	
+	
+<meta charset="utf-8" />	
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />	
+<meta name="viewport" content="width=device-width, initial-scale=1" />	
+	
+<script type="text/javascript" src="jquery.min.js"></script>	
+<style type="text/css">
+	
+	#circle {	
+		width:100px;	
+		height:100px;	
+		background-color:green;	
+		border-radius:50px;	
+		float: right;
+	}	
+	
+	.square {	
+		width:100px;
+		height:100px;	
+		background-color:red;	
+		margin-left:10px;	
+		margin-right:10px;	
+		float: right;
+	}
+
+</style>
+</head>	
+	
+<body>	
+
+
+<div class="square" id="doosra"> </div>
+
+<div class="square buoy"> </div>
+
+<div class="square buoy"> </div>
+
+<div style="float: right;">&lt;-- Circle</div>
+<div id="circle"> </div>
+	
+<p id="better">Circles are better</p>
+
+<p>$ denotes a string in jquery
+<br />Get content of a element by $("id").html()
+
+<br /><br />fadeOut(x) , or fadeIn - x is milliseconds for process
+<br />"fast" or "slow" are also valid parameters
+
+<br /><br />border-radius in jquery is borderRadius
+
+</p>
+
+<p id="Next"><a href="index2.html">I'll take you to Ajax</a></p>	
+<p id="francis">Or do you prefer Francis ?</p>
+
+
+<iframe src="http://kaustubhhiware.github.io"></iframe>
+<p id="frame">What is this website ?</p>
+
+<hr />
+
+<p id="sWaG">I am Darth Fader . I don't disappear , I fade out in style.</p>
+<button id="fader">Don't beliebe you , Sorry</button>
+<button id="fadeIn">I'm sorry ,Father</button>
+
+<script type="text/javascript" src="jquery-3.0.0.min.js"></script>
+<script>
+
+	$("#fadeIn").hide();
+	$("#francis").hide();
+
+	//mention jquery both places , in head as well as script
+
+	//http://stackoverflow.com/questions/1458349/installing-jquery
+	//see this for installing
+	if (typeof jQuery != "undefined") {	
+	
+		alert('jQuery is installed!');	
+	} else {	
+	
+		alert('jQuery is not installed!');	
+	
+	}	
+
+	//may replace class or id by "div"
+	$("#circle").click(function(){
+
+	$(this).animate({width:"300px",	height:"300px",	borderRadius:"150px"},800);
+		$("#better").html("Circles are better");
+
+	})
+
+	$(".buoy").click(function(){
+
+		$("#better").html("Squares are better");
+		alert($(this).css("width"));
+		//or alert $(".square")
+
+		$(this).css("width","125px");
+	})
+	
+	$("#frame").click(function(){
+
+		alert($("iframe").attr("src"));
+	})
+
+	$("#circle").hover(function(){
+		//change location
+		$("iframe").attr("src","http://kaustubhhiware.github.io/learning/");
+	})
+
+
+	$("#doosra").click(function(){
+
+		alert("I am gonna go now");
+		$(this).css("display","none");
+		//or just write $(this).hide();
+	})
+
+
+	$("#fader").click(function(){
+
+		$("#sWaG").fadeOut("slow",function(){
+
+			alert("Lucke , I was your faaaathaa !");
+		});
+
+
+		$(this).html("Join the dark side");
+		$("#fadeIn").fadeIn(200);
+		//the docs for these are cool , check them out
+	})
+
+	$("#fadeIn").click(function(){
+
+		$("#sWaG").fadeIn();
+		$(this).hide();
+		$("#fader").html("Do that again!");
+		//the docs for these are cool , check them out
+	})
+
+	$("#Next").hover(function(){
+		$("#francis").fadeIn(50);
+	})
+
+</script>		
+</body>	
+</html>	

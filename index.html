@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Kaustubh Hiware's personal website">
+    <meta name="author" content="Kaustubh">
+    <link rel="icon" href="img/favicon.ico">
+    <title>Kaustubh Hiware</title>
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="css/mystyles.css" rel="stylesheet">
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/agency2.css" rel="stylesheet">
+    <style type="text/css"></style>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- This is for card view -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+
+    <!-- sexy chart dear-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+    <script type="text/javascript" src="js/typed.min.js" ></script>
+
+    <!-- <link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" /> -->
+    <!-- Custom Fonts -->
+    <script src="https://use.fontawesome.com/b441800a06.js"></script>
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="preloader"></div>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#" style="padding-top:15px;" onclick="sideBarTeleport()">
+                        &emsp;&emsp;&emsp; Kaustubh
+                    </a>
+                </li>
+                <div style="padding-bottom:20px;"></div>
+                <li>
+                    <a href="#about" onclick="sideBarTeleport()">
+                        <span class="glyphicon glyphicon-user navicons">
+                        </span>&emsp;
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="#work" onclick="sideBarTeleport()">
+                        <span class="glyphicon glyphicon-console navicons">
+                        </span>&emsp;
+                        Skills
+                    </a>
+                </li>
+                <li>
+                    <a href="#love" onclick="sideBarTeleport()">
+                        <span class="fa fa-code navicons">
+                        </span>&emsp;
+                        Projects
+                    </a>
+                </li>
+                <li>
+                    <a href="blog/index.html">
+                        <span class="glyphicon glyphicon-pencil navicons">
+                        </span>&emsp;
+                        Blog
+                    </a>
+                </li>
+                <li>
+                    <a href="resume/index.html">
+                        <span class="glyphicon glyphicon-bookmark navicons">
+                        </span>&emsp;
+                        Resume
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" onclick="sideBarTeleport()">
+                        <span class="glyphicon glyphicon-send navicons">
+                        </span>&emsp;
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+    </div>
+
+    <a class="btn btn-default" id="menu-toggle">
+        <span class="glyphicon glyphicon-menu-hamburger burger"></span>
+    </a>
+    <!-- Landing page -->
+    <div id="landed" class="align-center img-responsive">
+        <div id="thumbnail text-center text-vertical-center">
+            <div class="caption">
+                <p><img src="img/me.jpg" id="photu"/></p>
+                <p id="titlename">Kaustubh Hiware</p>
+                <ul id="icon-list" align="center">
+                    <li><a href="https://www.linkedin.com/in/kaustubhhiware" target="_blank" class="fa fa-linkedin humanize linkedin"></a></li>
+                    <li><a href="https://www.facebook.com/kaustubhhiware" target="_blank" class="fa fa-facebook humanize facebook"></a></li>
+                    <li><a href="https://github.com/kaustubhhiware" target="_blank" class="fa fa-github github humanize"> </a></li>
+                    <li><a href="blog/index.html" class="fa fa-pencil medium humanize"></a></li>
+                    <li><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=hiwarekaustubh@gmail.com&amp" target="_blank" class="fa fa-envelope google humanize"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="module parallax parallax-1" style="background-image:url('img/py.jpg');">
+    </section>
+
+    <div id="about" class="idsection">
+        <div class="section_description">
+            <h1>About</h1>
+            <hr class="liner"/>
+            <br />
+            <p>
+                I am a 3rd year undergraduate pursuing a major in Computer Science and Engineering at <a href=http://www1.iitkgp.ac.in/ class="nolink"  style="text-decoration : none" target=_blank>Indian Institute of Technology, Kharagpur</a>. I am accustomed to working on Linux operating systems. My interests include Competitive Programming, Open Source, NLP,  Reading, whenever I am not "learning" from others.
+                <p> I take interest in learning about life through movies and TV series. I'm open to recommendations.
+                <p >I like to invest myself in long, informed, and elaborate discussions about technology, religion, movies, humans, politics; not necesarily in that order. Basically, all topics under the sun.
+            </p>
+            <!-- <br /> -->
+            /* A terminal is going to come up here, some time soon! */
+            <div class="section_heading">
+                <h2>How I spend my time</h2>
+                <br />
+
+                <div class="row">
+                    <div class="col-md-2">
+                        <button id="tooltip1" type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="bottom" data-original-title="I keep ricing my ubuntu distro.">
+                            <img class="lovethese" src="img/linux.png" />
+                        </button>
+                    </div>
+                    <div class="col-md-2">
+                        <button id="tooltip2" type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="bottom" data-original-title="Open source FTW!">
+                            <img class="lovethese" src="img/OpenSource.png" />
+                        </button>
+                    </div>
+                    <div class="col-md-2">
+                        <button id="tooltip3" type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="bottom" data-original-title="Python is <3">
+                            <img class="lovethese" src="img/python.png" />
+                        </button>
+                    </div>
+                    <div class="col-md-2">
+                        <button id="tooltip4" type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="bottom" data-original-title="Track and plot. Data and people.">
+                            <img class="lovethese" src="img/graph.png" />
+                        </button>
+                    </div>
+                    <div class="col-md-2">
+                        <button id="tooltip5" type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="bottom" data-original-title="The front page of the internet. Quite literally.">
+                            <img class="lovethese" src="img/reddit.png" />
+                        </button>
+                    </div>
+                    <div class="col-md-2">
+                        <button id="tooltip6" type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="bottom" data-original-title="Binge-watch everything">
+                            <img class="lovethese" src="img/tv.png" />
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <a href="https://github.com/kaustubhhiware" target="_blank">
+                        <img class="git" src="http://ghchart.rshah.org/009999/kaustubhhiware" alt="kaustubhhiware's Github chart" title="My Github public contributions" />
+                    </a>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <section class="module parallax parallax-1" style="background-image:url('img/screenshot.png');">
+    </section>
+    <div id="work" class="idsection">
+        <div class="section_description">
+            <h1>Skills</h1>
+            <hr class="liner"/>
+            <div id="codeChart">
+                <canvas id="myChart"></canvas>
+            </div>
+            <p>
+                I've written code in <span id="code_lang"></span>
+                <i class="typed-cursor" ></i>
+            </p>
+
+            Frameworks/ Software I have experience with :
+            <ul>
+                <li>Django</li>
+                <li>Git</li>
+                <li>OpenCV</li>
+                <li>Gazebo</li>
+                <li>MySQL</li>
+                <li>Visual Paradigm</li>
+            </ul>
+            <br />
+            The graph is a representative of my relative ease in writing each language.
+            <div style="padding-bottom:6%; clear: both;"></div><!-- Temp -->
+        </div>
+    </div>
+
+
+    <section class="module parallax parallax-1" style="padding-top:0;">
+        <div style="background-color:black;">
+            <!-- This code cloned from github.com/MinhasKamal/CreepyCodeCollection -->
+            <iframe id="matrixbox" src="matrix.html"></iframe>
+        </div>
+    </section>
+    <div id="love" class="idsection">
+        <div class="section_description">
+            <h1>Projects</h1>
+            <hr class="liner"/>
+            <div style="padding-bottom:6%;"></div><!-- Temp -->
+
+            <div id="wrapper">
+                <div class="lefty">
+                    <div class="row">
+
+                        <div class="col-sm-4">
+                            <div class="card" data-toggle="modal" data-target="#nlp">
+                                <img class="card-img-top" src="img/sanskrit.jpg" alt="Card image cap">
+                                <div class="card-block">
+                                    <h4 class="card-title">Sanskrit Vruddhi Analysis</h4>
+                                    <p class="card-text">July 2016 - Oct 2016</p>
+                                </div>
+                            </div>
+
+                            <div id="nlp" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">
+                                                Sanskrit Sandhi (Vruddhi) Analysis
+                                                <p class="modal-desc">
+                                                    Research project under Computer Science Department, IIT Kharagpur
+                                                    <br />
+                                                    Tags : Research, Project
+                                                </p>
+                                            </h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/nlp_modal.png" class="modal-img"/>
+
+                                            In this project, we try to determine whether a given pair of
+                                            Sanskrit words form Sandhi (Vruddhi) or not with a certain level of accuracy.
+                                            This involves formualation of rules for sandhi, analysis of vruddhi dataset
+                                            procured, and validate the results. Analysis of graphs was achieved by MAD and
+                                            adsorption algorithms, via junto. This project is in progress.
+                                            <br />
+                                            <p>
+                                                Guide : <a href="http://cse.iitkgp.ac.in/~pawang/" target="_blank">Prof. Pawan Goyal</a>
+                                            </p>
+                                            <p class="modal-closure">
+                                                July 2016 - Oct 2016
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="card" data-toggle="modal" data-target="#opensoft">
+                                <img class="card-img-top" src="img/opensoft.png" alt="Card image cap">
+                                <div class="card-block">
+                                    <h4 class="card-title">Graph Extractor from 2D Plots</h4>
+                                    <p class="card-text">Spring 2016</p>
+                                </div>
+                            </div>
+                            <!-- Resume projects here -->
+                            <!-- Add cool bars for tags-->
+                            <div id="opensoft" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">
+                                                Graph Extractor from 2D Plots
+                                                <p class="modal-desc">
+                                                    Opensoft, IIT Kharagpur 2015-16
+                                                    <br />
+                                                    Tags : Project
+                                                </p>
+                                            </h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/opensoft_modal.png" class="modal-img"/>
+
+                                            Built a graph extractor application using OpenCV and Tesseract OCR engine that detects
+                                             plots in any PDF and creates a plot values table. Worked on detecting and scaling the axis values in the plot to detect missing values.
+                                            <p>
+                                                Source : <a href="https://github.com/Azad-Hall/open-soft-2015-2016" target="_blank">GitHub</a>
+                                            </p>
+                                            <p class="modal-closure">
+                                                Feb 2016 - Apr 2016
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="card" data-toggle="modal" data-target="#coderunr">
+                                <img class="card-img-top" src="img/coderunr.PNG" alt="Card image cap">
+                                <div class="card-block">
+                                    <h4 class="card-title">C0derunR</h4>
+                                    <br />
+                                    <p class="card-text">Jan 2017</p>
+                                </div>
+                            </div>
+
+                            <div id="coderunr" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">
+                                                C0derunR
+                                                <p class="modal-desc">
+                                                    An online code compiler/interpreter.
+                                                    <br />
+                                                    Tags : Hobby
+                                                </p>
+                                            </h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/coderunr_modal.png" class="modal-img"/>
+
+                                            A Django(python) webapp for Integrated Development Environment using
+                                            HackerEarth API. It Includes a static website generator which allows you to view the
+                                            changes you make on the go. Developed during code.fun.do 2017.
+                                            <br />
+                                            <p>
+                                                Source : <a href="https://github.com/kaustubhhiware/c0derunR" target="_blank">GitHub</a>
+                                                <br />
+                                                <a href="http://c0derunr.pythonanywhere.com/" target="_blank">Website</a>
+                                            </p>
+                                            <p class="modal-closure">
+                                                Feb 2016 - Apr 2016
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div> <!-- row ends -->
+
+                    <div class="row">
+
+                        <div class="col-sm-4">
+                            <div class="card" data-toggle="modal" data-target="#foodspark">
+                                <img class="card-img-top" src="img/foodspark.gif" alt="Card image cap">
+                                <div class="card-block">
+                                    <h4 class="card-title">Foodspark</h4>
+                                    <br />
+                                    <p class="card-text">Feb 2017</p>
+                                </div>
+                            </div>
+
+                            <div id="foodspark" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">
+                                                Foodspark
+                                                <p class="modal-desc">
+                                                    An online food ordering system.
+                                                    <br />
+                                                    Tags : Project
+                                                </p>
+                                            </h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/foodspark_modal.png" class="modal-img"/>
+
+                                            A Django(python) webapp for online food ordering system. Developed by a team of 5
+                                            as an academic project for the Database Management System course under Prof. Pabitra Mitra.
+                                            <br />
+                                            <p>
+                                                Source : <a href="https://github.com/kaustubhhiware/Foodspark">GitHub</a>
+                                                <br />
+                                                <a href="http://foodkgp.pythonanywhere.com/" target="_blank">Website</a>
+                                            </p>
+                                            <p class="modal-closure">
+                                                Feb 2017
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="card" data-toggle="modal" data-target="#depinfosys">
+                                <img class="card-img-top" src="img/depinfosys.jpg" alt="Card image cap">
+                                <div class="card-block">
+                                    <h4 class="card-title">DepInfoSys</h4>
+                                    <br />
+                                    <p class="card-text">Spring 2016</p>
+                                </div>
+                            </div>
+
+                            <div id="depinfosys" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">
+                                                Department Information System
+                                                <p class="modal-desc">
+                                                    Software Project for academic monitoring.
+                                                    <br />
+                                                    Tags : Project
+                                                </p>
+                                            </h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/depinfosys_modal.PNG" class="modal-img" style="padding-top:1em !important; padding-bottom:1.5em !important;"/>
+
+                                            A software allowing the administrator to perform managerial tasks. Developed as a part of Software course under Prof. Partha Pratim Das.
+                                            <p>
+                                                Source : <a href="https://github.com/kaustubhhiware/Depinfosys">GitHub</a>
+                                            </p>
+                                            <p class="modal-closure">
+                                                Spring 2016
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="card" data-toggle="modal" data-target="#compiler">
+                                <img class="card-img-top" src="img/compiler.gif" alt="Card image cap">
+                                <div class="card-block">
+                                    <h4 class="card-title">cOMPILER</h4>
+                                    <br />
+                                    <p class="card-text">Autumn 2016</p>
+                                </div>
+                            </div>
+
+                            <div id="compiler" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">
+                                                cOMPILER
+                                                <p class="modal-desc">
+                                                    Compiler for restricted grammar C.
+                                                    <br />
+                                                    Tags : Project
+                                                </p>
+                                            </h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/compiler_modal.gif" class="modal-img"/>
+
+                                            A tiny-c compiler made using flex, yacc, and gnu assembler. tiny-c instructions are a subset of instructions from C. Targetted for x86_64 architecture. Developed as a part of Compilers course under prof. Partha Pratim Das.
+                                            <p>
+                                                Source : <a href="https://github.com/kaustubhhiware/cOMPILER">GitHub</a>
+                                            </p>
+                                            <p class="modal-closure">
+                                                Autumn 2016
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div> <!-- row ends -->
+
+                    <div class="row">
+
+                        <div class="col-sm-4">
+                            <div class="card" data-toggle="modal" data-target="#notifyre">
+                                <img class="card-img-top" src="img/notifyre.png" alt="Card image cap">
+                                <div class="card-block">
+                                    <h4 class="card-title">Notifyre</h4>
+                                    <br />
+                                    <p class="card-text">Dec 2016</p>
+                                </div>
+                            </div>
+
+                            <div id="notifyre" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">
+                                                Notifyre
+                                                <p class="modal-desc">
+                                                    Notify when a terminal task is done
+                                                    <br />
+                                                    Tags : Hobby
+                                                </p>
+                                            </h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/notifyre_modal.png" class="modal-img"/>
+
+                                            A terminal task notifier with support of basic customzations. Supports bash, and fish shell.
+                                            <br />
+                                            <p>
+                                                Source : <a href="https://github.com/kaustubhhiware/NotiFyre">GitHub</a>
+                                            </p>
+                                            <p class="modal-closure">
+                                                Dec 2016
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="card" data-toggle="modal" data-target="#cshell">
+                                <img class="card-img-top" src="img/cshell.png" alt="Card image cap">
+                                <div class="card-block">
+                                    <h4 class="card-title">Cshell</h4>
+                                    <br />
+                                    <p class="card-text">Feb 2017</p>
+                                </div>
+                            </div>
+
+                            <div id="cshell" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">
+                                                Cshell
+                                                <p class="modal-desc">
+                                                    A handmade terminal.
+                                                    <br />
+                                                    Tags : Project
+                                                </p>
+                                            </h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/cshell_modal.png" class="modal-img"/>
+
+                                            A handmade terminal made in C. Developed as a part of Operating Systems course under Prof. Aurobinda Gupta.
+                                            <p>
+                                                Source : <a href="https://github.com/kaustubhhiware/Cshell">GitHub</a>
+                                            </p>
+                                            <p class="modal-closure">
+                                                Feb 2017
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="card" data-toggle="modal" data-target="#netcheck">
+                                <img class="card-img-top" src="img/netcheck.png" alt="Card image cap">
+                                <div class="card-block">
+                                    <h4 class="card-title">netcheck</h4>
+                                    <br />
+                                    <p class="card-text">Jan 2017</p>
+                                </div>
+                            </div>
+
+                            <div id="netcheck" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">
+                                                netcheck
+                                                <p class="modal-desc">
+                                                    Application indicator for ping.
+                                                    <br />
+                                                    Tags : Hobby
+                                                </p>
+                                            </h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/netcheck_modal.png" class="modal-img"/>
+
+                                            A libappindicator made in python to check ping. [WIP] Soon to support
+                                            download and upload speeds.
+                                            <p>
+                                                Source : <a href="https://github.com/kaustubhhiware/netcheck">GitHub</a>
+                                            </p>
+                                            <p class="modal-closure">
+                                                Jan 2017
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div> <!-- row ends -->
+
+                    <div class="row">
+
+                        <div class="col-sm-4">
+                            <div class="card" data-toggle="modal" data-target="#wordabulary">
+                                <img class="card-img-top" src="img/wordabulary.jpg" alt="Card image cap">
+                                <div class="card-block">
+                                    <h4 class="card-title">Wordabulary</h4>
+                                    <br />
+                                    <p class="card-text">Summer 2016</p>
+                                </div>
+                            </div>
+
+                            <div id="wordabulary" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">
+                                                Wordabulary
+                                                <p class="modal-desc">
+                                                    A pip module for grammar statistics.
+                                                    <br />
+                                                    Tags : Hobby
+                                                </p>
+                                            </h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/word_modal.jpg" class="modal-img"/>
+
+                                            A python pip module for grammar statistics. Support trivial document analysis (Most frequent, incorrect, support correction in the future). Developed as a module to validate Zipf's law.
+                                            <p>
+                                                Source : <a href="https://github.com/kaustubhhiware/Wordabulary">GitHub</a>
+                                            </p>
+                                            <p class="modal-closure">
+                                                Summer 2016
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div> <!-- row ends -->
+
+                </div>
+
+                <div style="padding-bottom:6%;clear:left;"></div><!-- Temp -->
+            </div> <!-- wrapper end-->
+        </div>
+    </div>
+    <!-- Make sure quote in last parallax is visible -->
+    <div id="contact" style="padding-top:-75%; height:24%;">
+
+    </div>
+
+    <!-- This is the last parallax. The last there ever will be, like the last of time lords :/ -->
+    <section class="module parallax parallax-1" style="background-image:url('img/thedoctor.jpg');">
+    </section>
+    <div id="contact1" class="idsection">
+        <!-- style="height:89% !important;"> -->
+        <div class="section_description">
+            <h1>Reach me</h1>
+            <hr class="liner"/>
+            <div style="padding-bottom:6%;"></div><!-- Temp -->
+            <div class="row">
+
+                <div class="col-sm-6">
+                    <div class="footer-c12levent">
+                        <form action="https://formspree.io/hiwarekaustubh@googlemail.com" method="POST">
+
+                            <div class="form-group input-group">
+                               <div class="input-group-addon">
+                                   <i class="glyphicon glyphicon-user formicon"></i>
+                               </div>
+                               <input type="text" name="name" class="form-control" id="namer" placeholder="Your Name" data-rule="maxlen:4" data-msg="Please enter at least 4 chars" />
+                               <div class="validation"></div>
+                            </div>
+
+                            <div class="form-group input-group">
+                                <div class="input-group-addon">
+                                    <i class="glyphicon glyphicon-envelope formicon"></i>
+                                </div>
+                               <input type="email" class="form-control" name="_replyto" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                               <div class="validation"></div>
+                            </div>                            <div class="form-group input-group">
+                                <div class="input-group-addon">
+                                    <i class="glyphicon glyphicon-asterisk"></i>
+                                </div>
+                               <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="maxlen:4" data-msg="Please enter at least 8 chars of subject" />
+                               <div class="validation"></div>
+                            </div>
+
+                            <div class="form-group input-group">
+                                <div class="input-group-addon">
+                                    <i class="glyphicon glyphicon-pencil formicon"></i>
+                                </div>
+                               <textarea id="msg" class="form-control" name="message" rows="5" placeholder="Message" data-rule="required" data-msg="Please write something for us"></textarea>
+                               <div class="validation"></div>
+                            </div>
+
+                            <input type="text" name="_gotcha" style="display:none" />
+                            <input type="hidden" name="_next" value="submit.html" />
+                            <input type="hidden" name="_cc" value="hiwarekaustubh@gmail.com" />
+                            <input type="submit" value="Send" class="btn btn-primary pull-left"></button>
+
+                        </form>
+                        <br style="padding-bottom:4%;"/>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="footer-c12levent">
+
+                        <div class="widget-c12levent" id="contact-text">
+                            <p>
+                                <a href=""><i class="glyphicon glyphicon-map-marker locicon"></i></a>
+                                 : E-410, Azad Hall of Residence,
+                                 <a href="https://www.google.co.in/maps/place/22%C2%B019'03.3%22N+87%C2%B017'54.3%22E/@22.3175882,87.2978588,19z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d22.317587!4d87.298406" target="_blank">IIT Kharagpur.</a>
+                            </p>
+                            <p>
+                                <i class="glyphicon glyphicon-earphone locicon"></i>
+                                 : +91 8768829567
+                            </p>
+                            <hr class="liner" />
+                            <p style="padding-left:8%;">Find me on the social networks here</p>
+                        </div>
+                        <ul class="networks">
+                            <li class="facebook" style="padding-left:22% !important; margin-right: 5px !important;">
+                                <a target="_blank" href="https://www.facebook.com/kaustubhhiware">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="google">
+                                <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=hiwarekaustubh@gmail.com&amp" target="_blank" >
+                                    <i class="fa fa-google"></i>
+                                </a>
+                            </li>
+                            <br />
+                            <li class="github" style="padding-left:15% !important;">
+                                <a target="_blank" href="https://github.com/kaustubhhiware">
+                                    <i class="fa fa-github"></i>
+                                </a>
+                            </li>
+                            <li class="medium">
+                                <a target="_blank" href="https://medium.com/@hikaus">
+                                    <i class="fa fa-medium"></i>
+                                </a>
+                            </li>
+                            <li class="linkedin">
+                                <a target="_blank" href="https://www.linkedin.com/in/kaustubhhiware">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <br />
+                            <li class="quora" style="padding-left:22% !important; margin-right: 5px !important;">
+                                <a target="_blank" href="https://www.quora.com/profile/Kaustubh-Hiw%CE%B1re">
+                                    <span class="fa fa-fw"><strong>Q</strong></span>
+                                </a>
+                            </li>
+                            <!-- :P -->
+                            <li class="reddit">
+                                <a target="_blank" href="https://www.reddit.com/u/heard10cker">
+                                    <i class="fa fa-reddit"></i>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div style="clear:both; padding-bottom:9.5%;"></div><!-- Temp -->
+
+        </div>
+    </div>
+
+
+    <!-- Formal footer -->
+    <div class="footer" id="whoami">
+        <div class="overlayer">
+            <div class="container">
+                <div class="row support">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-2"></div>
+                </div>
+                <!-- Div footer has background-image -->
+                <div class="row" style="margin-bottom:0px;">
+                    <div class="credits">
+                        2017 Kaustubh Hiware, <span class="glyphicon glyphicon-chevron-left" style="margin-right:0px;"></span><span class="glyphicon glyphicon-chevron-right" style="margin-left:0px;"></span> with <a href="https://www.youtube.com/watch?v=tojicre_Qe8" target="_blank"><span class="glyphicon glyphicon-heart" style="color:red;"></span></a> with
+                        <span class="fa fa-github" style="font-size:20px;"></span>.
+                    </div>
+                    <!-- What is love-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/myscript.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+
+    <!-- This shit here because myscript.js didn't work here-->
+    <script> // paint a canvas for all I care
+        var ctx = document.getElementById("myChart");
+        // ctx.canvas.width = 600;
+        // ctx.canvas.height = 600;
+        var myChart = new Chart(ctx, {
+            type: 'radar',
+            data: {
+                labels: ["C/C++", "Css", "Java", "Js", "Python", "bash/assembly", "HTML", "R"],
+                datasets: [
+                    {
+                        label: 'Language',
+                        backgroundColor: "rgba(153,255,51,0.4)",
+                        borderColor: "rgba(153,255,51,1)",
+                        data: [80, 90, 70, 70, 90, 50, 85, 30]
+                    }/*, {
+                        label: 'oranges',
+                        backgroundColor: "rgba(255,153,0,0.4)",
+                        borderColor: "rgba(255,153,0,1)",
+                        data: [0, 70, 0, 40, 0, 15, 0]
+                    }*/
+                ]
+            },
+            options: {
+                legend: {
+                    display: false,
+                },
+                scale: {
+                    ticks: {
+                        beginAtZero: true
+                    }
+                },
+                layout: {
+                    padding: {
+                        right: 20
+                    }
+                }
+            }
+        });
+    </script>
+    <script>
+
+        jQuery(document).ready(function($) {
+            // site preloader -- also uncomment the div in the header and the css style for #preloader
+            $(window).load(function(){
+            $('#preloader').fadeOut('slow',function(){$(this).remove();});
+            });
+        });
+
+        // mandir wahi banega ! upar aaja when refreshed
+        window.onbeforeunload = function () {
+          window.scrollTo(0, 0);
+        }
+
+        $("#menu-toggle").click(function(e) {
+            e.stopPropagation();
+            $("#wrapper").toggleClass("toggled");
+        });
+
+        $('body').click(function(e) {
+          if ($('#wrapper').hasClass('toggled')) {
+            $("#wrapper").toggleClass('toggled');
+            // alert("khada hai");
+          }
+        });
+        // For the navbar
+        function sideBarTeleport(elem)
+        {
+            $("#wrapper").toggleClass("toggled");
+        }
+
+        document.addEventListener('DOMContentLoaded', function(){
+            Typed.new('#code_lang', {
+                strings: ["C", "C++","HTML", "Java", "Javascript", "Python","R","TeX","Shell"],
+                typeSpeed: 30,
+                startDelay: 50,
+                backDelay: 2000,
+                loop: true,
+                contentType: 'html', // or text
+                loopCount: false,
+                showCursor: true,
+                cursorChar: "|"
+            });
+        });
+
+        $('#tooltip1').tooltip();
+        $('#tooltip2').tooltip();
+        $('#tooltip3').tooltip();
+        $('#tooltip4').tooltip();
+        $('#tooltip5').tooltip();
+        $('#tooltip6').tooltip();
+
+        // Part below must be at the end, everything new goes above this comment
+        /* Die, die die overflow-x*/
+        var scrollEventHandler = function()
+        {
+          window.scroll(0, window.pageYOffset)
+        }
+        window.addEventListener("scroll", scrollEventHandler, false);
+
+    </script>
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.localscroll-1.2.7-min.js"></script>
+</body>
+
+</html>
