@@ -1,13 +1,6 @@
-div#preloader {
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 3000;
-    width: 100%;
-    height: 100%;
-    overflow: visible;
-    background:url(../img/quote.gif) center no-repeat #2f2f2f;
-    background-size: cover;
+#particle-canvas {
+  width: 100%;
+  height: 100%;
 }
 
 #menu-toggle {
@@ -50,20 +43,21 @@ div#preloader {
 }
 
 #landed {
-    background: url(../img/sun.jpg) no-repeat center center scroll;
+    /*background: url(../img/sun.jpg) no-repeat center center scroll;*/
     height: 100%;
     width: 100%;
 }
 
 .thumbnail {
     position: relative;
+    text-align: center;
 }
 
 .caption {
     left: 0;
     position: absolute;
     top: 20%;
-    width: 100%;
+    /*width: 100%;*/
 }
 
 .caption p {
