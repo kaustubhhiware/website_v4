@@ -14,6 +14,30 @@
     z-index: 2000;
 }
 
+#toggle-shadow {
+    background-color: white;
+    float: left !important;
+    height: 50px;
+    left: 20px !important;
+    position: absolute !important;
+    top: 20px !important;
+    width: 50px;
+    z-index: 1999;
+}
+
+#corner {
+    background-color: transparent;
+    float: right !important;
+    height: 50px;
+    right: 0 !important;
+    position: absolute; !important;
+    top: 0 !important;
+    width: 50px;
+    z-index: 2000;
+    border: none;
+    outline: none;
+}
+
 #sidebar-wrapper {
     /*border-right: 0.5px solid green !important;*/
     /*background-color: transparent !important;*/
