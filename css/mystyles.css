@@ -240,14 +240,18 @@ section.module.parallax {
     margin-right: 0;
 }
 
-@media (max-width: 600px) {
-    #myChart {
-        padding-left: 200px;
+@media (max-width: 800px) {
+    #codeChart {
+        padding-left: 150px;
     }
 
     /*div#preloader {
         width: 94%;
     }*/
+    html {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 
