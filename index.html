@@ -912,7 +912,7 @@
             //site preloader -- also uncomment the div in the header and the css style for #preloader
             // not exactly a preloader, just run once and exit
             $('#preloader').delay(3450).fadeOut('slow',function(){$(this).remove();});
-
+            $("#wrapper").toggleClass("toggled");
             $('.caption').css({
                 position:'absolute',
                 left: ($(window).width() - $('.caption').outerWidth())/2,
