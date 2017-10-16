@@ -491,12 +491,12 @@ nav#filter a:hover, nav#filter a.current {
 
 ::-moz-selection {
     text-shadow: none;
-    background: #00ccff;
+    background: #ccffcc;
 }
 
 ::selection {
     text-shadow: none;
-    background: #00ccff;
+    background: #ccffcc;
 }
 
 img::selection {
@@ -508,5 +508,5 @@ img::-moz-selection {
 }
 
 body {
-    webkit-tap-highlight-color: #00ccff;
+    webkit-tap-highlight-color: #ccffcc;
 }

@@ -50,9 +50,18 @@
 }
 
 .navicons {
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
     color: #ccffcc !important;
-    font-size: 30px !important;
+    font-size: 2em;
     padding-top: 10px;
+}
+
+.navtext {
+    text-align: center;
+    font-size: 0.5em;
+    color: white;
 }
 
 .humanize {
@@ -81,6 +90,7 @@
     left: 0;
     position: absolute;
     top: 20%;
+    z-index:101;
     /*width: 100%;*/
 }
 
@@ -110,7 +120,7 @@ ul#icon-list li {
 
 ul#icon-list li a {
     /*background-color: black;*/
-    border-radius: 25px;
+    border-radius: 40px;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -144,15 +154,15 @@ section.module.parallax {
 .idsection {
     background-color: white;
     font-weight: 500;
-    /*height: 100%;*/
-    padding-left: 17%;;
+    min-height: 100%;
+    padding-left: 10%;;
     padding-right: 40px;
     padding-top: 20px;
     width: 100%;
 }
 
 .idsection p {
-    font-size: 1.4em;
+    font-size: 1em;
 }
 
 .nolink {
@@ -195,10 +205,10 @@ section.module.parallax {
 }
 
 .lovethese {
-    border-radius: 75px;
+    border-radius: 50px;
     display: inline-block;
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
 }
 
 .btn-circle {
@@ -212,8 +222,8 @@ section.module.parallax {
 }
 
 .btn-circle.btn-xl {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   padding: 0;
   font-size: 24px;
   line-height: 1.33;
@@ -474,6 +484,7 @@ input[type=text]:focus, input[type=email]:focus, #msg:focus {
     background-color: #2f2f2f; /* Black Gray */
     background-attachment: fixed;
     position: relative;
+    margin-top: -5%;
 }
 .heart{
     color: #FF3B30;
@@ -501,4 +512,70 @@ input[type=text]:focus, input[type=email]:focus, #msg:focus {
 }
 .credits a{
     color: #FFFFFF;
+}
+
+/*scroll down button*/
+
+.scroll-down {
+  opacity: 1;
+  -webkit-transition: all .5s ease-in 3s;
+  transition: all .5s ease-in 3s;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -20px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #FFF;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.scroll-down:before {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 6px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border: 3px solid white;
+    border-width: 0px 0 2px 2px;
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+
+.border {
+    margin: 0;
+    border: 3px solid;
 }

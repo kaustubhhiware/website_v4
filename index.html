@@ -60,50 +60,50 @@
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
                     <a href="#" style="padding-top:15px;" onclick="sideBarTeleport()">
-                        &emsp;&emsp;&emsp; Kaustubh
+                        &emsp;&emsp;&emsp; ~
                     </a>
                 </li>
                 <div style="padding-bottom:20px;"></div>
                 <li>
                     <a href="#about" onclick="sideBarTeleport()">
                         <span class="glyphicon glyphicon-user navicons">
+                            <br /><p class="navtext"> About</p>
                         </span>&emsp;
-                        About
                     </a>
                 </li>
                 <li>
                     <a href="#work" onclick="sideBarTeleport()">
                         <span class="glyphicon glyphicon-console navicons">
+                            <br /><p class="navtext"> Skills</p>
                         </span>&emsp;
-                        Skills
                     </a>
                 </li>
                 <li>
                     <a href="#love" onclick="sideBarTeleport()">
-                        <span class="fa fa-code navicons">
+                        <span class="fa fa-code fa-2x navicons">
+                            <br /><p class="navtext"> Projects</p>
                         </span>&emsp;
-                        Projects
                     </a>
                 </li>
                 <li>
                     <a href="https://kaustubhhiware.github.io/blog/">
                         <span class="glyphicon glyphicon-pencil navicons">
+                            <br /><p class="navtext"> Blog</p>
                         </span>&emsp;
-                        Blog
                     </a>
                 </li>
                 <li>
                     <a href="resume/index.html">
                         <span class="glyphicon glyphicon-bookmark navicons">
+                            <br /><p class="navtext"> Resume</p>
                         </span>&emsp;
-                        Resume
                     </a>
                 </li>
                 <li>
                     <a href="#contact" onclick="sideBarTeleport()">
                         <span class="glyphicon glyphicon-send navicons">
+                            <br /><p class="navtext"> Contact</p>
                         </span>&emsp;
-                        Contact
                     </a>
                 </li>
             </ul>
@@ -116,6 +116,8 @@
     </a>
     <a class="btn btn-default" id="toggle-shadow">
     </a>
+
+    <!-- Corner button for github -->
     <a href="https://github.com/kaustubhhiware/kaustubhhiware.github.io" class="github-corner btn btn-default" id="corner" aria-label="View source on Github">
         <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
             <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
@@ -127,12 +129,13 @@
         @keyframes octocat-wave {0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}
             @media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}
     </style>
+
     <!-- Landing page -->
     <div id="landed" class="align-center img-responsive">
         <div id="particle-canvas"></div>
 
         <div id="thumbnail text-center text-vertical-center">
-            <div class="caption" style="z-index:101;">
+            <div class="caption">
                 <p><img src="img/me.jpg" id="photu"/></p>
                 <p id="titlename">Kaustubh Hiware</p>
                 <ul id="icon-list" align="center">
@@ -142,72 +145,84 @@
                     <li><a href="https://kaustubhhiware.github.io/blog/" class="fa fa-pencil medium humanize"></a></li>
                     <li><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=hiwarekaustubh@gmail.com&amp" target="_blank" class="fa fa-envelope google humanize"></a></li>
                 </ul>
+
+                <!-- scroll down button  -->
+                <div style="margin-top: 6em;"></div>
+                <a href="#" class="scroll-down" address="true"></a>
             </div>
         </div>
     </div>
 
 
-    <section class="module parallax parallax-1" style="background-image:url('img/py.jpg');">
-    </section>
+    <!-- <section class="module parallax parallax-1" style="background-image:url('img/py.jpg');">
+    </section> -->
 
     <div id="about" class="idsection">
         <div class="section_description">
             <h1>About</h1>
             <hr class="liner"/>
             <br />
-            <p>
-                I am a 4th year undergraduate pursuing a major in Computer Science and Engineering at <a href=http://www1.iitkgp.ac.in/ class="nolink"  style="text-decoration : none" target=_blank>Indian Institute of Technology, Kharagpur</a>. I am accustomed to working on Linux operating systems. My interests include Competitive Programming, Open Source, NLP,  Reading, whenever I am not "learning" from others.
-                <p> I take interest in learning about life through movies and TV series. I'm open to recommendations.
-                <p >I like to invest myself in long, informed, and elaborate discussions about technology, religion, movies, humans, politics; not necesarily in that order. Basically, all topics under the sun.
-            </p>
-            <!-- <br /> -->
-            /* A terminal is going to come up here, some time soon! */
-            <div class="section_heading">
-                <h2>How I spend my time</h2>
-                <br />
-
+            <div class="row">
                 <div class="row">
-                    <div class="col-md-2">
-                        <button id="tooltip1" type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="bottom" data-original-title="I keep ricing my ubuntu distro.">
-                            <img class="lovethese" src="img/linux.png" />
-                        </button>
-                    </div>
-                    <div class="col-md-2">
-                        <button id="tooltip2" type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="bottom" data-original-title="Open source FTW!">
-                            <img class="lovethese" src="img/OpenSource.png" />
-                        </button>
-                    </div>
-                    <div class="col-md-2">
-                        <button id="tooltip3" type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="bottom" data-original-title="Python is <3">
-                            <img class="lovethese" src="img/python.png" />
-                        </button>
-                    </div>
-                    <div class="col-md-2">
-                        <button id="tooltip4" type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="bottom" data-original-title="Track and plot. Data and people.">
-                            <img class="lovethese" src="img/graph.png" />
-                        </button>
-                    </div>
-                    <div class="col-md-2">
-                        <button id="tooltip5" type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="bottom" data-original-title="The front page of the internet. Quite literally.">
-                            <img class="lovethese" src="img/reddit.png" />
-                        </button>
-                    </div>
-                    <div class="col-md-2">
-                        <button id="tooltip6" type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="bottom" data-original-title="Binge-watch everything">
-                            <img class="lovethese" src="img/tv.png" />
-                        </button>
-                    </div>
+                    Asshole
                 </div>
 
-            </div>
+                <div class="row">
+                    <div id="general">
+                        <p>
+                            I am a 4th year undergraduate pursuing a major in Computer Science and Engineering at <a href=http://www1.iitkgp.ac.in/ class="nolink"  style="text-decoration : none" target=_blank>Indian Institute of Technology, Kharagpur</a>. I am accustomed to working on Linux operating systems. My interests include Competitive Programming, Open Source, NLP,  Reading, whenever I am not "learning" from others.
+                            <p> I take interest in learning about life through movies and TV series. I'm open to recommendations.
+                            <p >I like to invest myself in long, informed, and elaborate discussions about technology, religion, movies, humans, politics; not necesarily in that order. Basically, all topics under the sun.
+                        </p>
+                        <br />
+                        <!-- Nahi hone waala  -->
+                        <!-- /* A terminal is going to come up here, some time soon! */ -->
+                        <div class="section_heading">
+                            <h2>How I spend my time</h2>
+                            <br />
 
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <button id="tooltip1" type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="bottom" data-original-title="I keep ricing my ubuntu distro.">
+                                        <img class="lovethese" src="img/linux.png" />
+                                    </button>
+                                </div>
+                                <div class="col-md-2">
+                                    <button id="tooltip2" type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="bottom" data-original-title="Open source FTW!">
+                                        <img class="lovethese" src="img/OpenSource.png" />
+                                    </button>
+                                </div>
+                                <div class="col-md-2">
+                                    <button id="tooltip3" type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="bottom" data-original-title="Python is <3">
+                                        <img class="lovethese" src="img/python.png" />
+                                    </button>
+                                </div>
+                                <div class="col-md-2">
+                                    <button id="tooltip4" type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="bottom" data-original-title="Track and plot. Data and people.">
+                                        <img class="lovethese" src="img/graph.png" />
+                                    </button>
+                                </div>
+                                <div class="col-md-2">
+                                    <button id="tooltip5" type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="bottom" data-original-title="The front page of the internet. Quite literally.">
+                                        <img class="lovethese" src="img/reddit.png" />
+                                    </button>
+                                </div>
+                                <div class="col-md-2">
+                                    <button id="tooltip6" type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="bottom" data-original-title="Binge-watch everything">
+                                        <img class="lovethese" src="img/tv.png" />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-
-    <section class="module parallax parallax-1" style="background-image:url('img/screenshot.png');">
-    </section>
+    <hr class="border" />
+    <!-- <section class="module parallax parallax-1" style="background-image:url('img/screenshot.png');">
+    </section> -->
     <div id="work" class="idsection">
         <div class="section_description">
             <h1>Skills</h1>
@@ -845,8 +860,7 @@
 
             </div>
 
-            <div style="clear:both; padding-bottom:9.5%;"></div><!-- Temp -->
-
+            <!-- <div style="clear:both; padding-bottom:9.5%;"></div> -->
         </div>
     </div>
 
@@ -924,8 +938,11 @@
             // removing preloader due to speed :/
             //site preloader -- also uncomment the div in the header and the css style for #preloader
             // not exactly a preloader, just run once and exit
-            $('#preloader').delay(3450).fadeOut('slow',function(){$(this).remove();});
-            $("#wrapper").toggleClass("toggled");
+            // $('#preloader').delay(3450).fadeOut('slow',function(){$(this).remove();});
+            $('#preloader').delay(0).fadeOut('slow',function(){$(this).remove();}); 
+
+            // $("#wrapper").toggleClass("toggled");
+            
             $('.caption').css({
                 position:'absolute',
                 left: ($(window).width() - $('.caption').outerWidth())/2,
@@ -943,9 +960,10 @@
         });
 
         // mandir wahi banega ! upar aaja when refreshed
-        window.onbeforeunload = function () {
-          window.scrollTo(0, 0);
-        }
+        // TEMP Removed
+        // window.onbeforeunload = function () {
+        //   window.scrollTo(0, 0);
+        // }
 
         // get me a canvas
         !function(a){var b="object"==typeof self&&self.self===self&&self||"object"==typeof global&&global.global===global&&global;"function"==typeof define&&define.amd?define(["exports"],function(c){b.ParticleNetwork=a(b,c)}):"object"==typeof module&&module.exports?module.exports=a(b,{}):b.ParticleNetwork=a(b,{})}(function(a,b){var c=function(a){this.canvas=a.canvas,this.g=a.g,this.particleColor=a.options.particleColor,this.x=Math.random()*this.canvas.width,this.y=Math.random()*this.canvas.height,this.velocity={x:(Math.random()-.5)*a.options.velocity,y:(Math.random()-.5)*a.options.velocity}};return c.prototype.update=function(){(this.x>this.canvas.width+20||this.x<-20)&&(this.velocity.x=-this.velocity.x),(this.y>this.canvas.height+20||this.y<-20)&&(this.velocity.y=-this.velocity.y),this.x+=this.velocity.x,this.y+=this.velocity.y},c.prototype.h=function(){this.g.beginPath(),this.g.fillStyle=this.particleColor,this.g.globalAlpha=.7,this.g.arc(this.x,this.y,1.5,0,2*Math.PI),this.g.fill()},b=function(a,b){this.i=a,this.i.size={width:this.i.offsetWidth,height:this.i.offsetHeight},b=void 0!==b?b:{},this.options={particleColor:void 0!==b.particleColor?b.particleColor:"#fff",background:void 0!==b.background?b.background:"#1a252f",interactive:void 0!==b.interactive?b.interactive:!0,velocity:this.setVelocity(b.speed),density:this.j(b.density)},this.init()},b.prototype.init=function(){if(this.k=document.createElement("div"),this.i.appendChild(this.k),this.l(this.k,{position:"absolute",top:0,left:0,bottom:0,right:0,"z-index":1}),/(^#[0-9A-F]{6}$)|(^#[0-9A-F]{3}$)/i.test(this.options.background))this.l(this.k,{background:this.options.background});else{if(!/\.(gif|jpg|jpeg|tiff|png)$/i.test(this.options.background))return console.error("Please specify a valid background image or hexadecimal color"),!1;this.l(this.k,{background:'url("'+this.options.background+'") no-repeat center',"background-size":"cover"})}if(!/(^#[0-9A-F]{6}$)|(^#[0-9A-F]{3}$)/i.test(this.options.particleColor))return console.error("Please specify a valid particleColor hexadecimal color"),!1;this.canvas=document.createElement("canvas"),this.i.appendChild(this.canvas),this.g=this.canvas.getContext("2d"),this.canvas.width=this.i.size.width,this.canvas.height=this.i.size.height,this.l(this.i,{position:"relative"}),this.l(this.canvas,{"z-index":"20",position:"relative"}),window.addEventListener("resize",function(){return this.i.offsetWidth===this.i.size.width&&this.i.offsetHeight===this.i.size.height?!1:(this.canvas.width=this.i.size.width=this.i.offsetWidth,this.canvas.height=this.i.size.height=this.i.offsetHeight,clearTimeout(this.m),void(this.m=setTimeout(function(){this.o=[];for(var a=0;a<this.canvas.width*this.canvas.height/this.options.density;a++)this.o.push(new c(this));this.options.interactive&&this.o.push(this.p),requestAnimationFrame(this.update.bind(this))}.bind(this),500)))}.bind(this)),this.o=[];for(var a=0;a<this.canvas.width*this.canvas.height/this.options.density;a++)this.o.push(new c(this));this.options.interactive&&(this.p=new c(this),this.p.velocity={x:0,y:0},this.o.push(this.p),this.canvas.addEventListener("mousemove",function(a){this.p.x=a.clientX-this.canvas.offsetLeft,this.p.y=a.clientY-this.canvas.offsetTop}.bind(this)),this.canvas.addEventListener("mouseup",function(a){this.p.velocity={x:(Math.random()-.5)*this.options.velocity,y:(Math.random()-.5)*this.options.velocity},this.p=new c(this),this.p.velocity={x:0,y:0},this.o.push(this.p)}.bind(this))),requestAnimationFrame(this.update.bind(this))},b.prototype.update=function(){this.g.clearRect(0,0,this.canvas.width,this.canvas.height),this.g.globalAlpha=1;for(var a=0;a<this.o.length;a++){this.o[a].update(),this.o[a].h();for(var b=this.o.length-1;b>a;b--){var c=Math.sqrt(Math.pow(this.o[a].x-this.o[b].x,2)+Math.pow(this.o[a].y-this.o[b].y,2));c>120||(this.g.beginPath(),this.g.strokeStyle=this.options.particleColor,this.g.globalAlpha=(120-c)/120,this.g.lineWidth=.7,this.g.moveTo(this.o[a].x,this.o[a].y),this.g.lineTo(this.o[b].x,this.o[b].y),this.g.stroke())}}0!==this.options.velocity&&requestAnimationFrame(this.update.bind(this))},b.prototype.setVelocity=function(a){return"fast"===a?1:"slow"===a?.33:"none"===a?0:.66},b.prototype.j=function(a){return"high"===a?5e3:"low"===a?2e4:isNaN(parseInt(a,10))?1e4:a},b.prototype.l=function(a,b){for(var c in b)a.style[c]=b[c]},b});
@@ -1011,6 +1029,12 @@
           window.scroll(0, window.pageYOffset)
         }
         window.addEventListener("scroll", scrollEventHandler, false);
+
+        // scroll down button
+        $('.scroll-down').click (function() {
+            $('html, body').animate({scrollTop: $('#about').offset().top }, 'slow');
+            return false;
+        });
 
     </script>
     <!-- Place this tag in your head or just before your close body tag. -->
