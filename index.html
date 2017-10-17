@@ -23,6 +23,12 @@
     <!-- This is for card view -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
 
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!--Import materialize.css-->
+    <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/> -->
+
     <!-- sexy chart dear-->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script> -->
     <script type="text/javascript" src="js/typed.min.js" ></script>
@@ -33,6 +39,7 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style type="text/css">
         /*Load the gif first, while the rest of the resources are fetched */
@@ -153,7 +160,7 @@
         </div>
     </div>
 
-
+    <!-- _________________________________________________________________________________________________________ -->
     <!-- <section class="module parallax parallax-1" style="background-image:url('img/py.jpg');">
     </section> -->
 
@@ -162,19 +169,30 @@
             <h1>About</h1>
             <hr class="liner"/>
             <br />
-            <div class="row">
-                <div class="row">
-                    Asshole
+            <div class="row" style="display: table; margin-left: 1em !important;">
+                <div class="row" style="padding-top: 1%;">
+                    <ul id="abouticons">
+                        <li onmouseover="showabout('general')">
+                            <i class="material-icons medium">account_circle</i>
+                        </li>
+                        <li onmouseover="showabout('school')">
+                            <i class="material-icons medium">account_balance</i>
+                        </li>
+                        <li onmouseover="showabout('college')">
+                            <i class="material-icons medium">school</i>
+                        </li>
+                    </ul>
                 </div>
 
                 <div class="row">
                     <div id="general">
                         <p>
+                            &emsp; <i class="material-icons small">change_history</i><br />
                             I am a 4th year undergraduate pursuing a major in Computer Science and Engineering at <a href=http://www1.iitkgp.ac.in/ class="nolink"  style="text-decoration : none" target=_blank>Indian Institute of Technology, Kharagpur</a>. I am accustomed to working on Linux operating systems. My interests include Competitive Programming, Open Source, NLP,  Reading, whenever I am not "learning" from others.
                             <p> I take interest in learning about life through movies and TV series. I'm open to recommendations.
                             <p >I like to invest myself in long, informed, and elaborate discussions about technology, religion, movies, humans, politics; not necesarily in that order. Basically, all topics under the sun.
                         </p>
-                        <br />
+                        <!-- <br /> -->
                         <!-- Nahi hone waala  -->
                         <!-- /* A terminal is going to come up here, some time soon! */ -->
                         <div class="section_heading">
@@ -215,11 +233,31 @@
                             </div>
                         </div>
                     </div>
+
+                    <div id="school">
+                        <p>
+                            &emsp;&emsp;&emsp;&emsp;&emsp; <i class="material-icons small">change_history</i><br />
+                            I was brought up in Nagpur for most of my childhood, so most of my education before Kharagpur has been in Nagpur.
+
+                            Sandipani
+                            Shivaji
+                            IIT Kharagpur.
+                        </p>
+                    </div>
+
+                    <div id="college">
+                        <p>
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <i class="material-icons small">change_history</i><br />
+                            4th year Computer Science dude.
+                            Also write research interests.
+                        </p>
+                    </div>               
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- _________________________________________________________________________________________________________ -->
     <hr class="border" />
     <!-- <section class="module parallax parallax-1" style="background-image:url('img/screenshot.png');">
     </section> -->
@@ -233,7 +271,7 @@
                 <img src="img/chart.png" alt="chart.png">
                 <!-- <canvas id="myChart"></canvas> -->
             </div>
-
+            <i class="material-icons medium">code</i>
             <p>
                 I've written code in <span id="code_lang"></span>
                 <i class="typed-cursor" ></i>
@@ -264,6 +302,7 @@
     </div>
 
 
+    <!-- _________________________________________________________________________________________________________ -->
     <section class="module parallax parallax-1" style="padding-top:0;">
         <div style="background-color:black;">
             <!-- This code cloned from github.com/MinhasKamal/CreepyCodeCollection -->
@@ -746,6 +785,8 @@
     <!-- This is the last parallax. The last there ever will be, like the last of time lords :/ -->
     <section class="module parallax parallax-1" style="background-image:url('img/thedoctor.jpg');">
     </section>
+
+    <!-- _________________________________________________________________________________________________________ -->
     <div id="contact1" class="idsection">
         <!-- style="height:89% !important;"> -->
         <div class="section_description">
@@ -864,7 +905,7 @@
         </div>
     </div>
 
-
+    <!-- _________________________________________________________________________________________________________ -->
     <!-- Formal footer -->
     <div class="footer" id="whoami">
         <div class="overlayer">
@@ -1035,6 +1076,9 @@
             $('html, body').animate({scrollTop: $('#about').offset().top }, 'slow');
             return false;
         });
+
+        // show only general, rest are hidden
+        showabout('general');
 
     </script>
     <!-- Place this tag in your head or just before your close body tag. -->

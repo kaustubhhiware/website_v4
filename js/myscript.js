@@ -21,6 +21,15 @@ $(window).scroll(function() {
     else { window.history.pushState("state", "title", "/#"); return; }
 });
 
+function showabout(e)
+{
+    $("#general,#school,#college").hide(); 
+    $("#general-select,#school-select,#college-select").hide(); 
+    $("#"+e).show();
+    $('#' + e + '_select').show();
+    document.querySelector('#'+e).scrollIntoView({behavior: 'smooth'});
+}
+
 // scroll to other # smoothly, not abruptly
 // handle links with @href started with '#' only
 $(document).on('click', 'a[href^="#"]', function(e) {

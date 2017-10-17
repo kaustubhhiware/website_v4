@@ -162,7 +162,7 @@ section.module.parallax {
 }
 
 .idsection p {
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 .nolink {
@@ -577,5 +577,30 @@ input[type=text]:focus, input[type=email]:focus, #msg:focus {
 
 .border {
     margin: 0;
-    border: 3px solid;
+    border: 1px solid;
 }
+
+i.medium {
+    font-size: 3rem;
+    color: #777777;
+}
+
+i.hidden {
+    /*color: #FFFFFF !important;*/
+}
+
+i.small {
+    font-size: 1rem;
+    color: #777777;
+}
+
+#abouticons {
+    padding-left: 0;
+    margin-bottom: 0 !important;
+}
+
+ul#abouticons li
+ {
+ display:inline;
+ padding : 0px 10px 0px 10px;
+ }
