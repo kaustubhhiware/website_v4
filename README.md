@@ -8,8 +8,6 @@ The current version is hand-built from scratch. Snippets of perfect code found f
 
 So, in case you decide to use it, it won't hurt to mention it on your website. Allonsy!
 
-Analyse your website [here] (https://developers.google.com/speed/pagespeed/insights/).
+Analyse your website with [pagespeed](https://developers.google.com/speed/pagespeed/insights/).
 
-run [imgp](https://github.com/jarun/imgp) to optimize your images.
-Also get rid of .git folders - 
-http://stevelorek.com/how-to-shrink-a-git-repository.html
+Getting rid of .git folders - http://stevelorek.com/how-to-shrink-a-git-repository.html

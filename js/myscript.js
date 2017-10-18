@@ -24,7 +24,14 @@ $(window).scroll(function() {
 function showabout(e)
 {
     $("#general,#school,#college").hide(); 
-    $("#general-select,#school-select,#college-select").hide(); 
+    $("#"+e).show();
+    $('#' + e + '_select').show();
+    document.querySelector('#'+e).scrollIntoView({behavior: 'smooth'});
+}
+
+function showskills(e)
+{
+    $("#lang,#web,#frameworks").hide(); 
     $("#"+e).show();
     $('#' + e + '_select').show();
     document.querySelector('#'+e).scrollIntoView({behavior: 'smooth'});

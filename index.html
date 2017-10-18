@@ -26,6 +26,8 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
+    <!-- Import devicons  -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <!--Import materialize.css-->
     <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/> -->
 
@@ -51,8 +53,8 @@
             width: 100%;
             height: 100%;
             overflow: visible;
-            background:url(img/quote.gif) center no-repeat #2f2f2f;
-            background-size: cover;
+            background:url(img/quote.gif) center no-repeat #f8fbfc;
+            background-size: contain;
         }
 
     </style>
@@ -142,6 +144,7 @@
         <div id="particle-canvas"></div>
 
         <div id="thumbnail text-center text-vertical-center">
+            <div style="top: 20%;"></div>
             <div class="caption">
                 <p><img src="img/me.jpg" id="photu"/></p>
                 <p id="titlename">Kaustubh Hiware</p>
@@ -164,7 +167,7 @@
     <!-- <section class="module parallax parallax-1" style="background-image:url('img/py.jpg');">
     </section> -->
 
-    <div id="about" class="idsection">
+    <div id="about" class="idsection" onmouseover="showskills('lang')">
         <div class="section_description">
             <h1>About</h1>
             <hr class="liner"/>
@@ -184,7 +187,7 @@
                     </ul>
                 </div>
 
-                <div class="row">
+                <div class="row" style="margin-top: -1%;">
                     <div id="general">
                         <p>
                             &emsp; <i class="material-icons small">change_history</i><br />
@@ -200,32 +203,32 @@
                             <br />
 
                             <div class="row">
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-xs-6 col-sm-6">
                                     <button id="tooltip1" type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="bottom" data-original-title="I keep ricing my ubuntu distro.">
                                         <img class="lovethese" src="img/linux.png" />
                                     </button>
                                 </div>
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-xs-6 col-sm-6">
                                     <button id="tooltip2" type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="bottom" data-original-title="Open source FTW!">
                                         <img class="lovethese" src="img/OpenSource.png" />
                                     </button>
                                 </div>
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-xs-6 col-sm-6">
                                     <button id="tooltip3" type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="bottom" data-original-title="Python is <3">
                                         <img class="lovethese" src="img/python.png" />
                                     </button>
                                 </div>
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-xs-6 col-sm-6">
                                     <button id="tooltip4" type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="bottom" data-original-title="Track and plot. Data and people.">
                                         <img class="lovethese" src="img/graph.png" />
                                     </button>
                                 </div>
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-xs-6 col-sm-6">
                                     <button id="tooltip5" type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="bottom" data-original-title="The front page of the internet. Quite literally.">
                                         <img class="lovethese" src="img/reddit.png" />
                                     </button>
                                 </div>
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-xs-6 col-sm-6">
                                     <button id="tooltip6" type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="bottom" data-original-title="Binge-watch everything">
                                         <img class="lovethese" src="img/tv.png" />
                                     </button>
@@ -238,18 +241,55 @@
                         <p>
                             &emsp;&emsp;&emsp;&emsp;&emsp; <i class="material-icons small">change_history</i><br />
                             I was brought up in Nagpur for most of my childhood, so most of my education before Kharagpur has been in Nagpur.
-
-                            Sandipani
-                            Shivaji
-                            IIT Kharagpur.
+                            <br />
+                            I had my primary schooling at Sandipani school, where I studied from grade 2 to grade 10. 
+                            <br /><br />
+                            <span style="font-weight: bold;">Sandipani school, Nagpur</span>
+                            <br /> Primary and secondary schooling, CBSE, 2004 - 2012.
+                            <br /><br />
+                            <span style="font-weight: bold;">Shivaji Science college, Nagpur</span>
+                            <br /> Senior Secondary, MSBSHSE, 2012 - 2014. Vocation: Electronics
+                            <br /><br />
+                            <span style="font-weight: bold;">Indian Institute of Tehcnology, Kharagpur</span>
+                            <br />Computer Science and Engineering, 2014 - 2019 (expected).
                         </p>
                     </div>
 
                     <div id="college">
                         <p>
                             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <i class="material-icons small">change_history</i><br />
-                            4th year Computer Science dude.
-                            Also write research interests.
+                            I am currently a fourth year Computer Science and Engineering Undergraduate, pursuing a dual 
+                            degree course at  <a href=http://www1.iitkgp.ac.in/ class="nolink"  style="text-decoration : none" target=_blank>Indian Institute of Technology, Kharagpur</a>. A dual degree means I
+                            shall be graduating with both, a B.Tech and a M.Tech degree in July 2019.
+                            <br />
+                        
+                            As a part of my curriculum, I have a decent understanding of Algorithms. My research interests include Natural Language Processing, Machine Learning, Smart phone Computing and Social Computing.
+                            <br />
+
+                            Here is a list of relevant courses I have undertaken so far:
+                            <div class="row" id="courses">
+                                <div class="course col-xs-6 col-sm-6 col-md-3">Machine Learning*</div>
+                                <div class="course col-xs-6 col-sm-6 col-md-3">Artificial Intelligence*</div>
+                                <div class="course col-xs-6 col-sm-6 col-md-3">Natural Language Processing*^</div>
+                                <div class="course col-xs-6 col-sm-6 col-md-3">Social Computing*^</div>
+                                <div class="course col-xs-6 col-sm-6 col-md-3">Data Analytics^</div>
+                                <div class="course col-xs-6 col-sm-6 col-md-3">Database Management^</div>
+                                <div class="course col-xs-6 col-sm-6 col-md-3">Operating Systems^</div>
+                                <div class="course col-xs-6 col-sm-6 col-md-3">Computer Networks^</div>
+                                <div class="course col-xs-6 col-sm-6 col-md-3">Compilers^</div>
+                                <div class="course col-xs-6 col-sm-6 col-md-3">Computer Organisation^</div>
+                                <div class="course col-xs-6 col-sm-6 col-md-3">Matrix Algebra</div>
+                                <div class="course col-xs-6 col-sm-6 col-md-3">Software Engineering^</div>
+                                <div class="course col-xs-6 col-sm-6 col-md-3">Probability and Stats</div>
+                                <div class="course col-xs-6 col-sm-6 col-md-3">Switching Circuits^</div>
+                                <div class="course col-xs-6 col-sm-6 col-md-3">Formal Language &amp; Automata</div>
+                                <div class="course col-xs-6 col-sm-6 col-md-3">Algorithms^</div>
+                                <div class="course col-xs-6 col-sm-6 col-md-3">Discrete Structures</div>
+                            </div>
+                            <p class="coursedisclaimer">(* implies ongoing courses, ^ implies practicum)</p>
+
+
+
                         </p>
                     </div>               
                 </div>
@@ -257,8 +297,8 @@
         </div>
     </div>
 
-    <!-- _________________________________________________________________________________________________________ -->
     <hr class="border" />
+    <!-- _________________________________________________________________________________________________________ -->
     <!-- <section class="module parallax parallax-1" style="background-image:url('img/screenshot.png');">
     </section> -->
     <div id="work" class="idsection">
@@ -271,45 +311,169 @@
                 <img src="img/chart.png" alt="chart.png">
                 <!-- <canvas id="myChart"></canvas> -->
             </div>
-            <i class="material-icons medium">code</i>
-            <p>
+            <p style="margin-bottom: 0 !important;">
                 I've written code in <span id="code_lang"></span>
                 <i class="typed-cursor" ></i>
             </p>
+            <div class="row" style="display: table; margin-left: 1em !important; padding-top: 1em !important;">
+                <div class="row" style="padding-top: 1%;">
+                    <ul id="abouticons">
+                        <li onmouseover="showskills('lang')">
+                            <i class="fa fa-code famedium" aria-hidden="true"></i>
+                        </li>
+                        <li onmouseover="showskills('web')">
+                            <i class="fa fa-globe famedium" aria-hidden="true"></i>
+                        </li>
+                        <li onmouseover="showskills('frameworks')">
+                            <i class="material-icons famedium">build</i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row" style="margin-top: -1%;">
+                    <!--
+                        Maximum length of string
+                    _________________________________________________________________________________
+                    -->
+                    <div id="lang">
+                        &emsp; <i class="material-icons small">change_history</i> &emsp; Programming Languages <br /><br />
+                        <ul class="skillbox">
+                            <li>
+                                <i class="devicon-c-plain-wordmark colored devmedium"></i>
+                            </li>
+                            <li>
+                                <i class="devicon-cplusplus-plain-wordmark colored devmedium"></i>
+                            </li>
+                            <li>
+                                <i class="devicon-python-plain-wordmark colored devmedium"></i>
+                            </li>
+                            <li>
+                                <i class="devicon-javascript-plain colored devmedium"></i>
+                            </li>
+                        </ul>
+                        <ul class="skillbox">
+                            <li>
+                                <i class="devicon-java-plain-wordmark colored devmedium"></i>
+                            </li>
+                            <li>
+                                <img class="medium" src="http://www.scala-lang.org/resources/img/frontpage/scala-spiral.png">
+                            </li>
+                            <li>
+                                <img class="medium" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/1000px-R_logo.svg.png">
+                            </li>
+                            <li>
+                                <i class="devicon-nodejs-plain-wordmark colored devmedium"></i>
+                            </li>
+                        </ul>
+                    </div>
+                
+                    <div id="web">
+                        Web &emsp;&emsp; <i class="material-icons small">change_history</i><br /><br />
+                        <ul class="skillbox">
+                            <li>
+                                <i class="devicon-html5-plain-wordmark colored devmedium"></i>
+                            </li>
+                            <li>
+                                <i class="devicon-css3-plain-wordmark colored devmedium"></i>
+                            </li>
+                            <li>
+                                <i class="devicon-sass-original colored devmedium"></i>
+                            </li>
+                            <li>
+                                <i class="devicon-javascript-plain colored devmedium"></i>
+                            </li>
+                        </ul>
+                        <ul class="skillbox">
+                            <li>
+                                <i class="devicon-react-original-wordmark colored devmedium"></i>
+                            </li>
+                            <li>
+                                <img class="medium" src="https://cdn.worldvectorlogo.com/logos/bootstrap-4.svg">
+                            </li>
+                            <li>
+                                <i class="devicon-django-plain-wordmark colored devmedium"></i>
+                            </li>
+                            <li>
+                                <img class="medium" src="https://cdn.worldvectorlogo.com/logos/jekyll.svg">
+                            </li>
+                        </ul>
+                    </div>
 
-            Frameworks/ Software I have experience with :
-            <ul>
-                <li>Django</li>
-                <li>Git</li>
-                <li>OpenCV</li>
-                <li>Gazebo</li>
-                <li>MySQL</li>
-                <li>Visual Paradigm</li>
-            </ul>
-            <br />
-            <div>
-            <!-- <div style="padding-bottom:3%; clear: both;"> -->
-                The graph is a representative of my relative ease in writing each language.
-                I love to work on self projects as a hobby. There's no better way to learn anything ! &#9786;
-            </div><!-- Temp -->
-            <div style="padding-bottom:3%;"> </div>
-            <div class="row">
-                <a href="https://github.com/kaustubhhiware" target="_blank">
-                    <img class="git" src="http://ghchart.rshah.org/009999/kaustubhhiware" alt="kaustubhhiware's Github chart" title="My Github public contributions" />
-                </a>
+                    <div id="frameworks">
+                        Frameworks &amp; OS <i class="material-icons small">change_history</i><br /><br />
+                        <ul class="skillbox">
+                            <li>
+                                <i class="devicon-git-plain-wordmark colored devmedium"></i>
+                            </li>
+                            <li>
+                                <i class="devicon-mysql-plain-wordmark colored devmedium"></i>
+                            </li>
+                            <li>
+                                <i class="devicon-mongodb-plain-wordmark colored devmedium"></i>
+                            </li>
+                            <li>
+                                <img class="medium" src="https://ucarecdn.com/e3e34059-deb5-4a5e-baf8-ea608037ae62/"><!-- Elastic -->
+                            </li>
+
+                        </ul>
+                        <ul class="skillbox">
+                            <li>
+                                <i class="devicon-heroku-plain-wordmark colored devmedium"></i>
+                            </li>
+                            <li>
+                                <i class="devicon-travis-plain-wordmark colored devmedium"></i>
+                            </li>
+                            <li>
+                                <img class="medium" src="https://i.stack.imgur.com/zHFFO.png"><!-- LaTeX -->
+                            </li>
+                            <li>
+                                Shell / Fish
+                            </li>
+                        </ul>    
+                        <ul class="skillbox">
+                            <li>
+                                <i class="devicon-ubuntu-plain-wordmark colored medium"></i>
+                            </li>
+                            <li>
+                                <i class="fa fa-linux famedium" aria-hidden="true"></i>
+                            </li>
+                            <li>
+                                <i class="devicon-android-plain-wordmark colored devmedium"></i>
+                            </li>
+                            <li>
+                                <i class="devicon-windows8-plain-wordmark colored devmedium"></i>
+                            </li>
+                        </ul>                   
+                    </div> 
+                </div>                  
             </div>
+            <div>
+                <br />
+                <!-- <div style="padding-bottom:3%; clear: both;"> -->
+                The graph is a representative of my relative ease in writing each language.
+                <br />
+                I love to work on self projects as a hobby. There's no better way to learn anything ! <i class="material-icons">sentiment_very_satisfied</i>
+            </div>            
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-11" id="ghChart">
+            <a href="https://github.com/kaustubhhiware" target="_blank">
+                <img style="padding-bottom: 0 !important;" class="git" src="http://ghchart.rshah.org/009999/kaustubhhiware" alt="kaustubhhiware's Github chart" title="@kaustubhhiware's GitHub contributions" />
+            </a>
         </div>
     </div>
 
 
+    <hr class="border" />
     <!-- _________________________________________________________________________________________________________ -->
-    <section class="module parallax parallax-1" style="padding-top:0;">
-        <div style="background-color:black;">
-            <!-- This code cloned from github.com/MinhasKamal/CreepyCodeCollection -->
+    <section class="module parallax parallax-1" style="padding-top:0;" onmouseover="showskills('lang')">
+        <!-- <div style="background-color:black;"> -->
+        <div>
+            <!-- This code copied shamelessly from github.com/MinhasKamal/CreepyCodeCollection -->
             <iframe id="matrixbox" src="matrix.html"></iframe>
         </div>
     </section>
-    <div id="love" class="idsection">
+
+    <div id="ghChartTemp"></div>
+    <div id="love" class="idsection" onmouseover="showskills('lang')>
         <div class="section_description">
             <h1>Projects</h1>
             <hr class="liner"/>
@@ -1079,6 +1243,7 @@
 
         // show only general, rest are hidden
         showabout('general');
+        showskills('lang');
 
     </script>
     <!-- Place this tag in your head or just before your close body tag. -->

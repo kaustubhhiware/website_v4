@@ -148,6 +148,8 @@ section.module.parallax {
 
 #matrixbox {
     width: 100%;
+    margin: 0;
+    padding: 0;
     height: 300px;
 }
 
@@ -161,7 +163,7 @@ section.module.parallax {
     width: 100%;
 }
 
-.idsection p {
+.idsection p, .course {
     font-size: 1.2em;
 }
 
@@ -238,9 +240,11 @@ section.module.parallax {
 /*chart looks good*/
 #codeChart {
     height: 300px !important;
-    width: 600px !important;
+    /*width: 600px !important;*/
     float: right;
     padding-top: -20px;
+    padding-left: 5%;
+    padding-right: 10%;
 }
 
 #myChart {
@@ -250,14 +254,20 @@ section.module.parallax {
     margin-right: 0;
 }
 
+#ghChart {
+    padding-top: 2rem;
+}
+
 @media (max-width: 800px) {
     #codeChart {
-        padding-left: 150px;
+        /*padding-left: 300px !important;*/
+        margin-right: -25px !important;
+        padding-right: 0 !important;
     }
 
-    /*div#preloader {
-        width: 94%;
-    }*/
+    #ghChartTemp {
+        height: 100px !important;
+    }
     html {
         width: 100%;
         height: 100%;
@@ -577,10 +587,26 @@ input[type=text]:focus, input[type=email]:focus, #msg:focus {
 
 .border {
     margin: 0;
-    border: 1px solid;
+    border: 1px solid #d9d9d9;
 }
 
 i.medium {
+    font-size: 3rem;
+    color: #777777;
+}
+
+img.medium {
+    min-height: 2rem !important;
+    max-height: 2rem !important;
+    margin-top: -2rem !important;
+}
+
+i.famedium {
+    font-size: 2rem;
+    color: #777777;
+}
+
+i.devmedium {
     font-size: 3rem;
     color: #777777;
 }
@@ -603,4 +629,29 @@ ul#abouticons li
  {
  display:inline;
  padding : 0px 10px 0px 10px;
+ }
+
+.skillbox {
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+    .skillbox {
+        text-align: left;
+        padding-left: 0;
+    }
+}
+
+ul.skillbox li
+ {
+ display:inline;
+ padding : 0px 10px 0px 10px;
+ }
+
+ .coursedisclaimer {
+    font-size: 1rem !important;
+    margin-top: -1rem;
+    font-style: italic;
+    float: right;
+    margin-right: 5rem;
  }
