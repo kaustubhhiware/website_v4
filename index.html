@@ -19,7 +19,8 @@
     <style type="text/css"></style>
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
-
+    <!-- MD Bootstrap form -->
+    <link href="css/mdb.min.css" rel="stylesheet">
     <!-- This is for card view -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
 
@@ -167,7 +168,7 @@
     <!-- <section class="module parallax parallax-1" style="background-image:url('img/py.jpg');">
     </section> -->
 
-    <div id="about" class="idsection" onmouseover="showskills('lang')">
+    <div id="about" class="idsection">
         <div class="section_description">
             <h1>About</h1>
             <hr class="liner"/>
@@ -462,30 +463,30 @@
     </div>
 
 
-    <hr class="border" />
     <!-- _________________________________________________________________________________________________________ -->
-    <section class="module parallax parallax-1" style="padding-top:0;" onmouseover="showskills('lang')">
-        <!-- <div style="background-color:black;"> -->
+    <!-- <section class="module parallax parallax-1" style="padding-top:0;">
+        <div style="background-color:black;"> ->
         <div>
-            <!-- This code copied shamelessly from github.com/MinhasKamal/CreepyCodeCollection -->
+            <!- This code copied shamelessly from github.com/MinhasKamal/CreepyCodeCollection ->
             <iframe id="matrixbox" src="matrix.html"></iframe>
         </div>
-    </section>
+    </section> -->
 
     <div id="ghChartTemp"></div>
+    <hr class="border" />
     <div id="love" class="idsection" onmouseover="showskills('lang')>
         <div class="section_description">
             <h1>Projects</h1>
             <hr class="liner"/>
             <div style="padding-bottom:3%;">
                 <h4>Click on a project to know more.</h4>
-            </div><!-- Temp -->
+            </div>
 
             <div id="wrapper" class="container">
                 <div class="lefty">
                     <div class="row">
 
-                        <div class="col-md-4 col-xs-12 col-sm-12">
+                        <div class="col-md-3 col-xs-12 col-sm-12">
                             <div class="card" data-toggle="modal" data-target="#nlp">
                                 <img class="card-img-top" src="img/sanskrit.jpg" alt="Card image cap">
                                 <div class="card-block">
@@ -531,7 +532,7 @@
 
                         </div>
 
-                        <div class="col-md-4 col-xs-12 col-sm-12">
+                        <div class="col-md-3 col-xs-12 col-sm-12">
                             <div class="card" data-toggle="modal" data-target="#opensoft">
                                 <img class="card-img-top" src="img/opensoft.png" alt="Card image cap">
                                 <div class="card-block">
@@ -574,7 +575,7 @@
 
                         </div>
 
-                        <div class="col-md-4 col-xs-12 col-sm-12">
+                        <div class="col-md-3 col-xs-12 col-sm-12">
                             <div class="card" data-toggle="modal" data-target="#coderunr">
                                 <img class="card-img-top" src="https://raw.githubusercontent.com/kaustubhhiware/c0derunR/master/static/img/logo-red.PNG" alt="Card image cap">
                                 <div class="card-block">
@@ -621,11 +622,8 @@
 
                         </div>
 
-                    </div> <!-- row ends -->
 
-                    <div class="row">
-
-                        <div class="col-md-4 col-xs-12 col-sm-12">
+                        <div class="col-md-3 col-xs-12 col-sm-12">
                             <div class="card" data-toggle="modal" data-target="#foodspark">
                                 <img class="card-img-top" src="https://raw.githubusercontent.com/kaustubhhiware/FoodSpark/master/front-end/img/logo.gif" alt="Card image cap">
                                 <div class="card-block">
@@ -671,13 +669,17 @@
 
                         </div>
 
-                        <div class="col-md-4 col-xs-12 col-sm-12">
+                    </div> <!-- row ends -->
+                    
+                    <div class="row">
+
+                        <div class="col-md-3 col-xs-12 col-sm-12">
                             <div class="card" data-toggle="modal" data-target="#depinfosys">
                                 <img class="card-img-top" src="img/depinfosys.jpg" alt="Card image cap">
                                 <div class="card-block">
                                     <h4 class="card-title">DepInfoSys</h4>
                                     <br />
-                                    <p class="card-text" style="margin-bottom: -5px">Java based department system</p>
+                                    <p class="card-text" style="margin-bottom: -5px">Dept. Management System</p>
                                     <p class="card-text">Spring 2016</p>
                                 </div>
                             </div>
@@ -713,7 +715,7 @@
 
                         </div>
 
-                        <div class="col-md-4 col-xs-12 col-sm-12">
+                        <div class="col-md-3 col-xs-12 col-sm-12">
                             <div class="card" data-toggle="modal" data-target="#compiler">
                                 <img class="card-img-top" src="img/compiler.gif" alt="Card image cap">
                                 <div class="card-block">
@@ -755,11 +757,8 @@
 
                         </div>
 
-                    </div> <!-- row ends -->
-
-                    <div class="row">
-
-                        <div class="col-md-4 col-xs-12 col-sm-12">
+                   
+                        <div class="col-md-3 col-xs-12 col-sm-12">
                             <div class="card" data-toggle="modal" data-target="#notifyre">
                                 <img class="card-img-top" src="https://raw.githubusercontent.com/kaustubhhiware/NotiFyre/master/terminal.png" alt="Card image cap">
                                 <div class="card-block">
@@ -802,7 +801,7 @@
 
                         </div>
 
-                        <div class="col-md-4 col-xs-12 col-sm-12">
+                        <div class="col-md-3 col-xs-12 col-sm-12">
                             <div class="card" data-toggle="modal" data-target="#cshell">
                                 <img class="card-img-top" src="img/cshell.png" alt="Card image cap">
                                 <div class="card-block">
@@ -844,7 +843,11 @@
 
                         </div>
 
-                        <div class="col-md-4 col-xs-12 col-sm-12">
+                    </div> <!-- row ends -->
+
+                    <div class="row">
+
+                        <div class="col-md-3 col-xs-12 col-sm-12">
                             <div class="card" data-toggle="modal" data-target="#netcheck">
                                 <img class="card-img-top" src="img/netcheck.png" alt="Card image cap">
                                 <div class="card-block">
@@ -887,11 +890,8 @@
 
                         </div>
 
-                    </div> <!-- row ends -->
 
-                    <div class="row">
-
-                        <div class="col-md-4 col-xs-12 col-sm-12">
+                        <div class="col-md-3 col-xs-12 col-sm-12">
                             <div class="card" data-toggle="modal" data-target="#wordabulary">
                                 <img class="card-img-top" src="img/wordabulary.jpg" alt="Card image cap">
                                 <div class="card-block">
@@ -1008,16 +1008,16 @@
 
                         <div class="widget-c12levent" id="contact-text">
                             <p>
-                                <a href=""><i class="glyphicon glyphicon-map-marker locicon"></i></a>
+                                <i class="glyphicon glyphicon-map-marker locicon"></i>
                                  : C-123, Azad Hall of Residence,
-                                 <a href="https://www.google.co.in/maps/place/22%C2%B019'03.3%22N+87%C2%B017'54.3%22E/@22.3178538,87.2979607,19z/data=!4m5!3m4!1s0x0:0x0!8m2!3d22.317587!4d87.298406" target="_blank">IIT Kharagpur.</a>
+                                 <a href="https://www.google.co.in/maps/dir//22.3181183,87.2983329/@22.3180953,87.2984053,21z" target="_blank">IIT Kharagpur.</a>
                             </p>
                             <p>
                                 <i class="glyphicon glyphicon-earphone locicon"></i>
                                  : +91 8768829567
                             </p>
                             <hr class="liner" />
-                            <p style="padding-left:8%;">Find me on the social networks here</p>
+                            <p style=   "padding-left:8%;">Find me on the social networks here</p>
                         </div>
                         <ul class="networks">
                             <li class="facebook" style="padding-left:22% !important; margin-right: 0.365% !important;">
@@ -1094,7 +1094,8 @@
     <script src="js/jquery.js"></script>
     <script src="js/myscript.js"></script>
     <script src="js/bootstrap-tooltip.js"></script>
-
+    <!-- MD Bootstrap form -->
+    <script src="js/mdb.min.js"></script>
     <!-- This shit here because myscript.js didn't work here-->
     <!-- remove chart loading to reduce load time
     <script> // paint a canvas for all I care
@@ -1227,14 +1228,6 @@
         $('#tooltip5').tooltip();
         $('#tooltip6').tooltip();
 
-        // Part below must be at the end, everything new goes above this comment
-        /* Die, die die overflow-x*/
-        var scrollEventHandler = function()
-        {
-          window.scroll(0, window.pageYOffset)
-        }
-        window.addEventListener("scroll", scrollEventHandler, false);
-
         // scroll down button
         $('.scroll-down').click (function() {
             $('html, body').animate({scrollTop: $('#about').offset().top }, 'slow');
@@ -1244,6 +1237,14 @@
         // show only general, rest are hidden
         showabout('general');
         showskills('lang');
+        
+        // Part below must be at the end, everything new goes above this comment
+        /* Die, die die overflow-x*/
+        var scrollEventHandler = function()
+        {
+          window.scroll(0, window.pageYOffset)
+        }
+        window.addEventListener("scroll", scrollEventHandler, false);
 
     </script>
     <!-- Place this tag in your head or just before your close body tag. -->

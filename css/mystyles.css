@@ -258,6 +258,10 @@ section.module.parallax {
     padding-top: 2rem;
 }
 
+#ghChartTemp {
+    height: 100px;
+}
+
 @media (max-width: 800px) {
     #codeChart {
         /*padding-left: 300px !important;*/
@@ -266,7 +270,7 @@ section.module.parallax {
     }
 
     #ghChartTemp {
-        height: 100px !important;
+        height: 100px;
     }
     html {
         width: 100%;
@@ -307,14 +311,14 @@ section.module.parallax {
     padding-right: 20px;
 }
 
-.col-md-4 {
+.col-md-4, .col-md-3 {
     padding-bottom: 20px !important;
     cursor: pointer;
 }
 
 .card {
     margin-bottom: 0 !important;
-    width: 18rem;
+    width: 16rem;
 }
 
 .card-block {
@@ -324,8 +328,8 @@ section.module.parallax {
 .card-img-top{
     padding-left:1rem;
     padding-top:1rem;
-    width:17rem;                    /* card images*/
-    height:17rem;
+    width:15rem;                    /* card images*/
+    height:15rem;
 }
 
 .card-title {
@@ -343,12 +347,20 @@ section.module.parallax {
 /*modal, MoFos*/
 body {
     padding-right: 0 !important;
+    overflow-x: hidden;
 }
 
 body .modal-dialog {
-    padding-left: 5% !important;
-    width: 70% !important;
+    padding-left: 5%;
+    width: 70%;
 }
+@media (max-width: 800px) {
+    body .modal-dialog {
+        padding-right: 10%;
+        width: 100%;
+    }
+}
+
 .modal-title {
     text-align: center;
     font-size: 1.5em;
