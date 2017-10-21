@@ -317,8 +317,14 @@ section.module.parallax {
 }
 
 .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     margin-bottom: 0 !important;
+    transition: 0.3s;
     width: 16rem;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .card-block {
@@ -465,32 +471,62 @@ input[type=text]:focus, input[type=email]:focus, #msg:focus {
     padding: 4px;
 }
 
-.networks li.github a:hover {
+.github a:hover {
     background-color: #333;
 }
 
-.networks li.google a:hover {
-    background-color: #dd4b39;
+.google a:hover {
+    background-color: #DB4437;
 }
 
-.networks li.facebook a:hover {
+.facebook a:hover {
     background-color: #3b5998;
 }
 
-.networks li.medium a:hover {
-    background-color: #65BA95;
+.medium a:hover {
+    background-color: #37a576;
 }
 
-.networks li.quora a:hover {
+.quora a:hover {
     background-color: #B92B27;
 }
 
-.networks li.reddit a:hover {
-    background-color: #FF4500;
+.reddit a:hover {
+    background-color: #FF5700;
 }
 
-.networks li.linkedin a:hover {
-    background-color: #0976b4;
+.linkedin a:hover {
+    background-color: #0077B5;
+}
+
+.twitter a:hover {
+    background-color: #1DA1F2;
+}
+
+.instagram a:hover {
+    background-color: #e95950;
+}
+
+.stumbleupon a:hover {
+    background-color: #EB4924;
+}
+
+.extremenet {
+    padding-left:22% !important;
+    margin-right: 0.365% !important;
+}
+
+.midnet {
+    padding-left:16% !important;
+}
+@media (max-width: 800px) {
+    .extremenet {
+        padding-left:16% !important;
+        margin-right: 0.365% !important;
+    }
+    .midnet {
+        padding-left:5% !important;
+    }
 }
 
 /* remove bootstrap padding so images sit right next to each other with no gaps */
@@ -667,3 +703,17 @@ ul.skillbox li
     float: right;
     margin-right: 5rem;
  }
+
+ label {
+    font-weight: normal !important;
+ }
+
+ .md-textarea {
+    height: 50px;
+    /*width: 80%;*/
+ }
+@media (max-width: 800px) {
+    .md-textarea {
+        width: 90% !important;
+    }
+}

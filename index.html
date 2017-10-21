@@ -963,43 +963,43 @@
                     <div class="footer-c12levent">
                         <form action="https://formspree.io/hiwarekaustubh@googlemail.com" method="POST">
 
-                            <div class="form-group input-group">
-                               <div class="input-group-addon">
-                                   <i class="glyphicon glyphicon-user formicon"></i>
-                               </div>
-                               <input type="text" name="name" class="form-control" id="namer" placeholder="Your Name" data-rule="maxlen:4" data-msg="Please enter at least 4 chars" />
+                            <div class="md-form">
+                               <i class="fa fa-user prefix grey-text"></i>
+                               <input type="text" name="name" class="form-control" id="namer" data-rule="maxlen:4" data-msg="Please enter at least 4 chars" />
+                               <label for="namer">Name</label>
                                <div class="validation"></div>
                             </div>
 
-                            <div class="form-group input-group">
-                                <div class="input-group-addon">
-                                    <i class="glyphicon glyphicon-envelope formicon"></i>
-                                </div>
-                               <input type="email" class="form-control" name="_replyto" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                               <div class="validation"></div>
-                            </div>                            <div class="form-group input-group">
-                                <div class="input-group-addon">
-                                    <i class="glyphicon glyphicon-asterisk"></i>
-                                </div>
-                               <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="maxlen:4" data-msg="Please enter at least 8 chars of subject" />
+                            <div class="md-form">
+                                <i class="fa fa-envelope prefix grey-text"></i>
+                                <input type="email" class="form-control" name="_replyto" id="email" data-rule="email" data-msg="Please enter a valid email" />
+                                <label for="_replyto">Email</label>
+                                <div class="validation"></div>
+                            </div>
+
+                            <div class="md-form">
+                               <i class="fa fa-tag prefix grey-text"></i> 
+                               <input type="text" class="form-control" name="subject" id="subject" data-rule="maxlen:4" data-msg="Please enter at least 8 chars of subject" />
+                               <label for="subject">Subject</label>
                                <div class="validation"></div>
                             </div>
 
-                            <div class="form-group input-group">
-                                <div class="input-group-addon">
-                                    <i class="glyphicon glyphicon-pencil formicon"></i>
-                                </div>
-                               <textarea id="msg" class="form-control" name="message" rows="5" placeholder="Message" data-rule="required" data-msg="Please write something for us"></textarea>
-                               <div class="validation"></div>
+                            <div class="md-form">
+                                <i class="fa fa-pencil prefix grey-text"></i>
+                                <textarea type="text" id="msg" class="md-textarea form-control" data-rule="required" data-msg="Please write something for us"></textarea>
+                                <label for="msg">Message</label>
+                                <div class="validation"></div>
                             </div>
 
                             <input type="text" name="_gotcha" style="display:none" />
                             <input type="hidden" name="_next" value="submit.html" />
                             <input type="hidden" name="_cc" value="hiwarekaustubh@gmail.com" />
-                            <input type="submit" value="Send" class="btn btn-primary pull-left"></button>
+                            <div class="text-center">
+                                <input type="submit" value="Send" class="btn btn-primary"></button>
+                            </div>
 
                         </form>
-                        <br style="padding-bottom:4%;"/>
+                        <!-- <br style="padding-bottom:4%;"/> -->
                     </div>
                 </div>
 
@@ -1019,26 +1019,16 @@
                             <hr class="liner" />
                             <p style=   "padding-left:8%;">Find me on the social networks here</p>
                         </div>
+
                         <ul class="networks">
-                            <li class="facebook" style="padding-left:22% !important; margin-right: 0.365% !important;">
+                            <li class="facebook extremenet">
                                 <a target="_blank" href="https://www.facebook.com/kaustubhhiware">
                                     <i class="fa fa-facebook"></i>
                                 </a>
                             </li>
-                            <li class="google">
-                                <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=hiwarekaustubh@gmail.com&amp" target="_blank" >
-                                    <i class="fa fa-google"></i>
-                                </a>
-                            </li>
-                            <br />
-                            <li class="github" style="padding-left:15% !important;">
+                            <li class="github">
                                 <a target="_blank" href="https://github.com/kaustubhhiware">
                                     <i class="fa fa-github"></i>
-                                </a>
-                            </li>
-                            <li class="medium">
-                                <a target="_blank" href="https://medium.com/@hikaus">
-                                    <i class="fa fa-medium"></i>
                                 </a>
                             </li>
                             <li class="linkedin">
@@ -1047,18 +1037,43 @@
                                 </a>
                             </li>
                             <br />
-                            <li class="quora" style="padding-left:22% !important; margin-right: 0.365% !important;">
-                                <a target="_blank" href="https://www.quora.com/profile/Kaustubh-Hiw%CE%B1re">
-                                    <span class="fa fa-fw"><strong>Q</strong></span>
+                            <li class="google midnet">
+                                <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=hiwarekaustubh@gmail.com&amp" target="_blank" >
+                                    <i class="fa fa-google"></i>
                                 </a>
                             </li>
-                            <!-- :P -->
-                            <li class="reddit">
+                            <li class="reddit"><!-- :P --> 
                                 <a target="_blank" href="https://www.reddit.com/">
                                     <i class="fa fa-reddit"></i>
                                 </a>
                             </li>
-
+                            <li class="twitter">
+                                <a href="https://twitter.com/kaustubhhiware" target="_blank" >
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="instagram">
+                                <a target="_blank" href="https://www.instagram.com/kaustubhhiware/">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                            <br />
+                            <li class="quora extremenet">
+                                <a target="_blank" href="https://www.quora.com/profile/Kaustubh-Hiware">
+                                    <!-- <span class="fa fa-fw"><strong>Q</strong></span> -->
+                                    <i class="fa fa-quora"></i>
+                                </a>
+                            </li>
+                            <li class="medium">
+                                <a target="_blank" href="https://medium.com/@hikaus">
+                                    <i class="fa fa-medium"></i>
+                                </a>
+                            </li>
+                            <li class="stumbleupon">
+                                <a target="_blank" href="https://www.stumbleupon.com/stumbler/kaustubhhiware">
+                                    <i class="fa fa-stumbleupon"></i>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
