@@ -22,7 +22,7 @@
     <!-- MD Bootstrap form -->
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- This is for card view -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -32,18 +32,18 @@
     <!--Import materialize.css-->
     <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/> -->
 
-    <!-- sexy chart dear-->
+    <!-- nice chart dear-->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script> -->
-    <script type="text/javascript" src="js/typed.min.js" ></script>
+    <script async type="text/javascript" src="js/typed.min.js" ></script>
 
     <!-- <link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" /> -->
     <!-- Custom Fonts -->
-    <script src="https://use.fontawesome.com/b441800a06.js"></script>
+    <script async src="js/b441800a06.js"></script>
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script async src="js/jquery.min.js"></script>
     <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
     <style type="text/css">
         /*Load the gif first, while the rest of the resources are fetched */
         div#preloader {
@@ -146,7 +146,7 @@
     </style>
 
     <!-- Landing page -->
-    <div id="landed" class="align-center img-responsive" onmouseover="window.location.hash="#";>
+    <div id="landed" class="align-center img-responsive" onmouseover="window.location.hash='#';">
         <div id="particle-canvas"></div>
 
         <div id="thumbnail text-center text-vertical-center">
@@ -361,10 +361,10 @@
                                 <i class="devicon-java-plain-wordmark colored devmedium"></i>
                             </li>
                             <li>
-                                <img class="medium" src="http://www.scala-lang.org/resources/img/frontpage/scala-spiral.png">
+                                <img class="medium" src="img/scala-spiral.png">
                             </li>
                             <li>
-                                <img class="medium" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/1000px-R_logo.svg.png">
+                                <img class="medium" src="img/R_logo.png">
                             </li>
                             <li>
                                 <i class="devicon-nodejs-plain-wordmark colored devmedium"></i>
@@ -393,13 +393,13 @@
                                 <i class="devicon-react-original-wordmark colored devmedium"></i>
                             </li>
                             <li>
-                                <img class="medium" src="https://cdn.worldvectorlogo.com/logos/bootstrap-4.svg">
+                                <img class="medium" src="img/bootstrap-4.svg">
                             </li>
                             <li>
                                 <i class="devicon-django-plain-wordmark colored devmedium"></i>
                             </li>
                             <li>
-                                <img class="medium" src="https://cdn.worldvectorlogo.com/logos/jekyll.svg">
+                                <img class="medium" src="imgs/jekyll.svg">
                             </li>
                         </ul>
                     </div>
@@ -417,7 +417,7 @@
                                 <i class="devicon-mongodb-plain-wordmark colored devmedium"></i>
                             </li>
                             <li>
-                                <img class="medium" src="https://ucarecdn.com/e3e34059-deb5-4a5e-baf8-ea608037ae62/"><!-- Elastic -->
+                                <img class="medium" src="img/elastic.png"><!-- Elastic -->
                             </li>
 
                         </ul>
@@ -429,7 +429,7 @@
                                 <i class="devicon-travis-plain-wordmark colored devmedium"></i>
                             </li>
                             <li>
-                                <img class="medium" src="https://i.stack.imgur.com/zHFFO.png"><!-- LaTeX -->
+                                <img class="medium" src="img/latex.png"><!-- LaTeX -->
                             </li>
                             <li>
                                 Shell / Fish
@@ -479,7 +479,7 @@
 
     <div id="ghChartTemp"></div>
     <hr class="border" />
-    <div id="projects" class="idsection" onmouseover="showskills('lang');window.location.hash='#projects'">
+    <div id="projects" class="idsection" onmouseover="showskills('lang');window.location.hash='#projects';">
         <div class="section_description">
             <h1>Projects</h1>
             <hr class="liner"/>
@@ -722,7 +722,7 @@
 
                         <div class="col-md-3 col-xs-12 col-sm-12">
                             <div class="card" data-toggle="modal" data-target="#coderunr">
-                                <img class="card-img-top" src="https://raw.githubusercontent.com/kaustubhhiware/c0derunR/master/static/img/logo-red.PNG" alt="Card image cap">
+                                <img class="card-img-top" src="img/logo-red.png" alt="Card image cap">
                                 <div class="card-block">
                                     <h4 class="card-title">C0derunR</h4>
                                     <br />
@@ -746,7 +746,7 @@
                                             </h4>
                                         </div>
                                         <div class="modal-body">
-                                            <img src="https://raw.githubusercontent.com/kaustubhhiware/c0derunR/master/static/img/screenshot.png" class="modal-img"/>
+                                            <img src="img/c0derunr_modal.png" class="modal-img"/>
 
                                             A Django(python) webapp for Integrated Development Environment using
                                             HackerEarth API. It Includes a static website generator which allows you to view the
@@ -770,7 +770,7 @@
 
                         <div class="col-md-3 col-xs-12 col-sm-12">
                             <div class="card" data-toggle="modal" data-target="#foodspark">
-                                <img class="card-img-top" src="https://raw.githubusercontent.com/kaustubhhiware/FoodSpark/master/front-end/img/logo.gif" alt="Card image cap">
+                                <img class="card-img-top" src="img/foodspark.gif" alt="Card image cap">
                                 <div class="card-block">
                                     <h4 class="card-title">Foodspark</h4>
                                     <br />
@@ -794,7 +794,7 @@
                                             </h4>
                                         </div>
                                         <div class="modal-body">
-                                            <img src="https://raw.githubusercontent.com/kaustubhhiware/FoodSpark/master/Screenshot.png" class="modal-img"/>
+                                            <img src="img/foodspark_modal.png" class="modal-img"/>
 
                                             A Django(python) webapp for online food ordering system. Developed by a team of 5
                                             as an academic project for the Database Management System course under Prof. Pabitra Mitra.
@@ -905,7 +905,7 @@
                    
                         <div class="col-md-3 col-xs-12 col-sm-12">
                             <div class="card" data-toggle="modal" data-target="#notifyre">
-                                <img class="card-img-top" src="https://raw.githubusercontent.com/kaustubhhiware/NotiFyre/master/terminal.png" alt="Card image cap">
+                                <img class="card-img-top" src="img/terminal.png" alt="Card image cap">
                                 <div class="card-block">
                                     <h4 class="card-title">Notifyre</h4>
                                     <br />
@@ -929,7 +929,7 @@
                                             </h4>
                                         </div>
                                         <div class="modal-body">
-                                            <img src="https://raw.githubusercontent.com/kaustubhhiware/NotiFyre/master/thumbnail_fish.png"  class="modal-img"/>
+                                            <img src="img/thumbnail_fish.png"  class="modal-img"/>
 
                                             A terminal task notifier with support of basic customzations. Supports bash, and fish shell.
                                             <br />
@@ -972,7 +972,7 @@
                                             </h4>
                                         </div>
                                         <div class="modal-body">
-                                            <img src="https://raw.githubusercontent.com/kaustubhhiware/CShell/master/images/Cshell_about.png" class="modal-img"/>
+                                            <img src="img/Cshell_about.png" class="modal-img"/>
 
                                             A handmade terminal made in C. Developed as a part of Operating Systems course under Prof. Aurobinda Gupta.
                                             <p>
@@ -1205,7 +1205,7 @@
                                 </a>
                             </li>
                             <li class="medium">
-                                <a target="_blank" href="https://medium.com/@hikaus">
+                                <a target="_blank" href="https://medium.com/@kaustubhhiware">
                                     <i class="fa fa-medium"></i>
                                 </a>
                             </li>
@@ -1299,8 +1299,7 @@
             // removing preloader due to speed :/
             //site preloader -- also uncomment the div in the header and the css style for #preloader
             // not exactly a preloader, just run once and exit
-            // $('#preloader').delay(3450).fadeOut('slow',function(){$(this).remove();});
-            $('#preloader').delay(0).fadeOut('slow',function(){$(this).remove();}); 
+            $('#preloader').delay(3450).fadeOut('slow',function(){$(this).remove();});
 
             // $("#wrapper").toggleClass("toggled");
             
@@ -1321,7 +1320,6 @@
         });
 
         // mandir wahi banega ! upar aaja when refreshed
-        // TEMP Removed
         // window.onbeforeunload = function () {
         //   window.scrollTo(0, 0);
         // }

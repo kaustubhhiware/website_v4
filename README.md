@@ -13,3 +13,5 @@ So, in case you decide to use it, it won't hurt to mention it on your website. A
 * Getting rid of .git folders - http://stevelorek.com/how-to-shrink-a-git-repository.html
 
 * Handling overflows - https://css-tricks.com/findingfixing-unintended-body-overflow/
+
+* Minify HTML -  http://kangax.github.io/html-minifier/
