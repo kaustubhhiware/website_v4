@@ -13,12 +13,12 @@ function isScrolledIntoView(elem)
 }
 // change url appropriately when scrolling
 $(window).scroll(function() {
-    // alert("hey");
-    if (isScrolledIntoView("#about")) { window.history.pushState("state", "title", "/#about"); return; }
-    else if (isScrolledIntoView("#work")) { window.history.pushState("state", "title", "/#work"); return; }
-    else if (isScrolledIntoView("#love")) { window.history.pushState("state", "title", "/#love"); return; }
-    else if (isScrolledIntoView("#contact")) { window.history.pushState("state", "title", "/#contact"); return; }
-    else { window.history.pushState("state", "title", "/#"); return; }
+    if (isScrolledIntoView("#landed"))       { window.location.hash ='#';         }
+    else if (isScrolledIntoView("#about"))   { window.location.hash ='#about';    }
+    else if (isScrolledIntoView("#skills"))  { window.location.hash ='#skills';     }
+    else if (isScrolledIntoView("#projects")){ window.location.hash ='#projects';     }
+    else if (isScrolledIntoView("#contact")) { window.location.hash ='#contact';  }
+    else if (isScrolledIntoView("#contact_")){ window.location.hash ='#contact_'; }
 });
 
 function showabout(e)
@@ -58,3 +58,11 @@ $(document).on('click', 'a[href^="#"]', function(e) {
     // animated top scrolling
     $('body, html').animate({scrollTop: pos},1000);
 });
+
+function burger_transition(){
+    $('#menu-toggle').click(function(){
+        $(this).toggleClass('open');
+    });
+}
+
+$(document).ready(burger_transition());

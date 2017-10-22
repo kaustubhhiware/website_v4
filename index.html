@@ -82,14 +82,14 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#work" onclick="sideBarTeleport()">
+                    <a href="#skills" onclick="sideBarTeleport()">
                         <span class="glyphicon glyphicon-console navicons">
                             <br /><p class="navtext"> Skills</p>
                         </span>&emsp;
                     </a>
                 </li>
                 <li>
-                    <a href="#love" onclick="sideBarTeleport()">
+                    <a href="#projects" onclick="sideBarTeleport()">
                         <span class="fa fa-code fa-2x navicons">
                             <br /><p class="navtext"> Projects</p>
                         </span>&emsp;
@@ -121,9 +121,14 @@
         <!-- /#sidebar-wrapper -->
     </div>
 
+    <!-- left sidebar -->
     <a class="btn btn-default" id="menu-toggle">
-        <span class="glyphicon glyphicon-menu-hamburger burger"></span>
+        <!-- <span class="glyphicon glyphicon-menu-hamburger burger"></span> -->
+        <span></span>
+        <span></span>
+        <span></span>
     </a>
+
     <a class="btn btn-default" id="toggle-shadow">
     </a>
 
@@ -141,7 +146,7 @@
     </style>
 
     <!-- Landing page -->
-    <div id="landed" class="align-center img-responsive">
+    <div id="landed" class="align-center img-responsive" onmouseover="window.location.hash="#";>
         <div id="particle-canvas"></div>
 
         <div id="thumbnail text-center text-vertical-center">
@@ -302,7 +307,7 @@
     <!-- _________________________________________________________________________________________________________ -->
     <!-- <section class="module parallax parallax-1" style="background-image:url('img/screenshot.png');">
     </section> -->
-    <div id="work" class="idsection">
+    <div id="skills" class="idsection">
         <div class="section_description">
             <h1>Skills</h1>
             <hr class="liner"/>
@@ -474,7 +479,7 @@
 
     <div id="ghChartTemp"></div>
     <hr class="border" />
-    <div id="love" class="idsection" onmouseover="showskills('lang')>
+    <div id="projects" class="idsection" onmouseover="showskills('lang');window.location.hash='#projects'">
         <div class="section_description">
             <h1>Projects</h1>
             <hr class="liner"/>
@@ -485,6 +490,142 @@
             <div id="wrapper" class="container">
                 <div class="lefty">
                     <div class="row">
+
+                        <div class="col-md-3 col-xs-12 col-sm-12">
+                            <div class="card" data-toggle="modal" data-target="#affectsense">
+                                <img class="card-img-top" src="img/affectsense.png" alt="Card image cap">
+                                <div class="card-block">
+                                    <h4 class="card-title">AffectSense</h4>
+                                    <br />
+                                    <p class="card-text" style="margin-bottom: -5px">Smart Phone Computing</p>
+                                    <p class="card-text">Jan 2017 - Present</p>
+                                </div>
+                            </div>
+
+                            <div id="affectsense" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">
+                                                Emotion Detection using Smart Devices
+                                                <p class="modal-desc">
+                                                    Research project under Computer Science Department, IIT Kharagpur
+                                                    <br />
+                                                    Tags : Research, Smart Phone Computing, ML
+                                                </p>
+                                            </h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/affectsense_modal.png" style="max-height: 300px;" class="modal-img"/>
+
+                                            In this project, we try to determine whether it is possible to detect human emotions via smart devices, using only swipe interactions via the means of
+                                            a keyboard. We aim to develop a keyboard that tries to accurately predict the
+                                            emotional state of a user well in time.
+                                            <br />
+                                            <p>
+                                                Guide : <a href="http://cse.iitkgp.ac.in/~bivasm/" target="_blank">Prof. Bivas Mitra</a>
+                                            </p>
+                                            <p class="modal-closure">
+                                                Jan 2017 - Present
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- AffectSense -->
+                        </div>
+
+
+                        <div class="col-md-3 col-xs-12 col-sm-12">
+                            <div class="card" data-toggle="modal" data-target="#codemix">
+                                <img class="card-img-top" src="img/codemix.png" alt="Card image cap">
+                                <div class="card-block">
+                                    <h4 class="card-title">Code-mixing and code-borrowing</h4>
+                                    <p class="card-text" style="margin-bottom: -5px">Natural Language Processing</p>
+                                    <p class="card-text">Aug 2017 - Present</p>
+                                </div>
+                            </div>
+
+                            <div id="codemix" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">
+                                                Understanding code-mixing patterns in celebrity tweets
+                                                <p class="modal-desc">
+                                                    Research project under Computer Science Department, IIT Kharagpur
+                                                    <br />
+                                                    Tags : Research, NLP
+                                                </p>
+                                            </h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/codemix_modal.png" style="max-height: 300px;" class="modal-img"/>
+
+                                            This projects attempts to distinguish code-mixing and code-borrowing instances
+                                            in the context of celebrity tweets. We try to understand if a word from a foreign language is used by a celebrity, how likely is it to be borrowed by their followers. Additionally, we try to understand which sense the word is borrowed in.
+                                            <br />
+                                            <p>
+                                                Guide : <a href="www.facweb.iitkgp.ernet.in/~niloy/" target="_blank">Prof. Niloy Ganguly</a>
+                                            </p>
+                                            <p class="modal-closure">
+                                                Aug 2017 - Present
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- code-mixing patterns -->
+                        </div>
+
+                        <div class="col-md-3 col-xs-12 col-sm-12">
+                            <div class="card" data-toggle="modal" data-target="#savitr">
+                                <img class="card-img-top" src="img/savitr.png" alt="Card image cap">
+                                <div class="card-block">
+                                    <h4 class="card-title">Savitr: pre-disaster management tool</h4>
+                                    <p class="card-text" style="margin-bottom: -5px">Social Computing, NLP</p>
+                                    <p class="card-text">Aug 2017 - Present</p>
+                                </div>
+                            </div>
+
+                            <div id="savitr" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">
+                                                Leveraging Twitter to detect emergency situations
+                                                <p class="modal-desc">
+                                                    Research project under Computer Science Department, IIT Kharagpur
+                                                    <br />
+                                                    Tags : Research, Social Computing, NLP
+                                                </p>
+                                            </h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/savitr_modal.png" style="max-height: 300px;" class="modal-img"/>
+
+                                            The objective is to create a pre-warning system to detect potential disaster 
+                                            situations, by contnually monitoring tweets in real-time. This tool would 
+                                            also help us understand the geospatial distribution of important tweets 
+                                            across time. This would help in detecting important tweets and classifying 
+                                            tweets as situational and non-situational, which can help in disaster relief 
+                                            and mitigation.
+                                            <br />
+                                            <p>
+                                                Guide : <a href="https://sites.google.com/site/saptarshighosh/" target="_blank">Prof. Saptarshi Ghosh</a>
+                                            </p>
+                                            <p class="modal-closure">
+                                                Aug 2017 - Present
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- Savitr -->
+                        </div>
 
                         <div class="col-md-3 col-xs-12 col-sm-12">
                             <div class="card" data-toggle="modal" data-target="#nlp">
@@ -529,8 +670,12 @@
                                     </div>
                                 </div>
                             </div>
-
+                        <!-- Vruddhi analysis -->
                         </div>
+
+                    </div> <!-- row ends -->
+                    
+                    <div class="row">
 
                         <div class="col-md-3 col-xs-12 col-sm-12">
                             <div class="card" data-toggle="modal" data-target="#opensoft">
@@ -572,7 +717,7 @@
                                     </div>
                                 </div>
                             </div>
-
+                        <!-- Graph Extractor -->
                         </div>
 
                         <div class="col-md-3 col-xs-12 col-sm-12">
@@ -619,7 +764,7 @@
                                     </div>
                                 </div>
                             </div>
-
+                        <!-- c0derunR -->
                         </div>
 
 
@@ -644,7 +789,7 @@
                                                 <p class="modal-desc">
                                                     An online food ordering system.
                                                     <br />
-                                                    Tags : Project
+                                                    Tags : Academic
                                                 </p>
                                             </h4>
                                         </div>
@@ -666,12 +811,8 @@
                                     </div>
                                 </div>
                             </div>
-
+                        <!-- Foodspark -->
                         </div>
-
-                    </div> <!-- row ends -->
-                    
-                    <div class="row">
 
                         <div class="col-md-3 col-xs-12 col-sm-12">
                             <div class="card" data-toggle="modal" data-target="#depinfosys">
@@ -694,7 +835,7 @@
                                                 <p class="modal-desc">
                                                     Software Project for academic monitoring.
                                                     <br />
-                                                    Tags : Project
+                                                    Tags : Academic
                                                 </p>
                                             </h4>
                                         </div>
@@ -712,8 +853,12 @@
                                     </div>
                                 </div>
                             </div>
-
+                        <!-- DepInfoSys -->
                         </div>
+
+                    </div> <!-- row ends -->
+
+                    <div class="row">
 
                         <div class="col-md-3 col-xs-12 col-sm-12">
                             <div class="card" data-toggle="modal" data-target="#compiler">
@@ -736,7 +881,7 @@
                                                 <p class="modal-desc">
                                                     Compiler for restricted grammar C.
                                                     <br />
-                                                    Tags : Project
+                                                    Tags : Academic
                                                 </p>
                                             </h4>
                                         </div>
@@ -754,7 +899,7 @@
                                     </div>
                                 </div>
                             </div>
-
+                        <!-- cOMPILER -->
                         </div>
 
                    
@@ -798,7 +943,7 @@
                                     </div>
                                 </div>
                             </div>
-
+                        <!-- NotiFyre -->
                         </div>
 
                         <div class="col-md-3 col-xs-12 col-sm-12">
@@ -822,7 +967,7 @@
                                                 <p class="modal-desc">
                                                     A handmade terminal.
                                                     <br />
-                                                    Tags : Project
+                                                    Tags : Academic
                                                 </p>
                                             </h4>
                                         </div>
@@ -840,14 +985,10 @@
                                     </div>
                                 </div>
                             </div>
-
+                        <!-- cShell -->
                         </div>
 
-                    </div> <!-- row ends -->
-
-                    <div class="row">
-
-                        <div class="col-md-3 col-xs-12 col-sm-12">
+                        <!-- <div class="col-md-3 col-xs-12 col-sm-12">
                             <div class="card" data-toggle="modal" data-target="#netcheck">
                                 <img class="card-img-top" src="img/netcheck.png" alt="Card image cap">
                                 <div class="card-block">
@@ -887,9 +1028,8 @@
                                     </div>
                                 </div>
                             </div>
-
-                        </div>
-
+                        <!-- netcheck ->
+                        </div> -->
 
                         <div class="col-md-3 col-xs-12 col-sm-12">
                             <div class="card" data-toggle="modal" data-target="#wordabulary">
@@ -930,7 +1070,7 @@
                                     </div>
                                 </div>
                             </div>
-
+                        <!-- Wordabulary -->
                         </div>
 
                     </div> <!-- row ends -->
@@ -986,7 +1126,7 @@
 
                             <div class="md-form">
                                 <i class="fa fa-pencil prefix grey-text"></i>
-                                <textarea type="text" id="msg" class="md-textarea form-control" data-rule="required" data-msg="Please write something for us"></textarea>
+                                <textarea type="text" id="msg" name="message" class="md-textarea form-control" data-rule="required" data-msg="Please write something for us"></textarea>
                                 <label for="msg">Message</label>
                                 <div class="validation"></div>
                             </div>
@@ -1207,16 +1347,18 @@
             $("#wrapper").toggleClass("toggled");
         });
 
+        // close sidemenu when body clicked
         $('body').click(function(e) {
           if ($('#wrapper').hasClass('toggled')) {
             $("#wrapper").toggleClass('toggled');
-            // alert("khada hai");
+            $('#menu-toggle').removeClass('open');
           }
         });
         // For the navbar
         function sideBarTeleport(elem)
         {
             $("#wrapper").toggleClass("toggled");
+            $('#menu-toggle').removeClass('open');
         }
 
         document.addEventListener('DOMContentLoaded', function(){
