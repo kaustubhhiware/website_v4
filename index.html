@@ -35,7 +35,8 @@
     <!-- nice chart dear-->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script> -->
     <script async type="text/javascript" src="js/typed.min.js" ></script>
-
+    <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"/>
     <!-- <link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" /> -->
     <!-- Custom Fonts -->
     <script async src="js/b441800a06.js"></script>
@@ -64,7 +65,7 @@
 <body>
 
     <div id="preloader"></div>
-    <div id="wrapper">
+    <div id="wrapper" class="toggled">
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
@@ -84,35 +85,35 @@
                 <li>
                     <a href="#skills" onclick="sideBarTeleport()">
                         <span class="glyphicon glyphicon-console navicons">
-                            <br /><p class="navtext"> Skills</p>
+                            <br /><p class="navtext">Skills</p>
                         </span>&emsp;
                     </a>
                 </li>
                 <li>
                     <a href="#projects" onclick="sideBarTeleport()">
                         <span class="fa fa-code fa-2x navicons">
-                            <br /><p class="navtext"> Projects</p>
+                            <br /><p class="navtext">Projects</p>
                         </span>&emsp;
                     </a>
                 </li>
                 <li>
                     <a href="https://kaustubhhiware.github.io/blog/">
                         <span class="glyphicon glyphicon-pencil navicons">
-                            <br /><p class="navtext"> Blog</p>
+                            <br /><p class="navtext">Blog</p>
                         </span>&emsp;
                     </a>
                 </li>
                 <li>
                     <a href="resume/index.html">
                         <span class="glyphicon glyphicon-bookmark navicons">
-                            <br /><p class="navtext"> Resume</p>
+                            <br /><p class="navtext">Resume</p>
                         </span>&emsp;
                     </a>
                 </li>
                 <li>
                     <a href="#contact" onclick="sideBarTeleport()">
                         <span class="glyphicon glyphicon-send navicons">
-                            <br /><p class="navtext"> Contact</p>
+                            <br /><p class="navtext">Contact</p>
                         </span>&emsp;
                     </a>
                 </li>
@@ -274,10 +275,11 @@
 
                             Here is a list of relevant courses I have undertaken so far:
                             <div class="row" id="courses">
-                                <div class="course col-xs-6 col-sm-6 col-md-3">Machine Learning*</div>
-                                <div class="course col-xs-6 col-sm-6 col-md-3">Artificial Intelligence*</div>
-                                <div class="course col-xs-6 col-sm-6 col-md-3">Natural Language Processing*^</div>
-                                <div class="course col-xs-6 col-sm-6 col-md-3">Social Computing*^</div>
+                                <div class="course col-xs-6 col-sm-6 col-md-3">Deep Learning*^</div>
+                                <div class="course col-xs-6 col-sm-6 col-md-3">Machine Learning</div>
+                                <div class="course col-xs-6 col-sm-6 col-md-3">Artificial Intelligence</div>
+                                <div class="course col-xs-6 col-sm-6 col-md-3">Natural Language Processing^</div>
+                                <div class="course col-xs-6 col-sm-6 col-md-3">Social Computing^</div>
                                 <div class="course col-xs-6 col-sm-6 col-md-3">Data Analytics^</div>
                                 <div class="course col-xs-6 col-sm-6 col-md-3">Database Management^</div>
                                 <div class="course col-xs-6 col-sm-6 col-md-3">Operating Systems^</div>
@@ -303,10 +305,10 @@
         </div>
     </div>
 
-    <!-- <hr class="border" /> -->
     <!-- _________________________________________________________________________________________________________ -->
     <!-- <section class="module parallax parallax-1" style="background-image:url('img/screenshot.png');">
     </section> -->
+    <hr class="border" />
     <div id="skills" class="idsection">
         <div class="section_description">
             <h1>Skills</h1>
@@ -477,8 +479,12 @@
         </div>
     </section> -->
 
-    <div id="ghChartTemp"></div>
-    <!-- <hr class="border" /> -->
+    <!-- <div id="ghChartTemp"></div> -->
+    <!-- Github calendar  -->
+    <<!-- div class="calendar">
+        Loading the data just for you.
+    </div> -->
+    <hr class="border" />
     <div id="projects" class="idsection">
         <div class="section_description">
             <h1>Projects</h1>
@@ -543,7 +549,7 @@
                                 <div class="card-block">
                                     <h4 class="card-title">Code-mixing and code-borrowing</h4>
                                     <p class="card-text" style="margin-bottom: -5px">Natural Language Processing</p>
-                                    <p class="card-text">Aug 2017 - Present</p>
+                                    <p class="card-text">Aug 2017 - Nov 2017</p>
                                 </div>
                             </div>
 
@@ -571,7 +577,7 @@
                                                 Guide : <a href="www.facweb.iitkgp.ernet.in/~niloy/" target="_blank">Prof. Niloy Ganguly</a>
                                             </p>
                                             <p class="modal-closure">
-                                                Aug 2017 - Present
+                                                Aug 2017 - No 2017
                                             </p>
                                         </div>
                                     </div>
@@ -612,7 +618,8 @@
                                             also help us understand the geospatial distribution of important tweets 
                                             across time. This would help in detecting important tweets and classifying 
                                             tweets as situational and non-situational, which can help in disaster relief 
-                                            and mitigation.
+                                            and mitigation. The system can be viewed at 
+                                            <a href="https://savitr.herokuap.com">savitr.herokuapp.com</a>.
                                             <br />
                                             <p>
                                                 Guide : <a href="https://sites.google.com/site/saptarshighosh/" target="_blank">Prof. Saptarshi Ghosh</a>
@@ -1358,6 +1365,8 @@
             $("#wrapper").toggleClass("toggled");
             $('#menu-toggle').removeClass('open');
         }
+        
+        $('#menu-toggle').removeClass('open');
 
         document.addEventListener('DOMContentLoaded', function(){
             Typed.new('#code_lang', {
@@ -1392,6 +1401,7 @@
         // show only general, rest are hidden
         showabout('general');
         showskills('lang');
+        GitHubCalendar(".calendar", "kaustubhhiware");
         
         // Part below must be at the end, everything new goes above this comment
         /* Die, die die overflow-x*/
@@ -1403,7 +1413,6 @@
 
     </script>
     <!-- Place this tag in your head or just before your close body tag. -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.isotope.min.js"></script>
     <script src="js/jquery.localscroll-1.2.7-min.js"></script>
