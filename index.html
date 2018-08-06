@@ -183,16 +183,28 @@
                 <div class="row" style="padding-top: 1%;">
                     <ul id="abouticons">
                         <li onmouseover="showabout('general')">
-                            <i class="material-icons medium" id="general_default">account_circle</i>
-                            <i class="material-icons selected" id="general_select">account_circle</i>
+                            <button type="button" class="btn" id="general_default">
+                                <i class="material-icons medium" id="general_default">account_circle</i>
+                            </button>
+                            <button type="button" class="btn btn-default" id="general_select">
+                                <i class="material-icons selected">account_circle</i>
+                            </button>
                         </li>
                         <li onmouseover="showabout('school')">
-                            <i class="material-icons medium" id="school_default">account_balance</i>
-                            <i class="material-icons selected" id="school_select">account_balance</i>
+                            <button type="button" class="btn" id="school_default">
+                                <i class="material-icons medium">account_balance</i>
+                            </button>
+                            <button type="button" class="btn btn-default" id="school_select">
+                                <i class="material-icons selected">account_balance</i>
+                            </button>
                         </li>
                         <li onmouseover="showabout('college')">
-                            <i class="material-icons medium" id="college_default">school</i>
-                            <i class="material-icons selected" id="college_select">school</i>
+                            <button type="button" class="btn" id="college_default">
+                                <i class="material-icons medium">school</i>
+                            </button>
+                            <button type="button" class="btn btn-default" id="college_select">
+                                <i class="material-icons selected">school</i>
+                            </button>
                         </li>
                     </ul>
                 </div>
@@ -254,7 +266,7 @@
                                     <br />
                                     I had my primary schooling at Sandipani school, where I studied from grade 2 to grade 10. After which, I had my +2 at Shivaji Science college.
                                     <br /><br />
-                                    <span style="font-weight: bold;">Indian Institute of Tehcnology, Kharagpur</span>
+                                    <span style="font-weight: bold;">Indian Institute of Technology, Kharagpur</span>
                                     <br />Computer Science and Engineering, 2014 - 2019 (expected).
                                     <br /><br />
                                     <span style="font-weight: bold;">Shivaji Science college, Nagpur</span>
@@ -269,8 +281,9 @@
                                 <p>
                                     <!-- &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <i class="material-icons small">change_history</i><br /> -->
                                     I am currently a fifth year Computer Science and Engineering Undergraduate, pursuing a dual 
-                                    degree course at  <a href=http://www1.iitkgp.ac.in/ class="nolink"  style="text-decoration : none" target=_blank>Indian Institute of Technology, Kharagpur</a>. A dual degree means I
-                                    shall be graduating with both, a B.Tech and a M.Tech degree in July 2019.
+                                    degree course at  <a href=http://www1.iitkgp.ac.in/ class="nolink"  style="text-decoration : none" target=_blank>Indian Institute of Technology, Kharagpur</a>.
+                                    <br />
+                                    A dual degree means I will be graduating with both, a B.Tech and a M.Tech degree in July 2019.
                                     <br />
 
                                     My research interests include Natural Language Processing, Machine Learning, Smart phone Computing and Social Computing.
@@ -332,19 +345,35 @@
                 <div class="row" style="padding-top: 1%;">
                     <ul id="abouticons">
                         <li onmouseover="showskills('lang')">
-                            <i class="fa fa-code famedium" id="lang_default" aria-hidden="true"></i>
-                            <i class="fa fa-code faselected" id="lang_select"></i>
+                            <button type="button" class="btn" id="lang_default">
+                                <!-- <i class="fa fa-code famedium"></i> -->
+                                <i class="material-icons medium">code</i>
+                            </button>
+                            <button type="button" class="btn btn-default" id="lang_select">
+                                <!-- <i class="fa fa-code faselected"></i> -->
+                                <i class="material-icons selected">code</i>
+                            </button>
                         </li>
                         <li onmouseover="showskills('web')">
-                            <i class="fa fa-globe famedium" aria-hidden="true" id="web_default"></i>
-                            <i class="fa fa-globe faselected" aria-hidden="true" id="web_select"></i>
+                            <button type="button" class="btn" id="web_default">
+                                <!-- <i class="fa fa-globe famedium"></i> -->
+                                <i class="material-icons medium">language</i>
+                            </button>
+                            <button type="button" class="btn btn-default" id="web_select">
+                                <!-- <i class="fa fa-globe faselected"></i> -->
+                                <i class="material-icons selected">language</i>
+                            </button>
                         </li>
                         <li onmouseover="showskills('frameworks')">
-                            <i class="material-icons famedium" id="frameworks_default">build</i>
-                            <i class="material-icons faselected" id="frameworks_select">build</i>
+                            <button type="button" class="btn" id="frameworks_default">
+                                <i class="material-icons medium">build</i>
+                            </button>
+                            <button type="button" class="btn btn-default" id="frameworks_select">
+                                <i class="material-icons selected">build</i>
+                            </button>
                         </li>
-                        <li>
-                            <span id="lang_text">Programming Languages</span>
+                        <li style="font-size: 0.7em;">
+                            <span id="lang_text">Prog. Languages</span>
                             <span id="web_text">Web</span>
                             <span id="frameworks_text">Frameworks &amp; OS</span>
                         </li>
@@ -403,17 +432,20 @@
                         <li>
                             <i class="devicon-sass-original colored devmedium"></i>
                         </li>
+                        
+                    </ul>
+                    <ul class="skillbox">
                         <li>
                             <img class="medium" src="img/bootstrap-4.svg">                                
                         </li>
-                    </ul>
-                    <ul class="skillbox">
                         <li>
                             <i class="devicon-react-original-wordmark colored devmedium"></i>
                         </li>
                         <li>
                             <i class="devicon-angularjs-plain colored devmedium"></i>
                         </li>
+                    </ul>
+                    <ul class="skillbox">
                         <li>
                             <i class="devicon-django-plain-wordmark colored devmedium"></i>
                         </li>
@@ -514,14 +546,14 @@
                             SAVITR: A System for Real-time Location Extraction from Microblogs during Emergencies
                         </h4>
                         <span style="float: right">Apr 2018</span>
-                        <span style="float: left"><a href="https://www.cse.iitk.ac.in/users/kripa/smerp2018/">
+                        <span style="float: left"><a href="https://www.cse.iitk.ac.in/users/kripa/smerp2018/" target="_blank">
                             Social Media for Emergency and Response Preparedness workshop, Webconf (WWW'18)
                         </a></span>
                         <span style="float: right"><p class="card-text">Natural Language Processing, Social Computing</p></span>
                         <span style="display: inline-block; text-align: center;">
                             We proposed a pre-warning system to detect potential disaster 
                             situations, by continually monitoring tweets in real-time. The system is deployed
-                            at <a href="http://savitr.herokuapp.com">savitr.herokuapp.com</a>. <a href="https://www.cse.iitk.ac.in/users/kripa/smerp2018/savitr-system-real-ritam.pdf"> Link </a>
+                            at <a href="http://savitr.herokuapp.com" target="_blank">savitr.herokuapp.com</a>. <a href="https://www.cse.iitk.ac.in/users/kripa/smerp2018/savitr-system-real-ritam.pdf" target="_blank"> Link </a>
                             <div style="margin-bottom: 0.8em;"></div>
                         </span>
                         <span style="clear: all;"></span>
@@ -538,13 +570,13 @@
                         </h4>
                         <span style="float: right">Aug 2017</span>
                         <span style="clear: all;"></span>
-                        <span style="float: left"><a href="http://sites.google.com/site/textgraphs2017/program">
+                        <span style="float: left"><a href="http://sites.google.com/site/textgraphs2017/program" target="_blank">
                         TextGraphs-11, ACL 2017</a>
                         <span style="color: white;">some text to fill up space</span>
                     </span>
                     <span style="float: right"><p class="card-text">Network-based learning, Natural Language Processing</p></span>
                     <span style="display: inline-block; text-align: center;">
-                        We developed a transductive learning approach identifying derivative nouns in Sanskrit Language, under Prof. Pawan Goyal. Applied MAD algorithm that propagates labels from a subset of seed nodes with the known labels to the unlabelled data. <a href="http://www.aclweb.org/anthology/W17-2409"> Link </a>
+                        We developed a transductive learning approach identifying derivative nouns in Sanskrit Language, under Prof. Pawan Goyal. Applied MAD algorithm that propagates labels from a subset of seed nodes with the known labels to the unlabelled data. <a href="http://www.aclweb.org/anthology/W17-2409" target="_blank"> Link </a>
                         <div style="margin-bottom: 0.8em;"></div>
                     </span>
                     <span style="clear: all;"></span>
@@ -597,7 +629,7 @@
                                         common people seeking professional advice by historic cases lookup.
                                         <br />
                                         <p>
-                                            Guide : <a href="https://sites.google.com/site/saptarshighosh/" target="_blank">Prof. Saptarshi Ghosh</a>
+                                            Masters' Thesis Project Guide : <a href="https://sites.google.com/site/saptarshighosh/" target="_blank">Prof. Saptarshi Ghosh</a>
                                         </p>
                                         <p class="modal-closure">
                                             Aug 2018 - Present
@@ -642,6 +674,8 @@
                                         <br />
                                         <p>
                                             Guide : <a href="http://cse.iitkgp.ac.in/~sudeshna/" target="_blank">Prof. Sudeshna Sarkar</a>
+                                            <br />
+                                            Source: <a href="https://github.com/Sohanpatro/Adversarial_Samples" target="_blank">Sohanpatro/Adversarial_Samples</a>
                                         </p>
                                         <p class="modal-closure">
                                             April 2018
@@ -691,7 +725,7 @@
                                             Bachelor's Thesis Project Guide : <a href="http://cse.iitkgp.ac.in/~bivasm/" target="_blank">Prof. Bivas Mitra</a>
                                         </p>
                                         <p class="modal-closure">
-                                            Jan 2017 - Present
+                                            Jan 2017 - Apr 2018
                                         </p>
                                     </div>
                                 </div>
@@ -732,6 +766,8 @@
                                         <br />
                                         <p>
                                             Guide : <a href="www.facweb.iitkgp.ernet.in/~niloy/" target="_blank">Prof. Niloy Ganguly</a>
+                                            <br />
+                                            Source: <a href="https://github.com/kaustubhhiware/code-mixing" target="_blank">kaustubhhiware/code-mixing</a>
                                         </p>
                                         <p class="modal-closure">
                                             Aug 2017 - No 2017
@@ -787,6 +823,8 @@
                                         <br />
                                         <p>
                                             Guide : <a href="https://sites.google.com/site/saptarshighosh/" target="_blank">Prof. Saptarshi Ghosh</a>
+                                            <br />
+                                            Source: <a href="https://github.com/kaustubhhiware/Savitr" target="_blank">kaustubhhiware/Savitr</a>
                                         </p>
                                         <p class="modal-closure">
                                             Aug 2017 - Present
@@ -799,7 +837,7 @@
                     <!-- Savitr -->
 
                     <div class="col-md-3 col-xs-12 col-sm-12">
-                        <div class="card" data-toggle="modal" data-target="#nlp">
+                        <div class="card" data-toggle="modal" data-target="#sanskrit">
                             <img class="card-img-top" src="img/sanskrit.jpg" alt="Card image cap">
                             <div class="card-block">
                                 <h4 class="card-title">Sanskrit Vruddhi Analysis</h4>
@@ -808,7 +846,7 @@
                             </div>
                         </div>
 
-                        <div id="nlp" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
+                        <div id="sanskrit" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
@@ -833,6 +871,8 @@
                                         <br />
                                         <p>
                                             Guide : <a href="http://cse.iitkgp.ac.in/~pawang/" target="_blank">Prof. Pawan Goyal</a>
+                                            <br />
+                                            Source: <a href="https://github.com/kaustubhhiware/junto-kanto" target="_blank">kaustubhhiware/junto-kanto</a>
                                         </p>
                                         <p class="modal-closure">
                                             July 2016 - Oct 2016
@@ -874,10 +914,12 @@
                                         The goal of this project was to load a large graph dataset from Stanford's SNAP large graph 
                                         repository using a Graph Processing system [for which we used Hadoop and Spark both]. 
                                         Simple queries to be run, along with profile performance. Developed by a team of 5
-                                        as an academic project for the Database Management System course under Prof. Pabitra Mitra.
+                                        as an academic project for the Database Management System course.
                                         <br />
                                         <p>
-                                            Source : <a href="https://github.com/kaustubhhiware/GraphWise" target="_blank">GitHub</a>
+                                            Guide : <a href="http://cse.iitkgp.ac.in/~pabitra/" target="_blank">Prof. Pabitra Mitra</a>
+                                            <br />
+                                            Source: <a href="https://github.com/kaustubhhiware/GraphWise" target="_blank">kaustubhhiware/GraphWise</a>
                                         </p>
                                         <p class="modal-closure">
                                             Mar 2017
@@ -922,9 +964,9 @@
                                         changes you make on the go. Developed during code.fun.do 2017.
                                         <br />
                                         <p>
-                                            Source : <a href="https://github.com/kaustubhhiware/c0derunR" target="_blank">GitHub</a>
+                                            Source : <a href="https://github.com/kaustubhhiware/c0derunR" target="_blank">kaustubhhiware/c0derunR</a>
                                             <br />
-                                            <a href="http://c0derunr.herokuapp.com/" target="_blank">Website</a>
+                                            Website: <a href="http://c0derunr.herokuapp.com/" target="_blank">c0derunr.herokuapp.com</a>
                                         </p>
                                         <p class="modal-closure">
                                             Feb 2016 - Apr 2016
@@ -972,9 +1014,9 @@
                                         as an academic project for the Database Management System course under Prof. Pabitra Mitra.
                                         <br />
                                         <p>
-                                            Source : <a href="https://github.com/kaustubhhiware/Foodspark" target="_blank">GitHub</a>
+                                            Source : <a href="https://github.com/kaustubhhiware/Foodspark" target="_blank">kaustubhhiware/Foodspark</a>
                                             <br />
-                                            <a href="http://foodkgp.pythonanywhere.com/" target="_blank">Website</a>
+                                            Website: <a href="http://foodkgp.pythonanywhere.com/" target="_blank">foodkgp.pythonanywhere.com</a>
                                         </p>
                                         <p class="modal-closure">
                                             Feb 2017
@@ -1014,9 +1056,11 @@
                                     <div class="modal-body">
                                         <img src="img/compiler_modal.gif" class="modal-img"/>
 
-                                        A tiny-c compiler made using flex, yacc, and gnu assembler. tiny-c instructions are a subset of instructions from C. Targetted for x86_64 architecture. Developed as a part of Compilers course under prof. Partha Pratim Das.
+                                        A tiny-c compiler made using flex, yacc, and gnu assembler. tiny-c instructions are a subset of instructions from C. Targetted for x86_64 architecture. Developed as a part of Compilers course.
                                         <p>
-                                            Source : <a href="https://github.com/kaustubhhiware/cOMPILER" target="_blank">GitHub</a>
+                                            Guide: <a href="http://cse.iitkgp.ac.in/~ppd/" target="_blank">Prof. Partha Pratim Das</a>
+                                            <br />
+                                            Source : <a href="https://github.com/kaustubhhiware/cOMPILER" target="_blank">kaustubhhiware/cOMPILER</a>
                                         </p>
                                         <p class="modal-closure">
                                             Autumn 2016
@@ -1056,9 +1100,11 @@
                                     <div class="modal-body">
                                         <img src="img/depinfosys_modal.PNG" class="modal-img" style="padding-top:1em !important; padding-bottom:1.5em !important;"/>
 
-                                        A software allowing the administrator to perform managerial tasks. Developed as a part of Software course under Prof. Partha Pratim Das.
+                                        A software allowing the administrator to perform managerial tasks. Developed as a part of Software course.
                                         <p>
-                                            Source : <a href="https://github.com/kaustubhhiware/Depinfosys" target="_blank">GitHub</a>
+                                            Guide: <a href="http://cse.iitkgp.ac.in/~ppd/" target="_blank">Prof. Partha Pratim Das</a>
+                                            <br />
+                                            Source : <a href="https://github.com/kaustubhhiware/Depinfosys" target="_blank">kaustubhhiware/Depinfosys</a>
                                         </p>
                                         <p class="modal-closure">
                                             Spring 2016
@@ -1101,7 +1147,9 @@
                                         A terminal task notifier with support of basic customzations. Supports bash, and fish shell.
                                         <br />
                                         <p>
-                                            Source : <a href="https://github.com/kaustubhhiware/NotiFyre" target="_blank">GitHub</a>
+                                            Source : <a href="https://github.com/kaustubhhiware/NotiFyre" target="_blank">kaustubhhiware/NotiFyre</a>
+                                            <br />
+                                            Website: <a href="https://kaustubhhiware.github.io/NotiFyre/" target="_blank">kaustubhhiware.github.io/NotiFyre/</a>
                                         </p>
                                         <p class="modal-closure">
                                             Dec 2016
@@ -1148,7 +1196,7 @@
                                         Built a graph extractor application using OpenCV and Tesseract OCR engine that detects
                                         plots in any PDF and creates a plot values table. Worked on detecting and scaling the axis values in the plot to detect missing values.
                                         <p>
-                                            Source : <a href="https://github.com/Azad-Hall/open-soft-2015-2016" target="_blank">GitHub</a>
+                                            Source : <a href="https://github.com/Azad-Hall/open-soft-2015-2016" target="_blank">Azad-Hall/open-soft-2015-2016</a>
                                         </p>
                                         <p class="modal-closure">
                                             Feb 2016 - Apr 2016
@@ -1190,7 +1238,7 @@
 
                                         A handmade terminal made in C. Developed as a part of Operating Systems course under Prof. Aurobinda Gupta.
                                         <p>
-                                            Source : <a href="https://github.com/kaustubhhiware/Cshell" target="_blank">GitHub</a>
+                                            Source : <a href="https://github.com/kaustubhhiware/Cshell" target="_blank">kaustubhhiware/Cshell</a>
                                         </p>
                                         <p class="modal-closure">
                                             Feb 2017
@@ -1233,7 +1281,7 @@
                                         A libappindicator made in python to check ping. [WIP] Soon to support
                                         download and upload speeds.
                                         <p>
-                                            Source : <a href="https://github.com/kaustubhhiware/netcheck" target="_blank">GitHub</a>
+                                            Source : <a href="https://github.com/kaustubhhiware/netcheck" target="_blank">kaustubhhiware/netcheck</a>
                                         </p>
                                         <p class="modal-closure">
                                             Jan 2017
@@ -1275,7 +1323,7 @@
 
                                         A python pip module for grammar statistics. Support trivial document analysis (Most frequent, incorrect, support correction in the future). Developed as a module to validate Zipf's law.
                                         <p>
-                                            Source : <a href="https://github.com/kaustubhhiware/Wordabulary" target="_blank">GitHub</a>
+                                            Source : <a href="https://github.com/kaustubhhiware/Wordabulary" target="_blank">kaustubhhiware/Wordabulary</a>
                                         </p>
                                         <p class="modal-closure">
                                             Summer 2016
@@ -1318,13 +1366,13 @@
                     <form action="https://formspree.io/hiwarekaustubh@googlemail.com" method="POST">
 
                         <div class="md-form">
-                           <i class="fa fa-user prefix grey-text"></i>
-                           <input type="text" name="name" class="form-control" id="namer" data-rule="maxlen:4" data-msg="Please enter at least 4 chars" />
-                           <label for="namer">Name</label>
-                           <div class="validation"></div>
-                       </div>
+                         <i class="fa fa-user prefix grey-text"></i>
+                         <input type="text" name="name" class="form-control" id="namer" data-rule="maxlen:4" data-msg="Please enter at least 4 chars" />
+                         <label for="namer">Name</label>
+                         <div class="validation"></div>
+                     </div>
 
-                       <div class="md-form">
+                     <div class="md-form">
                         <i class="fa fa-envelope prefix grey-text"></i>
                         <input type="email" class="form-control" name="_replyto" id="email" data-rule="email" data-msg="Please enter a valid email" />
                         <label for="_replyto">Email</label>
@@ -1332,13 +1380,13 @@
                     </div>
 
                     <div class="md-form">
-                       <i class="fa fa-tag prefix grey-text"></i> 
-                       <input type="text" class="form-control" name="subject" id="subject" data-rule="maxlen:4" data-msg="Please enter at least 8 chars of subject" />
-                       <label for="subject">Subject</label>
-                       <div class="validation"></div>
-                   </div>
+                     <i class="fa fa-tag prefix grey-text"></i> 
+                     <input type="text" class="form-control" name="subject" id="subject" data-rule="maxlen:4" data-msg="Please enter at least 8 chars of subject" />
+                     <label for="subject">Subject</label>
+                     <div class="validation"></div>
+                 </div>
 
-                   <div class="md-form">
+                 <div class="md-form">
                     <i class="fa fa-pencil prefix grey-text"></i>
                     <textarea type="text" id="msg" name="message" class="md-textarea form-control" data-rule="required" data-msg="Please write something for us"></textarea>
                     <label for="msg">Message</label>
