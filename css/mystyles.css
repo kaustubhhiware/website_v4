@@ -127,12 +127,15 @@ input[type=text]:focus, input[type=email]:focus, #msg:focus{background-color:#e6
 60%{-webkit-transform:translateY(-5px);-ms-transform:translateY(-5px);transform:translateY(-5px);}
 }
 .border{margin:0;border:10em solid #fff;}
-i.medium{font-size:3rem;color:#777777;}
+i.medium{font-size:2rem;color:#777777;}
 img.medium{min-height:2rem !important;max-height:2rem !important;margin-top:-2rem !important;}
 i.famedium{font-size:2rem;color:#777777;}
 i.devmedium{font-size:3rem;color:#777777;}
 i.hidden{}
 i.small{font-size:1rem;color:#777777;}
+i.selected{font-size:3rem;color:#4286f4;}
+.faselected{font-size:3rem;color:#4286f4;}
+i.faselected{font-size:3rem;color:#4286f4;}
 #abouticons{padding-left:0;margin-bottom:0 !important;}
 ul#abouticons li{display:inline;padding:0px 10px 0px 10px;}
 .skillbox{text-align:center;}

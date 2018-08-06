@@ -21,14 +21,69 @@ $(window).scroll( function() {
 function showabout(e) {
 	$("#general,#school,#college").hide();
 	$("#"+e).show();
-	$('#'+e+'_select').show();
+	if(e=='general') {
+		$('#general_select').show();
+		$('#school_select').hide();
+		$('#college_select').hide();
+		$('#general_default').hide();
+		$('#school_default').show();
+		$('#college_default').show();
+	}
+	else if(e=='school') {
+		$('#general_select').hide();
+		$('#school_select').show();
+		$('#college_select').hide();
+		$('#general_default').show();
+		$('#school_default').hide();
+		$('#college_default').show();
+	}
+	else {
+		$('#general_select').hide();
+		$('#school_select').hide();
+		$('#college_select').show();
+		$('#general_default').show();
+		$('#school_default').show();
+		$('#college_default').hide();
+	}
 	document.querySelector('#'+e).scrollIntoView({behavior:'smooth'});
 }
 
 function showskills(e) {
 	$("#lang,#web,#frameworks").hide();
 	$("#"+e).show();
-	$('#'+e+'_select').show();
+	if(e=='lang') {
+		$('#lang_select').show();
+		$('#web_select').hide();
+		$('#frameworks_select').hide();
+		$('#lang_default').hide();
+		$('#web_default').show();
+		$('#frameworks_default').show();
+		$('#lang_text').show();
+		$('#web_text').hide();
+		$('#frameworks_text').hide();
+	}
+	else if(e=='web') {
+		$('#lang_select').hide();
+		$('#web_select').show();
+		$('#frameworks_select').hide();
+		$('#lang_default').show();
+		$('#web_default').hide();
+		$('#frameworks_default').show();
+		$('#lang_text').hide();
+		$('#web_text').show();
+		$('#frameworks_text').hide();
+	}
+	else {
+		$('#lang_select').hide();
+		$('#web_select').hide();
+		$('#frameworks_select').show();
+		$('#lang_default').show();
+		$('#web_default').show();
+		$('#frameworks_default').hide();
+		$('#lang_text').hide();
+		$('#web_text').hide();
+		$('#frameworks_text').show();
+	}
 	document.querySelector('#'+e).scrollIntoView({behavior:'smooth'});
 }
 

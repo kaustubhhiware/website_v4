@@ -46,20 +46,20 @@
     <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
     <!-- <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
     <style type="text/css">
-        /*Load the gif first, while the rest of the resources are fetched */
-        div#preloader {
-            position: fixed;
-            left: 0;
-            top: 0;
-            z-index: 3000;
-            width: 100%;
-            height: 100%;
-            overflow: visible;
-            background:url(img/quote.gif) center no-repeat #f8fbfc;
-            background-size: contain;
-        }
+    /*Load the gif first, while the rest of the resources are fetched */
+    div#preloader {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 3000;
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+        background:url(img/quote.gif) center no-repeat #f8fbfc;
+        background-size: contain;
+    }
 
-    </style>
+</style>
 </head>
 
 <body>
@@ -142,35 +142,35 @@
         </svg>
     </a>
     <style>.github-corner:hover .octo-arm { animation:octocat-wave 560ms ease-in-out}
-        @keyframes octocat-wave {0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}
-            @media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}
-    </style>
+    @keyframes octocat-wave {0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}
+    @media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}
+</style>
 
-    <!-- Landing page -->
-    <div id="landed" class="align-center img-responsive">
-        <div id="particle-canvas"></div>
+<!-- Landing page -->
+<div id="landed" class="align-center img-responsive">
+    <div id="particle-canvas"></div>
 
-        <div id="thumbnail text-center text-vertical-center">
-            <div style="top: 20%;"></div>
-            <div class="caption">
-                <p><img src="img/me.jpg" id="photu"/></p>
-                <p id="titlename">Kaustubh Hiware</p>
-                <ul id="icon-list" align="center">
-                    <li><a href="https://www.linkedin.com/in/kaustubhhiware" target="_blank" class="fa fa-linkedin humanize linkedin"></a></li>
-                    <li><a href="https://www.facebook.com/kaustubhhiware" target="_blank" class="fa fa-facebook humanize facebook"></a></li>
-                    <li><a href="https://github.com/kaustubhhiware" target="_blank" class="fa fa-github github humanize"> </a></li>
-                    <li><a href="https://kaustubhhiware.github.io/blog/" class="fa fa-pencil medium humanize"></a></li>
-                    <li><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=hiwarekaustubh@gmail.com&amp" target="_blank" class="fa fa-envelope google humanize"></a></li>
-                </ul>
+    <div id="thumbnail text-center text-vertical-center">
+        <div style="top: 20%;"></div>
+        <div class="caption">
+            <p><img src="img/me.jpg" id="photu"/></p>
+            <p id="titlename">Kaustubh Hiware</p>
+            <ul id="icon-list" align="center">
+                <li><a href="https://www.linkedin.com/in/kaustubhhiware" target="_blank" class="fa fa-linkedin humanize linkedin"></a></li>
+                <li><a href="https://www.facebook.com/kaustubhhiware" target="_blank" class="fa fa-facebook humanize facebook"></a></li>
+                <li><a href="https://github.com/kaustubhhiware" target="_blank" class="fa fa-github github humanize"> </a></li>
+                <li><a href="https://kaustubhhiware.github.io/blog/" class="fa fa-pencil medium humanize"></a></li>
+                <li><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=hiwarekaustubh@gmail.com&amp" target="_blank" class="fa fa-envelope google humanize"></a></li>
+            </ul>
 
-                <!-- scroll down button  -->
-                <div style="margin-top: 6em;"></div>
-                <a href="#" class="scroll-down" address="true"></a>
-            </div>
+            <!-- scroll down button  -->
+            <div style="margin-top: 6em;"></div>
+            <a href="#" class="scroll-down" address="true"></a>
         </div>
     </div>
+</div>
 
-    <!-- _________________________________________________________________________________________________________ -->
+<!-- _________________________________________________________________________________________________________ -->
     <!-- <section class="module parallax parallax-1" style="background-image:url('img/py.jpg');">
     </section> -->
 
@@ -183,129 +183,134 @@
                 <div class="row" style="padding-top: 1%;">
                     <ul id="abouticons">
                         <li onmouseover="showabout('general')">
-                            <i class="material-icons medium">account_circle</i>
+                            <i class="material-icons medium" id="general_default">account_circle</i>
+                            <i class="material-icons selected" id="general_select">account_circle</i>
                         </li>
                         <li onmouseover="showabout('school')">
-                            <i class="material-icons medium">account_balance</i>
+                            <i class="material-icons medium" id="school_default">account_balance</i>
+                            <i class="material-icons selected" id="school_select">account_balance</i>
                         </li>
                         <li onmouseover="showabout('college')">
-                            <i class="material-icons medium">school</i>
+                            <i class="material-icons medium" id="college_default">school</i>
+                            <i class="material-icons selected" id="college_select">school</i>
                         </li>
                     </ul>
                 </div>
 
-                <div class="row" style="margin-top: -1%;">
+                <div class="row" style="margin-top: 1%;">
                     <div id="general">
                         <p>
-                            &emsp; <i class="material-icons small">change_history</i><br />
-                            I am a 4th year undergraduate pursuing a major in Computer Science and Engineering at <a href=http://www1.iitkgp.ac.in/ class="nolink"  style="text-decoration : none" target=_blank>Indian Institute of Technology, Kharagpur</a>. I am accustomed to working on Linux operating systems. My interests include Competitive Programming, Open Source, NLP,  Reading, whenever I am not "learning" from others.
+                            <!-- &emsp; <i class="material-icons small">change_history</i><br /> -->
+                            I am a 5th year dual degree undergraduate pursuing a major in Computer Science and Engineering at <a href=http://www1.iitkgp.ac.in/ class="nolink"  style="text-decoration : none" target=_blank>Indian Institute of Technology, Kharagpur</a>. My interests include Competitive Programming, Open Source, NLP,  Reading, whenever I am not "learning" from others.
                             <p> I take interest in learning about life through movies and TV series. I'm open to recommendations.
-                            <p >I like to invest myself in long, informed, and elaborate discussions about technology, religion, movies, humans, politics; not necesarily in that order. Basically, all topics under the sun.
-                        </p>
-                        <!-- <br /> -->
-                        <!-- Nahi hone waala  -->
-                        <!-- /* A terminal is going to come up here, some time soon! */ -->
-                        <div class="section_heading">
-                            <h2>How I spend my time</h2>
-                            <br />
+                                <p >I like to invest myself in long, informed, and elaborate discussions about technology, religion, movies, humans, politics; not necesarily in that order. Basically, all topics under the sun.
+                                </p>
+                                <!-- <br /> -->
+                                <!-- Nahi hone waala  -->
+                                <!-- /* A terminal is going to come up here, some time soon! */ -->
+                                <div class="section_heading">
+                                    <h2>How I spend my time</h2>
+                                    <br />
 
-                            <div class="row">
-                                <div class="col-md-2 col-xs-6 col-sm-6">
-                                    <button id="tooltip1" type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="bottom" data-original-title="I keep ricing my ubuntu distro.">
-                                        <img class="lovethese" src="img/linux.png" />
-                                    </button>
-                                </div>
-                                <div class="col-md-2 col-xs-6 col-sm-6">
-                                    <button id="tooltip2" type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="bottom" data-original-title="Open source FTW!">
-                                        <img class="lovethese" src="img/OpenSource.png" />
-                                    </button>
-                                </div>
-                                <div class="col-md-2 col-xs-6 col-sm-6">
-                                    <button id="tooltip3" type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="bottom" data-original-title="Python is <3">
-                                        <img class="lovethese" src="img/python.png" />
-                                    </button>
-                                </div>
-                                <div class="col-md-2 col-xs-6 col-sm-6">
-                                    <button id="tooltip4" type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="bottom" data-original-title="Track and plot. Data and people.">
-                                        <img class="lovethese" src="img/graph.png" />
-                                    </button>
-                                </div>
-                                <div class="col-md-2 col-xs-6 col-sm-6">
-                                    <button id="tooltip5" type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="bottom" data-original-title="The front page of the internet. Quite literally.">
-                                        <img class="lovethese" src="img/reddit.png" />
-                                    </button>
-                                </div>
-                                <div class="col-md-2 col-xs-6 col-sm-6">
-                                    <button id="tooltip6" type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="bottom" data-original-title="Binge-watch everything">
-                                        <img class="lovethese" src="img/tv.png" />
-                                    </button>
+                                    <div class="row">
+                                        <div class="col-md-2 col-xs-6 col-sm-6">
+                                            <button id="tooltip1" type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="bottom" data-original-title="I keep ricing my ubuntu distro.">
+                                                <img class="lovethese" src="img/linux.png" />
+                                            </button>
+                                        </div>
+                                        <div class="col-md-2 col-xs-6 col-sm-6">
+                                            <button id="tooltip2" type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="bottom" data-original-title="Open source FTW!">
+                                                <img class="lovethese" src="img/OpenSource.png" />
+                                            </button>
+                                        </div>
+                                        <div class="col-md-2 col-xs-6 col-sm-6">
+                                            <button id="tooltip3" type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="bottom" data-original-title="Python is <3">
+                                                <img class="lovethese" src="img/python.png" />
+                                            </button>
+                                        </div>
+                                        <div class="col-md-2 col-xs-6 col-sm-6">
+                                            <button id="tooltip4" type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="bottom" data-original-title="Track and plot. Data and people.">
+                                                <img class="lovethese" src="img/graph.png" />
+                                            </button>
+                                        </div>
+                                        <div class="col-md-2 col-xs-6 col-sm-6">
+                                            <button id="tooltip5" type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="bottom" data-original-title="The front page of the internet. Quite literally.">
+                                                <img class="lovethese" src="img/reddit.png" />
+                                            </button>
+                                        </div>
+                                        <div class="col-md-2 col-xs-6 col-sm-6">
+                                            <button id="tooltip6" type="button" class="btn btn-default btn-circle btn-xl" data-toggle="tooltip" data-placement="bottom" data-original-title="Binge-watch everything">
+                                                <img class="lovethese" src="img/tv.png" />
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+
+                            <div id="school">
+                                <p>
+                                    <!-- &emsp;&emsp;&emsp;&emsp;&emsp; <i class="material-icons small">change_history</i><br /> -->
+                                    Having brought up in Nagpur for most of my childhood, most of my education before college has been in Nagpur.
+                                    <br />
+                                    I had my primary schooling at Sandipani school, where I studied from grade 2 to grade 10. After which, I had my +2 at Shivaji Science college.
+                                    <br /><br />
+                                    <span style="font-weight: bold;">Indian Institute of Tehcnology, Kharagpur</span>
+                                    <br />Computer Science and Engineering, 2014 - 2019 (expected).
+                                    <br /><br />
+                                    <span style="font-weight: bold;">Shivaji Science college, Nagpur</span>
+                                    <br /> Senior Secondary, MSBSHSE, 2012 - 2014. Vocation: Electronics
+                                    <br /><br />
+                                    <span style="font-weight: bold;">Sandipani school, Nagpur</span>
+                                    <br /> Primary and secondary schooling, CBSE, 2004 - 2012.
+                                </p>
+                            </div>
+
+                            <div id="college">
+                                <p>
+                                    <!-- &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <i class="material-icons small">change_history</i><br /> -->
+                                    I am currently a fifth year Computer Science and Engineering Undergraduate, pursuing a dual 
+                                    degree course at  <a href=http://www1.iitkgp.ac.in/ class="nolink"  style="text-decoration : none" target=_blank>Indian Institute of Technology, Kharagpur</a>. A dual degree means I
+                                    shall be graduating with both, a B.Tech and a M.Tech degree in July 2019.
+                                    <br />
+
+                                    My research interests include Natural Language Processing, Machine Learning, Smart phone Computing and Social Computing.
+                                    <br />
+
+                                    Here is a list of relevant courses I have undertaken so far:
+                                    <div class="row" id="courses">
+                                        <div class="course col-xs-6 col-sm-6 col-md-3">Deep Learning^</div>
+                                        <div class="course col-xs-6 col-sm-6 col-md-3">Machine Learning</div>
+                                        <div class="course col-xs-6 col-sm-6 col-md-3">Natural Language Processing^</div>
+                                        <div class="course col-xs-6 col-sm-6 col-md-3">Social Computing^</div>
+                                        <div class="course col-xs-6 col-sm-6 col-md-3">Image Processing*^</div>
+                                        <div class="course col-xs-6 col-sm-6 col-md-3">Advanced Graph Theory*</div>
+                                        <div class="course col-xs-6 col-sm-6 col-md-3">Parallel & Distributed Algo*</div>
+                                        <div class="course col-xs-6 col-sm-6 col-md-3">Artificial Intelligence</div>
+                                        <div class="course col-xs-6 col-sm-6 col-md-3">Data Analytics^</div>
+                                        <div class="course col-xs-6 col-sm-6 col-md-3">Database Management^</div>
+                                        <div class="course col-xs-6 col-sm-6 col-md-3">Operating Systems^</div>
+                                        <div class="course col-xs-6 col-sm-6 col-md-3">Computer Networks^</div>
+                                        <div class="course col-xs-6 col-sm-6 col-md-3">Compilers^</div>
+                                        <div class="course col-xs-6 col-sm-6 col-md-3">Computer Organisation^</div>
+                                        <div class="course col-xs-6 col-sm-6 col-md-3">Software Engineering^</div>
+                                        <div class="course col-xs-6 col-sm-6 col-md-3">Probability and Stats</div>
+                                        <div class="course col-xs-6 col-sm-6 col-md-3">Switching Circuits^</div>
+                                        <div class="course col-xs-6 col-sm-6 col-md-3">Algorithms^</div>
+                                        <div class="course col-xs-6 col-sm-6 col-md-3">Formal Language &amp; Automata</div>
+                                        <div class="course col-xs-6 col-sm-6 col-md-3">Matrix Algebra</div>
+                                    </div>
+                                    <p class="coursedisclaimer">(* implies ongoing courses, ^ implies practicum)</p>
+
+
+
+                                </p>
+                            </div>               
                         </div>
                     </div>
-
-                    <div id="school">
-                        <p>
-                            &emsp;&emsp;&emsp;&emsp;&emsp; <i class="material-icons small">change_history</i><br />
-                            I was brought up in Nagpur for most of my childhood, so most of my education before Kharagpur has been in Nagpur.
-                            <br />
-                            I had my primary schooling at Sandipani school, where I studied from grade 2 to grade 10. 
-                            <br /><br />
-                            <span style="font-weight: bold;">Sandipani school, Nagpur</span>
-                            <br /> Primary and secondary schooling, CBSE, 2004 - 2012.
-                            <br /><br />
-                            <span style="font-weight: bold;">Shivaji Science college, Nagpur</span>
-                            <br /> Senior Secondary, MSBSHSE, 2012 - 2014. Vocation: Electronics
-                            <br /><br />
-                            <span style="font-weight: bold;">Indian Institute of Tehcnology, Kharagpur</span>
-                            <br />Computer Science and Engineering, 2014 - 2019 (expected).
-                        </p>
-                    </div>
-
-                    <div id="college">
-                        <p>
-                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <i class="material-icons small">change_history</i><br />
-                            I am currently a fourth year Computer Science and Engineering Undergraduate, pursuing a dual 
-                            degree course at  <a href=http://www1.iitkgp.ac.in/ class="nolink"  style="text-decoration : none" target=_blank>Indian Institute of Technology, Kharagpur</a>. A dual degree means I
-                            shall be graduating with both, a B.Tech and a M.Tech degree in July 2019.
-                            <br />
-                        
-                            As a part of my curriculum, I have a decent understanding of Algorithms. My research interests include Natural Language Processing, Machine Learning, Smart phone Computing and Social Computing.
-                            <br />
-
-                            Here is a list of relevant courses I have undertaken so far:
-                            <div class="row" id="courses">
-                                <div class="course col-xs-6 col-sm-6 col-md-3">Deep Learning*^</div>
-                                <div class="course col-xs-6 col-sm-6 col-md-3">Machine Learning</div>
-                                <div class="course col-xs-6 col-sm-6 col-md-3">Artificial Intelligence</div>
-                                <div class="course col-xs-6 col-sm-6 col-md-3">Natural Language Processing^</div>
-                                <div class="course col-xs-6 col-sm-6 col-md-3">Social Computing^</div>
-                                <div class="course col-xs-6 col-sm-6 col-md-3">Data Analytics^</div>
-                                <div class="course col-xs-6 col-sm-6 col-md-3">Database Management^</div>
-                                <div class="course col-xs-6 col-sm-6 col-md-3">Operating Systems^</div>
-                                <div class="course col-xs-6 col-sm-6 col-md-3">Computer Networks^</div>
-                                <div class="course col-xs-6 col-sm-6 col-md-3">Compilers^</div>
-                                <div class="course col-xs-6 col-sm-6 col-md-3">Computer Organisation^</div>
-                                <div class="course col-xs-6 col-sm-6 col-md-3">Matrix Algebra</div>
-                                <div class="course col-xs-6 col-sm-6 col-md-3">Software Engineering^</div>
-                                <div class="course col-xs-6 col-sm-6 col-md-3">Probability and Stats</div>
-                                <div class="course col-xs-6 col-sm-6 col-md-3">Switching Circuits^</div>
-                                <div class="course col-xs-6 col-sm-6 col-md-3">Formal Language &amp; Automata</div>
-                                <div class="course col-xs-6 col-sm-6 col-md-3">Algorithms^</div>
-                                <div class="course col-xs-6 col-sm-6 col-md-3">Discrete Structures</div>
-                            </div>
-                            <p class="coursedisclaimer">(* implies ongoing courses, ^ implies practicum)</p>
-
-
-
-                        </p>
-                    </div>               
                 </div>
             </div>
-        </div>
-    </div>
 
-    <!-- _________________________________________________________________________________________________________ -->
+            <!-- _________________________________________________________________________________________________________ -->
     <!-- <section class="module parallax parallax-1" style="background-image:url('img/screenshot.png');">
     </section> -->
     <hr class="border" />
@@ -327,136 +332,147 @@
                 <div class="row" style="padding-top: 1%;">
                     <ul id="abouticons">
                         <li onmouseover="showskills('lang')">
-                            <i class="fa fa-code famedium" aria-hidden="true"></i>
+                            <i class="fa fa-code famedium" id="lang_default" aria-hidden="true"></i>
+                            <i class="fa fa-code faselected" id="lang_select"></i>
                         </li>
                         <li onmouseover="showskills('web')">
-                            <i class="fa fa-globe famedium" aria-hidden="true"></i>
+                            <i class="fa fa-globe famedium" aria-hidden="true" id="web_default"></i>
+                            <i class="fa fa-globe faselected" aria-hidden="true" id="web_select"></i>
                         </li>
                         <li onmouseover="showskills('frameworks')">
-                            <i class="material-icons famedium">build</i>
+                            <i class="material-icons famedium" id="frameworks_default">build</i>
+                            <i class="material-icons faselected" id="frameworks_select">build</i>
+                        </li>
+                        <li>
+                            <span id="lang_text">Programming Languages</span>
+                            <span id="web_text">Web</span>
+                            <span id="frameworks_text">Frameworks &amp; OS</span>
                         </li>
                     </ul>
                 </div>
-                <div class="row" style="margin-top: -1%;">
+
+                <div class="row" style="margin-top: 10%;">
                     <!--
                         Maximum length of string
                     _________________________________________________________________________________
-                    -->
-                    <div id="lang">
-                        &emsp; <i class="material-icons small">change_history</i> &emsp; Programming Languages <br /><br />
-                        <ul class="skillbox">
-                            <li>
-                                <i class="devicon-c-plain-wordmark colored devmedium"></i>
-                            </li>
-                            <li>
-                                <i class="devicon-cplusplus-plain-wordmark colored devmedium"></i>
-                            </li>
-                            <li>
-                                <i class="devicon-python-plain-wordmark colored devmedium"></i>
-                            </li>
-                            <li>
-                                <i class="devicon-javascript-plain colored devmedium"></i>
-                            </li>
-                        </ul>
-                        <ul class="skillbox">
-                            <li>
-                                <i class="devicon-java-plain-wordmark colored devmedium"></i>
-                            </li>
-                            <li>
-                                <img class="medium" src="img/scala-spiral.png">
-                            </li>
-                            <li>
-                                <img class="medium" src="img/R_logo.png">
-                            </li>
-                            <li>
-                                <i class="devicon-nodejs-plain-wordmark colored devmedium"></i>
-                            </li>
-                        </ul>
-                    </div>
+                -->
+                <div id="lang">
+                    <ul class="skillbox">
+                        <li>
+                            <i class="devicon-c-plain-wordmark colored devmedium"></i>
+                        </li>
+                        <li>
+                            <i class="devicon-cplusplus-plain-wordmark colored devmedium"></i>
+                        </li>
+                        <li>
+                            <i class="devicon-python-plain-wordmark colored devmedium"></i>
+                        </li>
+                        <li>
+                            <i class="devicon-javascript-plain colored devmedium"></i>
+                        </li>
+                    </ul>
+                    <ul class="skillbox">
+                        <li>
+                            <i class="devicon-java-plain-wordmark colored devmedium"></i>
+                        </li>
+                        <li>
+                            <img class="medium" src="img/scala-spiral.png">
+                        </li>
+                        <li>
+                            <i class="devicon-nodejs-plain-wordmark colored devmedium"></i>
+                        </li>
+                    </ul>
+                    <ul class="skillbox">
+                        <li>
+                            <i class="devicon-csharp-plain-wordmark colored devmedium"></i>
+                        </li>
+                        <li>
+                            <img class="medium" src="img/R_logo.png">
+                        </li>
+                    </ul>
+                </div>
                 
-                    <div id="web">
-                        Web &emsp;&emsp; <i class="material-icons small">change_history</i><br /><br />
-                        <ul class="skillbox">
-                            <li>
-                                <i class="devicon-html5-plain-wordmark colored devmedium"></i>
-                            </li>
-                            <li>
-                                <i class="devicon-css3-plain-wordmark colored devmedium"></i>
-                            </li>
-                            <li>
-                                <i class="devicon-sass-original colored devmedium"></i>
-                            </li>
-                            <li>
-                                <i class="devicon-javascript-plain colored devmedium"></i>
-                            </li>
-                        </ul>
-                        <ul class="skillbox">
-                            <li>
-                                <i class="devicon-react-original-wordmark colored devmedium"></i>
-                            </li>
-                            <li>
-                                <img class="medium" src="img/bootstrap-4.svg">
-                            </li>
-                            <li>
-                                <i class="devicon-django-plain-wordmark colored devmedium"></i>
-                            </li>
-                            <li>
-                                <img class="medium" src="img/jekyll.svg">
-                            </li>
-                        </ul>
-                    </div>
+                <div id="web">
+                    <ul class="skillbox">
+                        <li>
+                            <i class="devicon-html5-plain-wordmark colored devmedium"></i>
+                        </li>
+                        <li>
+                            <i class="devicon-css3-plain-wordmark colored devmedium"></i>
+                        </li>
+                        <li>
+                            <i class="devicon-sass-original colored devmedium"></i>
+                        </li>
+                        <li>
+                            <img class="medium" src="img/bootstrap-4.svg">                                
+                        </li>
+                    </ul>
+                    <ul class="skillbox">
+                        <li>
+                            <i class="devicon-react-original-wordmark colored devmedium"></i>
+                        </li>
+                        <li>
+                            <i class="devicon-angularjs-plain colored devmedium"></i>
+                        </li>
+                        <li>
+                            <i class="devicon-django-plain-wordmark colored devmedium"></i>
+                        </li>
+                        <li>
+                            <img class="medium" src="img/jekyll.svg">
+                        </li>
+                    </ul>
+                </div>
 
-                    <div id="frameworks">
-                        Frameworks &amp; OS <i class="material-icons small">change_history</i><br /><br />
-                        <ul class="skillbox">
-                            <li>
-                                <i class="devicon-git-plain-wordmark colored devmedium"></i>
-                            </li>
-                            <li>
-                                <i class="devicon-mysql-plain-wordmark colored devmedium"></i>
-                            </li>
-                            <li>
-                                <i class="devicon-mongodb-plain-wordmark colored devmedium"></i>
-                            </li>
-                            <li>
-                                <img class="medium" src="img/elastic.png"><!-- Elastic -->
-                            </li>
+                <div id="frameworks">
+                    <ul class="skillbox">
+                        <li>
+                            <i class="devicon-git-plain-wordmark colored devmedium"></i>
+                        </li>
+                        <li>
+                            <i class="devicon-mysql-plain-wordmark colored devmedium"></i>
+                        </li>
+                        <li>
+                            <i class="devicon-mongodb-plain-wordmark colored devmedium"></i>
+                        </li>
+                        <li>
+                            <img class="medium" src="img/elastic.png"><!-- Elastic -->
+                        </li>
 
-                        </ul>
-                        <ul class="skillbox">
-                            <li>
-                                <i class="devicon-heroku-plain-wordmark colored devmedium"></i>
-                            </li>
-                            <li>
-                                <i class="devicon-travis-plain-wordmark colored devmedium"></i>
-                            </li>
-                            <li>
-                                <img class="medium" src="img/latex.png"><!-- LaTeX -->
-                            </li>
-                            <li>
-                                Shell / Fish
-                            </li>
-                        </ul>    
-                        <ul class="skillbox">
-                            <li>
-                                <i class="devicon-ubuntu-plain-wordmark colored medium"></i>
-                            </li>
-                            <li>
-                                <i class="fa fa-linux famedium" aria-hidden="true"></i>
-                            </li>
-                            <li>
-                                <i class="devicon-android-plain-wordmark colored devmedium"></i>
-                            </li>
-                            <li>
-                                <i class="devicon-windows8-plain-wordmark colored devmedium"></i>
-                            </li>
-                        </ul>                   
-                    </div> 
-                </div>                  
-            </div>
-            <div>
-                <br />
-                <!-- <div style="padding-bottom:3%; clear: both;"> -->
+                    </ul>
+                    <ul class="skillbox">
+                        <li>
+                            <i class="devicon-heroku-plain-wordmark colored devmedium"></i>
+                        </li>
+                        <li>
+                            <i class="devicon-travis-plain-wordmark colored devmedium"></i>
+                        </li>
+                        <li>
+                            <img class="medium" src="img/latex.png"><!-- LaTeX -->
+                        </li>
+                        <li>
+                            Shell / Fish
+                        </li>
+                    </ul>    
+                    <ul class="skillbox">
+                        <li>
+                            <i class="devicon-ubuntu-plain-wordmark colored medium"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-linux famedium" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                            <i class="devicon-android-plain-wordmark colored devmedium"></i>
+                        </li>
+                        <li>
+                            <i class="devicon-windows8-original colored devmedium"></i>
+                        </li>
+                    </ul>                   
+                </div> 
+            </div>                  
+        </div>
+        <div>
+            <br />
+            <!-- <div style="padding-bottom:3%; clear: both;"> -->
                 The graph is a representative of my relative ease in writing each language.
                 <br />
                 I love to work on self projects as a hobby. There's no better way to learn anything ! <i class="material-icons">sentiment_very_satisfied</i>
@@ -481,789 +497,975 @@
 
     <!-- <div id="ghChartTemp"></div> -->
     <!-- Github calendar  -->
-    <<!-- div class="calendar">
+    <!-- div class="calendar">
         Loading the data just for you.
     </div> -->
     <hr class="border" />
     <div id="projects" class="idsection">
         <div class="section_description">
-            <h1>Projects</h1>
+
+            <h1>Publications</h1>
             <hr class="liner"/>
-            <div style="padding-bottom:3%;">
-                <h4>Click on a project to know more.</h4>
-            </div>
-
-            <div id="wrapper" class="container">
-                <div class="lefty">
-                    <div class="row">
-
-                        <div class="col-md-3 col-xs-12 col-sm-12">
-                            <div class="card" data-toggle="modal" data-target="#affectsense">
-                                <img class="card-img-top" src="img/affectsense.png" alt="Card image cap">
-                                <div class="card-block">
-                                    <h4 class="card-title">AffectSense</h4>
-                                    <br />
-                                    <p class="card-text" style="margin-bottom: -5px">Smart Phone Computing</p>
-                                    <p class="card-text">Jan 2017 - Present</p>
-                                </div>
-                            </div>
-
-                            <div id="affectsense" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            <h4 class="modal-title">
-                                                Emotion Detection using Smart Devices
-                                                <p class="modal-desc">
-                                                    Research project under Computer Science Department, IIT Kharagpur
-                                                    <br />
-                                                    Tags : Research, Smart Phone Computing, ML
-                                                </p>
-                                            </h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <img src="img/affectsense_modal.png" style="max-height: 300px;" class="modal-img"/>
-
-                                            In this project, we try to determine whether it is possible to detect human emotions via smart devices, using only swipe interactions via the means of
-                                            a keyboard. We aim to develop a keyboard that tries to accurately predict the
-                                            emotional state of a user well in time.
-                                            <br />
-                                            Two papers are being written for this project.
-                                            <br />
-                                            <p>
-                                                Guide : <a href="http://cse.iitkgp.ac.in/~bivasm/" target="_blank">Prof. Bivas Mitra</a>
-                                            </p>
-                                            <p class="modal-closure">
-                                                Jan 2017 - Present
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        <!-- AffectSense -->
-                        </div>
-
-
-                        <div class="col-md-3 col-xs-12 col-sm-12">
-                            <div class="card" data-toggle="modal" data-target="#codemix">
-                                <img class="card-img-top" src="img/codemix.png" alt="Card image cap">
-                                <div class="card-block">
-                                    <h4 class="card-title">Code-mixing and code-borrowing</h4>
-                                    <p class="card-text" style="margin-bottom: -5px">Natural Language Processing</p>
-                                    <p class="card-text">Aug 2017 - Nov 2017</p>
-                                </div>
-                            </div>
-
-                            <div id="codemix" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            <h4 class="modal-title">
-                                                Understanding code-mixing patterns in celebrity tweets
-                                                <p class="modal-desc">
-                                                    Research project under Computer Science Department, IIT Kharagpur
-                                                    <br />
-                                                    Tags : Research, NLP
-                                                </p>
-                                            </h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <img src="img/codemix_modal.png" style="max-height: 300px;" class="modal-img"/>
-
-                                            This projects attempts to distinguish code-mixing and code-borrowing instances
-                                            in the context of celebrity tweets. We try to understand if a word from a foreign language is used by a celebrity, how likely is it to be borrowed by their followers. Additionally, we try to understand which sense the word is borrowed in.
-                                            <br />
-                                            <p>
-                                                Guide : <a href="www.facweb.iitkgp.ernet.in/~niloy/" target="_blank">Prof. Niloy Ganguly</a>
-                                            </p>
-                                            <p class="modal-closure">
-                                                Aug 2017 - No 2017
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        <!-- code-mixing patterns -->
-                        </div>
-
-                        <div class="col-md-3 col-xs-12 col-sm-12">
-                            <div class="card" data-toggle="modal" data-target="#savitr">
-                                <img class="card-img-top" src="img/savitr.png" alt="Card image cap">
-                                <div class="card-block">
-                                    <h4 class="card-title">Savitr: pre-disaster management tool</h4>
-                                    <p class="card-text" style="margin-bottom: -5px">Social Computing, NLP</p>
-                                    <p class="card-text">Aug 2017 - Present</p>
-                                </div>
-                            </div>
-
-                            <div id="savitr" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            <h4 class="modal-title">
-                                                Leveraging Twitter to detect emergency situations
-                                                <p class="modal-desc">
-                                                    Research project under Computer Science Department, IIT Kharagpur
-                                                    <br />
-                                                    Tags : Research, Social Computing, NLP
-                                                </p>
-                                            </h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <img src="img/savitr_modal.png" style="max-height: 300px;" class="modal-img"/>
-
-                                            The objective is to create a pre-warning system to detect potential disaster 
-                                            situations, by contnually monitoring tweets in real-time. This tool would 
-                                            also help us understand the geospatial distribution of important tweets 
-                                            across time. This would help in detecting important tweets and classifying 
-                                            tweets as situational and non-situational, which can help in disaster relief 
-                                            and mitigation. The system can be viewed at 
-                                            <a href="https://savitr.herokuap.com">savitr.herokuapp.com</a>.
-                                            <br />
-                                            A paper has been accepted for this project in Social Media for Emergency and Response Preparedness (SMERP) workshop at 
-                                            <a href="https://drive.google.com/file/d/13J_0PL0fMB_pbWVcU-5_xwvbHvGmpsCT/view"> Webconf (WWW'18) conference.</a> and a poster at<a href="https://drive.google.com/file/d/1fCH2AAAHWp5JLwQxLNGoOYoGnyWrolHf/view"> International Conference of Networked Digital Earth (ICDNE)</a>
-                                            <br />
-                                            <p>
-                                                Guide : <a href="https://sites.google.com/site/saptarshighosh/" target="_blank">Prof. Saptarshi Ghosh</a>
-                                            </p>
-                                            <p class="modal-closure">
-                                                Aug 2017 - Present
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        <!-- Savitr -->
-                        </div>
-
-                        <div class="col-md-3 col-xs-12 col-sm-12">
-                            <div class="card" data-toggle="modal" data-target="#nlp">
-                                <img class="card-img-top" src="img/sanskrit.jpg" alt="Card image cap">
-                                <div class="card-block">
-                                    <h4 class="card-title">Sanskrit Vruddhi Analysis</h4>
-                                    <p class="card-text" style="margin-bottom: -5px">An NLP Research Project</p>
-                                    <p class="card-text">July 2016 - Oct 2016</p>
-                                </div>
-                            </div>
-
-                            <div id="nlp" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            <h4 class="modal-title">
-                                                Sanskrit Sandhi (Vruddhi) Analysis
-                                                <p class="modal-desc">
-                                                    Research project under Computer Science Department, IIT Kharagpur
-                                                    <br />
-                                                    Tags : Research, NLP
-                                                </p>
-                                            </h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <img src="img/nlp_modal.png" class="modal-img"/>
-
-                                            In this project, we try to determine whether a given pair of
-                                            Sanskrit words form Sandhi (Vruddhi) or not with a certain level of accuracy.
-                                            This involves formualation of rules for sandhi, analysis of vruddhi dataset
-                                            procured, and validate the results. Analysis of graphs was achieved by MAD and
-                                            adsorption algorithms, via junto. A paper has been <a href="http://www.aclweb.org/anthology/W17-2409" target="_blank">accepted</a> for the same.
-                                            <br />
-                                            <p>
-                                                Guide : <a href="http://cse.iitkgp.ac.in/~pawang/" target="_blank">Prof. Pawan Goyal</a>
-                                            </p>
-                                            <p class="modal-closure">
-                                                July 2016 - Oct 2016
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        <!-- Vruddhi analysis -->
-                        </div>
-
-                    </div> <!-- row ends -->
-                    
-                    <div class="row">
-
-                        <div class="col-md-3 col-xs-12 col-sm-12">
-                            <div class="card" data-toggle="modal" data-target="#opensoft">
-                                <img class="card-img-top" src="img/opensoft.png" alt="Card image cap">
-                                <div class="card-block">
-                                    <h4 class="card-title">Graph Extractor from 2D Plots</h4>
-                                    <p class="card-text" style="margin-bottom: -5px"> OpenSoft, IIT Kharagpur</p>
-                                    <p class="card-text">Spring 2016</p>
-                                </div>
-                            </div>
-                            <!-- Resume projects here -->
-                            <!-- Add cool bars for tags-->
-                            <div id="opensoft" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            <h4 class="modal-title">
-                                                Graph Extractor from 2D Plots
-                                                <p class="modal-desc">
-                                                    Opensoft, IIT Kharagpur 2015-16
-                                                    <br />
-                                                    Tags : Project
-                                                </p>
-                                            </h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <img src="img/opensoft_modal.png" class="modal-img"/>
-
-                                            Built a graph extractor application using OpenCV and Tesseract OCR engine that detects
-                                             plots in any PDF and creates a plot values table. Worked on detecting and scaling the axis values in the plot to detect missing values.
-                                            <p>
-                                                Source : <a href="https://github.com/Azad-Hall/open-soft-2015-2016" target="_blank">GitHub</a>
-                                            </p>
-                                            <p class="modal-closure">
-                                                Feb 2016 - Apr 2016
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        <!-- Graph Extractor -->
-                        </div>
-
-                        <div class="col-md-3 col-xs-12 col-sm-12">
-                            <div class="card" data-toggle="modal" data-target="#coderunr">
-                                <img class="card-img-top" src="img/logo-red.png" alt="Card image cap">
-                                <div class="card-block">
-                                    <h4 class="card-title">C0derunR</h4>
-                                    <br />
-                                    <p class="card-text" style="margin-bottom: -5px">A Django-based IDE</p>
-                                    <p class="card-text">Jan 2017</p>
-                                </div>
-                            </div>
-
-                            <div id="coderunr" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            <h4 class="modal-title">
-                                                C0derunR
-                                                <p class="modal-desc">
-                                                    An online code compiler/interpreter.
-                                                    <br />
-                                                    Tags : Hobby
-                                                </p>
-                                            </h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <img src="img/c0derunr_modal.png" class="modal-img"/>
-
-                                            A Django(python) webapp for Integrated Development Environment using
-                                            HackerEarth API. It Includes a static website generator which allows you to view the
-                                            changes you make on the go. Developed during code.fun.do 2017.
-                                            <br />
-                                            <p>
-                                                Source : <a href="https://github.com/kaustubhhiware/c0derunR" target="_blank">GitHub</a>
-                                                <br />
-                                                <a href="http://c0derunr.herokuapp.com/" target="_blank">Website</a>
-                                            </p>
-                                            <p class="modal-closure">
-                                                Feb 2016 - Apr 2016
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        <!-- c0derunR -->
-                        </div>
-
-
-                        <div class="col-md-3 col-xs-12 col-sm-12">
-                            <div class="card" data-toggle="modal" data-target="#foodspark">
-                                <img class="card-img-top" src="img/foodspark.gif" alt="Card image cap">
-                                <div class="card-block">
-                                    <h4 class="card-title">Foodspark</h4>
-                                    <br />
-                                    <p class="card-text" style="margin-bottom: -5px">Online food-ordering portal</p>
-                                    <p class="card-text">Feb 2017</p>
-                                </div>
-                            </div>
-
-                            <div id="foodspark" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            <h4 class="modal-title">
-                                                Foodspark
-                                                <p class="modal-desc">
-                                                    An online food ordering system.
-                                                    <br />
-                                                    Tags : Academic
-                                                </p>
-                                            </h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <img src="img/foodspark_modal.png" class="modal-img"/>
-
-                                            A Django(python) webapp for online food ordering system. Developed by a team of 5
-                                            as an academic project for the Database Management System course under Prof. Pabitra Mitra.
-                                            <br />
-                                            <p>
-                                                Source : <a href="https://github.com/kaustubhhiware/Foodspark" target="_blank">GitHub</a>
-                                                <br />
-                                                <a href="http://foodkgp.pythonanywhere.com/" target="_blank">Website</a>
-                                            </p>
-                                            <p class="modal-closure">
-                                                Feb 2017
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        <!-- Foodspark -->
-                        </div>
-
-                        <div class="col-md-3 col-xs-12 col-sm-12">
-                            <div class="card" data-toggle="modal" data-target="#depinfosys">
-                                <img class="card-img-top" src="img/depinfosys.jpg" alt="Card image cap">
-                                <div class="card-block">
-                                    <h4 class="card-title">DepInfoSys</h4>
-                                    <br />
-                                    <p class="card-text" style="margin-bottom: -5px">Dept. Management System</p>
-                                    <p class="card-text">Spring 2016</p>
-                                </div>
-                            </div>
-
-                            <div id="depinfosys" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            <h4 class="modal-title">
-                                                Department Information System
-                                                <p class="modal-desc">
-                                                    Software Project for academic monitoring.
-                                                    <br />
-                                                    Tags : Academic
-                                                </p>
-                                            </h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <img src="img/depinfosys_modal.PNG" class="modal-img" style="padding-top:1em !important; padding-bottom:1.5em !important;"/>
-
-                                            A software allowing the administrator to perform managerial tasks. Developed as a part of Software course under Prof. Partha Pratim Das.
-                                            <p>
-                                                Source : <a href="https://github.com/kaustubhhiware/Depinfosys" target="_blank">GitHub</a>
-                                            </p>
-                                            <p class="modal-closure">
-                                                Spring 2016
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        <!-- DepInfoSys -->
-                        </div>
-
-                    </div> <!-- row ends -->
-
-                    <div class="row">
-
-                        <div class="col-md-3 col-xs-12 col-sm-12">
-                            <div class="card" data-toggle="modal" data-target="#compiler">
-                                <img class="card-img-top" src="img/compiler.gif" alt="Card image cap">
-                                <div class="card-block">
-                                    <h4 class="card-title">cOMPILER</h4>
-                                    <br />
-                                    <p class="card-text" style="margin-bottom: -5px">Compiler of tinyC</p>
-                                    <p class="card-text">Autumn 2016</p>
-                                </div>
-                            </div>
-
-                            <div id="compiler" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            <h4 class="modal-title">
-                                                cOMPILER
-                                                <p class="modal-desc">
-                                                    Compiler for restricted grammar C.
-                                                    <br />
-                                                    Tags : Academic
-                                                </p>
-                                            </h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <img src="img/compiler_modal.gif" class="modal-img"/>
-
-                                            A tiny-c compiler made using flex, yacc, and gnu assembler. tiny-c instructions are a subset of instructions from C. Targetted for x86_64 architecture. Developed as a part of Compilers course under prof. Partha Pratim Das.
-                                            <p>
-                                                Source : <a href="https://github.com/kaustubhhiware/cOMPILER" target="_blank">GitHub</a>
-                                            </p>
-                                            <p class="modal-closure">
-                                                Autumn 2016
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        <!-- cOMPILER -->
-                        </div>
-
-                   
-                        <div class="col-md-3 col-xs-12 col-sm-12">
-                            <div class="card" data-toggle="modal" data-target="#notifyre">
-                                <img class="card-img-top" src="img/terminal.png" alt="Card image cap">
-                                <div class="card-block">
-                                    <h4 class="card-title">Notifyre</h4>
-                                    <br />
-                                    <p class="card-text" style="margin-bottom: -5px">Shell terminal notifier</p>
-                                    <p class="card-text">Dec 2016</p>
-                                </div>
-                            </div>
-
-                            <div id="notifyre" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            <h4 class="modal-title">
-                                                Notifyre
-                                                <p class="modal-desc">
-                                                    Notify when a terminal task is done
-                                                    <br />
-                                                    Tags : Hobby
-                                                </p>
-                                            </h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <img src="img/thumbnail_fish.png"  class="modal-img"/>
-
-                                            A terminal task notifier with support of basic customzations. Supports bash, and fish shell.
-                                            <br />
-                                            <p>
-                                                Source : <a href="https://github.com/kaustubhhiware/NotiFyre" target="_blank">GitHub</a>
-                                            </p>
-                                            <p class="modal-closure">
-                                                Dec 2016
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        <!-- NotiFyre -->
-                        </div>
-
-                        <div class="col-md-3 col-xs-12 col-sm-12">
-                            <div class="card" data-toggle="modal" data-target="#cshell">
-                                <img class="card-img-top" src="img/cshell.png" alt="Card image cap">
-                                <div class="card-block">
-                                    <h4 class="card-title">Cshell</h4>
-                                    <br />
-                                    <p class="card-text" style="margin-bottom: -5px">C-based terminal</p>
-                                    <p class="card-text">Feb 2017</p>
-                                </div>
-                            </div>
-
-                            <div id="cshell" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            <h4 class="modal-title">
-                                                Cshell
-                                                <p class="modal-desc">
-                                                    A handmade terminal.
-                                                    <br />
-                                                    Tags : Academic
-                                                </p>
-                                            </h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <img src="img/Cshell_about.png" class="modal-img"/>
-
-                                            A handmade terminal made in C. Developed as a part of Operating Systems course under Prof. Aurobinda Gupta.
-                                            <p>
-                                                Source : <a href="https://github.com/kaustubhhiware/Cshell" target="_blank">GitHub</a>
-                                            </p>
-                                            <p class="modal-closure">
-                                                Feb 2017
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        <!-- cShell -->
-                        </div>
-
-                        <!-- <div class="col-md-3 col-xs-12 col-sm-12">
-                            <div class="card" data-toggle="modal" data-target="#netcheck">
-                                <img class="card-img-top" src="img/netcheck.png" alt="Card image cap">
-                                <div class="card-block">
-                                    <h4 class="card-title">netcheck</h4>
-                                    <br />
-                                    <p class="card-text" style="margin-bottom: -5px">Ping application indicator</p>
-                                    <p class="card-text">Jan 2017</p>
-                                </div>
-                            </div>
-
-                            <div id="netcheck" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            <h4 class="modal-title">
-                                                netcheck
-                                                <p class="modal-desc">
-                                                    Application indicator for ping.
-                                                    <br />
-                                                    Tags : Hobby
-                                                </p>
-                                            </h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <img src="https://raw.githubusercontent.com/kaustubhhiware/netcheck/master/images/connect_demo.png" class="modal-img"/>
-
-                                            A libappindicator made in python to check ping. [WIP] Soon to support
-                                            download and upload speeds.
-                                            <p>
-                                                Source : <a href="https://github.com/kaustubhhiware/netcheck" target="_blank">GitHub</a>
-                                            </p>
-                                            <p class="modal-closure">
-                                                Jan 2017
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        <!-- netcheck ->
-                        </div> -->
-
-                        <div class="col-md-3 col-xs-12 col-sm-12">
-                            <div class="card" data-toggle="modal" data-target="#wordabulary">
-                                <img class="card-img-top" src="img/wordabulary.jpg" alt="Card image cap">
-                                <div class="card-block">
-                                    <h4 class="card-title">Wordabulary</h4>
-                                    <br />
-                                    <p class="card-text" style="margin-bottom: -5px">Python module</p>
-                                    <p class="card-text">Summer 2016</p>
-                                </div>
-                            </div>
-
-                            <div id="wordabulary" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            <h4 class="modal-title">
-                                                Wordabulary
-                                                <p class="modal-desc">
-                                                    A pip module for grammar statistics.
-                                                    <br />
-                                                    Tags : Hobby
-                                                </p>
-                                            </h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <img src="img/word_modal.jpg" class="modal-img"/>
-
-                                            A python pip module for grammar statistics. Support trivial document analysis (Most frequent, incorrect, support correction in the future). Developed as a module to validate Zipf's law.
-                                            <p>
-                                                Source : <a href="https://github.com/kaustubhhiware/Wordabulary" target="_blank">GitHub</a>
-                                            </p>
-                                            <p class="modal-closure">
-                                                Summer 2016
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        <!-- Wordabulary -->
-                        </div>
-
-                    </div> <!-- row ends -->
-
-                </div>
-
-                <div style="padding-bottom:6%;clear:left;"></div><!-- Temp -->
-            </div> <!-- wrapper end-->
-        </div>
-    </div>
-    <!-- Make sure quote in last parallax is visible -->
-    <div id="contact" style="padding-top:-75%; height:24%;">
-
-    </div>
-
-    <!-- This is the last parallax. The last there ever will be, like the last of time lords :/ -->
-    <section class="module parallax parallax-1" style="background-image:url('img/thedoctor.jpg');">
-    </section>
-
-    <!-- _________________________________________________________________________________________________________ -->
-    <div id="contact1" class="idsection">
-        <!-- style="height:89% !important;"> -->
-        <div class="section_description">
-            <h1>Reach me</h1>
-            <hr class="liner"/>
-            <div style="padding-bottom:6%;"></div><!-- Temp -->
+            <div style="margin-top: 3em;"></div>
             <div class="row">
-
-                <div class="col-sm-12 col-md-6 col-xs-12">
-                    <div class="footer-c12levent">
-                        <form action="https://formspree.io/hiwarekaustubh@googlemail.com" method="POST">
-
-                            <div class="md-form">
-                               <i class="fa fa-user prefix grey-text"></i>
-                               <input type="text" name="name" class="form-control" id="namer" data-rule="maxlen:4" data-msg="Please enter at least 4 chars" />
-                               <label for="namer">Name</label>
-                               <div class="validation"></div>
-                            </div>
-
-                            <div class="md-form">
-                                <i class="fa fa-envelope prefix grey-text"></i>
-                                <input type="email" class="form-control" name="_replyto" id="email" data-rule="email" data-msg="Please enter a valid email" />
-                                <label for="_replyto">Email</label>
-                                <div class="validation"></div>
-                            </div>
-
-                            <div class="md-form">
-                               <i class="fa fa-tag prefix grey-text"></i> 
-                               <input type="text" class="form-control" name="subject" id="subject" data-rule="maxlen:4" data-msg="Please enter at least 8 chars of subject" />
-                               <label for="subject">Subject</label>
-                               <div class="validation"></div>
-                            </div>
-
-                            <div class="md-form">
-                                <i class="fa fa-pencil prefix grey-text"></i>
-                                <textarea type="text" id="msg" name="message" class="md-textarea form-control" data-rule="required" data-msg="Please write something for us"></textarea>
-                                <label for="msg">Message</label>
-                                <div class="validation"></div>
-                            </div>
-
-                            <input type="text" name="_gotcha" style="display:none" />
-                            <input type="hidden" name="_next" value="submit.html" />
-                            <input type="hidden" name="_cc" value="hiwarekaustubh@gmail.com" />
-                            <div class="text-center">
-                                <input type="submit" value="Send" class="btn btn-primary"></button>
-                            </div>
-
-                        </form>
-                        <!-- <br style="padding-bottom:4%;"/> -->
+                <div class="card col-md-10" style="width: 100%;">
+                    <div class="card-block">
+                        <h4 style="float: left">
+                            SAVITR: A System for Real-time Location Extraction from Microblogs during Emergencies
+                        </h4>
+                        <span style="float: right">Apr 2018</span>
+                        <span style="float: left"><a href="https://www.cse.iitk.ac.in/users/kripa/smerp2018/">
+                            Social Media for Emergency and Response Preparedness workshop, Webconf (WWW'18)
+                        </a></span>
+                        <span style="float: right"><p class="card-text">Natural Language Processing, Social Computing</p></span>
+                        <span style="display: inline-block; text-align: center;">
+                            We proposed a pre-warning system to detect potential disaster 
+                            situations, by continually monitoring tweets in real-time. The system is deployed
+                            at <a href="http://savitr.herokuapp.com">savitr.herokuapp.com</a>. <a href="https://www.cse.iitk.ac.in/users/kripa/smerp2018/savitr-system-real-ritam.pdf"> Link </a>
+                            <div style="margin-bottom: 0.8em;"></div>
+                        </span>
+                        <span style="clear: all;"></span>
+                        
                     </div>
                 </div>
+            </div>
 
-                <div class="col-sm-12 col-md-6 col-xs-12">
-                    <div class="footer-c12levent">
+            <div class="row" style="margin-top: 1em;">
+                <div class="card col-md-10" style="width: 100%;">
+                    <div class="card-block">
+                        <h4 style="float: left">
+                            A Graph Based Semi-Supervised Approach for Analysis of Derivational Nouns in Sanskrit
+                        </h4>
+                        <span style="float: right">Aug 2017</span>
+                        <span style="clear: all;"></span>
+                        <span style="float: left"><a href="http://sites.google.com/site/textgraphs2017/program">
+                        TextGraphs-11, ACL 2017</a>
+                        <span style="color: white;">some text to fill up space</span>
+                    </span>
+                    <span style="float: right"><p class="card-text">Network-based learning, Natural Language Processing</p></span>
+                    <span style="display: inline-block; text-align: center;">
+                        We developed a transductive learning approach identifying derivative nouns in Sanskrit Language, under Prof. Pawan Goyal. Applied MAD algorithm that propagates labels from a subset of seed nodes with the known labels to the unlabelled data. <a href="http://www.aclweb.org/anthology/W17-2409"> Link </a>
+                        <div style="margin-bottom: 0.8em;"></div>
+                    </span>
+                    <span style="clear: all;"></span>
 
-                        <div class="widget-c12levent" id="contact-text">
-                            <p>
-                                <i class="glyphicon glyphicon-map-marker locicon"></i>
-                                 : C-123, Azad Hall of Residence,
-                                 <a href="https://www.google.co.in/maps/dir//22.3181183,87.2983329/@22.3180953,87.2984053,21z" target="_blank">IIT Kharagpur.</a>
-                            </p>
-                            <p>
-                                <i class="glyphicon glyphicon-earphone locicon"></i>
-                                 : +91 8768829567
-                            </p>
-                            <hr class="liner" />
-                            <p style=   "padding-left:8%;">Find me on the social networks here</p>
+                </div>
+            </div>
+        </div>
+
+        <h1 style="margin-top: 1em;">Projects</h1>
+        <hr class="liner"/>
+        <div style="padding-bottom:3%;">
+            <h4>Click on a project to know more.</h4>
+        </div>
+
+        <div id="wrapper" class="container">
+            <div class="lefty">
+                <div class="row">
+
+                    <div class="col-md-3 col-xs-12 col-sm-12">
+                        <div class="card" data-toggle="modal" data-target="#mtp">
+                            <img class="card-img-top" src="img/legal.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h4 class="card-title">Legal Data Analytics</h4>
+                                <p class="card-text" style="margin-bottom: -5px">Systems</p>
+                                <p class="card-text">Aug 2018 - Present</p>
+                            </div>
                         </div>
 
-                        <ul class="networks">
-                            <li class="facebook extremenet">
-                                <a target="_blank" href="https://www.facebook.com/kaustubhhiware">
-                                    <i class="fa fa-facebook"></i>
-                                </a>
-                            </li>
-                            <li class="github">
-                                <a target="_blank" href="https://github.com/kaustubhhiware">
-                                    <i class="fa fa-github"></i>
-                                </a>
-                            </li>
-                            <li class="linkedin">
-                                <a target="_blank" href="https://www.linkedin.com/in/kaustubhhiware">
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                            </li>
-                            <br />
-                            <li class="google midnet">
-                                <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=hiwarekaustubh@gmail.com&amp" target="_blank" >
-                                    <i class="fa fa-google"></i>
-                                </a>
-                            </li>
-                            <li class="reddit"><!-- :P --> 
-                                <a target="_blank" href="https://www.reddit.com/">
-                                    <i class="fa fa-reddit"></i>
-                                </a>
-                            </li>
-                            <li class="twitter">
-                                <a href="https://twitter.com/kaustubhhiware" target="_blank" >
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li class="instagram">
-                                <a target="_blank" href="https://www.instagram.com/kaustubhhiware/">
-                                    <i class="fa fa-instagram"></i>
-                                </a>
-                            </li>
-                            <br />
-                            <li class="quora extremenet">
-                                <a target="_blank" href="https://www.quora.com/profile/Kaustubh-Hiware">
-                                    <!-- <span class="fa fa-fw"><strong>Q</strong></span> -->
-                                    <i class="fa fa-quora"></i>
-                                </a>
-                            </li>
-                            <li class="medium">
-                                <a target="_blank" href="https://medium.com/@kaustubhhiware">
-                                    <i class="fa fa-medium"></i>
-                                </a>
-                            </li>
-                            <li class="stumbleupon">
-                                <a target="_blank" href="https://www.stumbleupon.com/stumbler/kaustubhhiware">
-                                    <i class="fa fa-stumbleupon"></i>
-                                </a>
-                            </li>
-                        </ul>
+                        <div id="mtp" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">
+                                            Deep Learning in Legal Data Analytics
+                                            <p class="modal-desc">
+                                                Master's Thesis Project under Computer Science Department, IIT Kharagpur
+                                                <br />
+                                                Tags : Research, Deep Learning, Systems
+                                            </p>
+                                        </h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="img/legal-modal.jpeg" style="max-height: 300px;" class="modal-img"/>
+
+                                        In this project, we aim to build a knowledge graph for Indian legal system 
+                                        (where nodes are court cases, Acts, sections of Acts, etc), understand the 
+                                        similarity between legal documents (precursor to prior case retrieval), and 
+                                        use legal document summarisation. We also aim to develop a chatbot to assist
+                                        common people seeking professional advice by historic cases lookup.
+                                        <br />
+                                        <p>
+                                            Guide : <a href="https://sites.google.com/site/saptarshighosh/" target="_blank">Prof. Saptarshi Ghosh</a>
+                                        </p>
+                                        <p class="modal-closure">
+                                            Aug 2018 - Present
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                    <!-- Legal Documents MTP -->
+
+                    <div class="col-md-3 col-xs-12 col-sm-12">
+                        <div class="card" data-toggle="modal" data-target="#adversarial">
+                            <img class="card-img-top" src="img/adversarial.png" alt="Card image cap">
+                            <div class="card-block">
+                                <h4 class="card-title">Adversarial attacks</h4>
+                                <br />
+                                <p class="card-text" style="margin-bottom: -5px">Deep Learning</p>
+                                <p class="card-text">April 2018</p>
+                            </div>
+                        </div>
+
+                        <div id="adversarial" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">
+                                            Adversarial attacks on DNN Classifiers
+                                            <p class="modal-desc">
+                                                Research Project under Computer Science Department, IIT Kharagpur
+                                                <br />
+                                                Tags : Research, Deep Learning
+                                            </p>
+                                        </h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="img/adversarial-modal.jpeg" style="max-height: 300px;" class="modal-img"/>
+                                        The goal was to generate adversarial images by introducing minute modifications
+                                        so as to misclassify it by ML classifier, while remaining correctly classified
+                                        by humans. We used Fast Gradient Sign Method to reduce accuracy by 25% in MNIST dataset, and 62% in CIFAR dataset.
+                                        <br />
+                                        <p>
+                                            Guide : <a href="http://cse.iitkgp.ac.in/~sudeshna/" target="_blank">Prof. Sudeshna Sarkar</a>
+                                        </p>
+                                        <p class="modal-closure">
+                                            April 2018
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Adversarial attacks -->
+
+                    <div class="col-md-3 col-xs-12 col-sm-12">
+                        <div class="card" data-toggle="modal" data-target="#affectsense">
+                            <img class="card-img-top" src="img/affectsense.png" alt="Card image cap">
+                            <div class="card-block">
+                                <h4 class="card-title">AffectSense</h4>
+                                <br />
+                                <p class="card-text" style="margin-bottom: -5px">Smart Phone Computing</p>
+                                <p class="card-text">Jan 2017 - Apr 2018</p>
+                            </div>
+                        </div>
+
+                        <div id="affectsense" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">
+                                            Emotion Detection using Smart Devices
+                                            <p class="modal-desc">
+                                                Bachelor's Thesis Project under Computer Science Department, IIT Kharagpur
+                                                <br />
+                                                Tags : Research, Smart Phone Computing, ML
+                                            </p>
+                                        </h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="img/affectsense_modal.png" style="max-height: 300px;" class="modal-img"/>
+
+                                        In this project, we try to determine whether it is possible to detect human emotions via smart devices, using only swipe interactions via the means of
+                                        a keyboard. We aim to develop a keyboard that tries to accurately predict the
+                                        emotional state of a user well in time.
+                                        <br />
+                                        Two research papers have been submitted, pending review - at RecSys (Recommender systems) and THMS (Transactions on Human-Machine Systems) journal.
+                                        <br />
+                                        <p>
+                                            Bachelor's Thesis Project Guide : <a href="http://cse.iitkgp.ac.in/~bivasm/" target="_blank">Prof. Bivas Mitra</a>
+                                        </p>
+                                        <p class="modal-closure">
+                                            Jan 2017 - Present
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- AffectSense -->
+
+                    <div class="col-md-3 col-xs-12 col-sm-12">
+                        <div class="card" data-toggle="modal" data-target="#codemix">
+                            <img class="card-img-top" src="img/codemix.png" alt="Card image cap">
+                            <div class="card-block">
+                                <h4 class="card-title">Code-mixing and code-borrowing</h4>
+                                <p class="card-text" style="margin-bottom: -5px">Natural Language Processing</p>
+                                <p class="card-text">Aug 2017 - Nov 2017</p>
+                            </div>
+                        </div>
+
+                        <div id="codemix" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">
+                                            Understanding code-mixing patterns in celebrity tweets
+                                            <p class="modal-desc">
+                                                Research project under Computer Science Department, IIT Kharagpur
+                                                <br />
+                                                Tags : Research, NLP
+                                            </p>
+                                        </h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="img/codemix_modal.png" style="max-height: 300px;" class="modal-img"/>
+
+                                        This projects attempts to distinguish code-mixing and code-borrowing instances
+                                        in the context of celebrity tweets. We try to understand if a word from a foreign language is used by a celebrity, how likely is it to be borrowed by their followers. Additionally, we try to understand which sense the word is borrowed in.
+                                        <br />
+                                        <p>
+                                            Guide : <a href="www.facweb.iitkgp.ernet.in/~niloy/" target="_blank">Prof. Niloy Ganguly</a>
+                                        </p>
+                                        <p class="modal-closure">
+                                            Aug 2017 - No 2017
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- code-mixing patterns -->
+
+                </div> <!-- row ends -->
+
+                <div class="row">
+
+                    <div class="col-md-3 col-xs-12 col-sm-12">
+                        <div class="card" data-toggle="modal" data-target="#savitr">
+                            <img class="card-img-top" src="img/savitr.png" alt="Card image cap">
+                            <div class="card-block">
+                                <h4 class="card-title">Savitr: pre-disaster management tool</h4>
+                                <p class="card-text" style="margin-bottom: -5px">Social Computing, NLP</p>
+                                <p class="card-text">Aug 2017 - Present</p>
+                            </div>
+                        </div>
+
+                        <div id="savitr" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">
+                                            Leveraging Twitter to detect emergency situations
+                                            <p class="modal-desc">
+                                                Research project under Computer Science Department, IIT Kharagpur
+                                                <br />
+                                                Tags : Research, Social Computing, NLP
+                                            </p>
+                                        </h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="img/savitr_modal.png" style="max-height: 300px;" class="modal-img"/>
+
+                                        The objective is to create a pre-warning system to detect potential disaster 
+                                        situations, by contnually monitoring tweets in real-time. This tool would 
+                                        also help us understand the geospatial distribution of important tweets 
+                                        across time. This would help in detecting important tweets and classifying 
+                                        tweets as situational and non-situational, which can help in disaster relief 
+                                        and mitigation. The system can be viewed at 
+                                        <a href="https://savitr.herokuap.com">savitr.herokuapp.com</a>.
+                                        <br />
+                                        A paper has been accepted for this project in Social Media for Emergency and Response Preparedness (SMERP) workshop at 
+                                        <a href="https://drive.google.com/file/d/13J_0PL0fMB_pbWVcU-5_xwvbHvGmpsCT/view"> Webconf (WWW'18) conference.</a> and a poster at<a href="https://drive.google.com/file/d/1fCH2AAAHWp5JLwQxLNGoOYoGnyWrolHf/view"> International Conference of Networked Digital Earth (ICDNE)</a>
+                                        <br />
+                                        <p>
+                                            Guide : <a href="https://sites.google.com/site/saptarshighosh/" target="_blank">Prof. Saptarshi Ghosh</a>
+                                        </p>
+                                        <p class="modal-closure">
+                                            Aug 2017 - Present
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Savitr -->
+
+                    <div class="col-md-3 col-xs-12 col-sm-12">
+                        <div class="card" data-toggle="modal" data-target="#nlp">
+                            <img class="card-img-top" src="img/sanskrit.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h4 class="card-title">Sanskrit Vruddhi Analysis</h4>
+                                <p class="card-text" style="margin-bottom: -5px">Natural Language Processing</p>
+                                <p class="card-text">July 2016 - Oct 2016</p>
+                            </div>
+                        </div>
+
+                        <div id="nlp" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">
+                                            Sanskrit Sandhi (Vruddhi) Analysis
+                                            <p class="modal-desc">
+                                                Research project under Computer Science Department, IIT Kharagpur
+                                                <br />
+                                                Tags : Research, NLP
+                                            </p>
+                                        </h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="img/nlp_modal.png" class="modal-img"/>
+
+                                        In this project, we try to determine whether a given pair of
+                                        Sanskrit words form Sandhi (Vruddhi) or not with a certain level of accuracy.
+                                        This involves formualation of rules for sandhi, analysis of vruddhi dataset
+                                        procured, and validate the results. Analysis of graphs was achieved by MAD and
+                                        adsorption algorithms, via junto. A paper has been <a href="http://www.aclweb.org/anthology/W17-2409" target="_blank">accepted</a> for the same.
+                                        <br />
+                                        <p>
+                                            Guide : <a href="http://cse.iitkgp.ac.in/~pawang/" target="_blank">Prof. Pawan Goyal</a>
+                                        </p>
+                                        <p class="modal-closure">
+                                            July 2016 - Oct 2016
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Vruddhi analysis -->
+
+                    <div class="col-md-3 col-xs-12 col-sm-12">
+                        <div class="card" data-toggle="modal" data-target="#graphwise">
+                            <img class="card-img-top" src="img/graphwise.jpeg" alt="Card image cap">
+                            <div class="card-block">
+                                <h4 class="card-title">Graphwise</h4>
+                                <br />
+                                <p class="card-text" style="margin-bottom: -5px">Database Management</p>
+                                <p class="card-text">Mar 2017</p>
+                            </div>
+                        </div>
+
+                        <div id="graphwise" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">
+                                            GraphWise
+                                            <p class="modal-desc">
+                                                Large Scale Graph Processing - Detect communities in large graphs
+                                                <br />
+                                                Tags : Academic
+                                            </p>
+                                        </h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="img/graphwise-modal.png" class="modal-img"/>
+                                        The goal of this project was to load a large graph dataset from Stanford's SNAP large graph 
+                                        repository using a Graph Processing system [for which we used Hadoop and Spark both]. 
+                                        Simple queries to be run, along with profile performance. Developed by a team of 5
+                                        as an academic project for the Database Management System course under Prof. Pabitra Mitra.
+                                        <br />
+                                        <p>
+                                            Source : <a href="https://github.com/kaustubhhiware/GraphWise" target="_blank">GitHub</a>
+                                        </p>
+                                        <p class="modal-closure">
+                                            Mar 2017
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Graphwise -->
+
+                    <div class="col-md-3 col-xs-12 col-sm-12">
+                        <div class="card" data-toggle="modal" data-target="#coderunr">
+                            <img class="card-img-top" src="img/logo-red.png" alt="Card image cap">
+                            <div class="card-block">
+                                <h4 class="card-title">C0derunR</h4>
+                                <br />
+                                <p class="card-text" style="margin-bottom: -5px">A Django-based IDE</p>
+                                <p class="card-text">Jan 2017</p>
+                            </div>
+                        </div>
+
+                        <div id="coderunr" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">
+                                            C0derunR
+                                            <p class="modal-desc">
+                                                An online code compiler/interpreter.
+                                                <br />
+                                                Tags : Hobby
+                                            </p>
+                                        </h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="img/c0derunr_modal.png" class="modal-img"/>
+
+                                        A Django(python) webapp for Integrated Development Environment using
+                                        HackerEarth API. It Includes a static website generator which allows you to view the
+                                        changes you make on the go. Developed during code.fun.do 2017.
+                                        <br />
+                                        <p>
+                                            Source : <a href="https://github.com/kaustubhhiware/c0derunR" target="_blank">GitHub</a>
+                                            <br />
+                                            <a href="http://c0derunr.herokuapp.com/" target="_blank">Website</a>
+                                        </p>
+                                        <p class="modal-closure">
+                                            Feb 2016 - Apr 2016
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- c0derunR -->
+
+                </div> <!-- row ends -->
+
+                <div class="row">
+
+                    <div class="col-md-3 col-xs-12 col-sm-12">
+                        <div class="card" data-toggle="modal" data-target="#foodspark">
+                            <img class="card-img-top" src="img/foodspark.gif" alt="Card image cap">
+                            <div class="card-block">
+                                <h4 class="card-title">Foodspark</h4>
+                                <br />
+                                <p class="card-text" style="margin-bottom: -5px">Online food-ordering portal</p>
+                                <p class="card-text">Feb 2017</p>
+                            </div>
+                        </div>
+
+                        <div id="foodspark" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">
+                                            Foodspark
+                                            <p class="modal-desc">
+                                                An online food ordering system.
+                                                <br />
+                                                Tags : Academic
+                                            </p>
+                                        </h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="img/foodspark_modal.png" class="modal-img"/>
+
+                                        A Django(python) webapp for online food ordering system. Developed by a team of 5
+                                        as an academic project for the Database Management System course under Prof. Pabitra Mitra.
+                                        <br />
+                                        <p>
+                                            Source : <a href="https://github.com/kaustubhhiware/Foodspark" target="_blank">GitHub</a>
+                                            <br />
+                                            <a href="http://foodkgp.pythonanywhere.com/" target="_blank">Website</a>
+                                        </p>
+                                        <p class="modal-closure">
+                                            Feb 2017
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Foodspark -->
+
+                    <div class="col-md-3 col-xs-12 col-sm-12">
+                        <div class="card" data-toggle="modal" data-target="#compiler">
+                            <img class="card-img-top" src="img/compiler.gif" alt="Card image cap">
+                            <div class="card-block">
+                                <h4 class="card-title">cOMPILER</h4>
+                                <br />
+                                <p class="card-text" style="margin-bottom: -5px">Compiler of tinyC</p>
+                                <p class="card-text">Autumn 2016</p>
+                            </div>
+                        </div>
+
+                        <div id="compiler" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">
+                                            cOMPILER
+                                            <p class="modal-desc">
+                                                Compiler for restricted grammar C.
+                                                <br />
+                                                Tags : Academic
+                                            </p>
+                                        </h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="img/compiler_modal.gif" class="modal-img"/>
+
+                                        A tiny-c compiler made using flex, yacc, and gnu assembler. tiny-c instructions are a subset of instructions from C. Targetted for x86_64 architecture. Developed as a part of Compilers course under prof. Partha Pratim Das.
+                                        <p>
+                                            Source : <a href="https://github.com/kaustubhhiware/cOMPILER" target="_blank">GitHub</a>
+                                        </p>
+                                        <p class="modal-closure">
+                                            Autumn 2016
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- cOMPILER -->
+
+                    <div class="col-md-3 col-xs-12 col-sm-12">
+                        <div class="card" data-toggle="modal" data-target="#depinfosys">
+                            <img class="card-img-top" src="img/depinfosys.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h4 class="card-title">DepInfoSys</h4>
+                                <br />
+                                <p class="card-text" style="margin-bottom: -5px">Dept. Management System</p>
+                                <p class="card-text">Spring 2016</p>
+                            </div>
+                        </div>
+
+                        <div id="depinfosys" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">
+                                            Department Information System
+                                            <p class="modal-desc">
+                                                Software Project for academic monitoring.
+                                                <br />
+                                                Tags : Academic
+                                            </p>
+                                        </h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="img/depinfosys_modal.PNG" class="modal-img" style="padding-top:1em !important; padding-bottom:1.5em !important;"/>
+
+                                        A software allowing the administrator to perform managerial tasks. Developed as a part of Software course under Prof. Partha Pratim Das.
+                                        <p>
+                                            Source : <a href="https://github.com/kaustubhhiware/Depinfosys" target="_blank">GitHub</a>
+                                        </p>
+                                        <p class="modal-closure">
+                                            Spring 2016
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- DepInfoSys -->
+
+                    <div class="col-md-3 col-xs-12 col-sm-12">
+                        <div class="card" data-toggle="modal" data-target="#notifyre">
+                            <img class="card-img-top" src="img/terminal.png" alt="Card image cap">
+                            <div class="card-block">
+                                <h4 class="card-title">Notifyre</h4>
+                                <br />
+                                <p class="card-text" style="margin-bottom: -5px">Shell terminal notifier</p>
+                                <p class="card-text">Dec 2016</p>
+                            </div>
+                        </div>
+
+                        <div id="notifyre" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">
+                                            Notifyre
+                                            <p class="modal-desc">
+                                                Notify when a terminal task is done
+                                                <br />
+                                                Tags : Hobby
+                                            </p>
+                                        </h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="img/thumbnail_fish.png"  class="modal-img"/>
+
+                                        A terminal task notifier with support of basic customzations. Supports bash, and fish shell.
+                                        <br />
+                                        <p>
+                                            Source : <a href="https://github.com/kaustubhhiware/NotiFyre" target="_blank">GitHub</a>
+                                        </p>
+                                        <p class="modal-closure">
+                                            Dec 2016
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- NotiFyre -->
+
+                </div> <!-- row ends -->
+
+                <div class="row">
+
+                    <div class="col-md-3 col-xs-12 col-sm-12">
+                        <div class="card" data-toggle="modal" data-target="#opensoft">
+                            <img class="card-img-top" src="img/opensoft.png" alt="Card image cap">
+                            <div class="card-block">
+                                <h4 class="card-title">Graph Extractor from 2D Plots</h4>
+                                <p class="card-text" style="margin-bottom: -5px"> OpenSoft, IIT Kharagpur</p>
+                                <p class="card-text">Spring 2016</p>
+                            </div>
+                        </div>
+                        <!-- Resume projects here -->
+                        <!-- Add cool bars for tags-->
+                        <div id="opensoft" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">
+                                            Graph Extractor from 2D Plots
+                                            <p class="modal-desc">
+                                                Opensoft, IIT Kharagpur 2015-16
+                                                <br />
+                                                Tags : Project
+                                            </p>
+                                        </h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="img/opensoft_modal.png" class="modal-img"/>
+
+                                        Built a graph extractor application using OpenCV and Tesseract OCR engine that detects
+                                        plots in any PDF and creates a plot values table. Worked on detecting and scaling the axis values in the plot to detect missing values.
+                                        <p>
+                                            Source : <a href="https://github.com/Azad-Hall/open-soft-2015-2016" target="_blank">GitHub</a>
+                                        </p>
+                                        <p class="modal-closure">
+                                            Feb 2016 - Apr 2016
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Graph Extractor -->
+
+                    <div class="col-md-3 col-xs-12 col-sm-12">
+                        <div class="card" data-toggle="modal" data-target="#cshell">
+                            <img class="card-img-top" src="img/cshell.png" alt="Card image cap">
+                            <div class="card-block">
+                                <h4 class="card-title">Cshell</h4>
+                                <br />
+                                <p class="card-text" style="margin-bottom: -5px">C-based terminal</p>
+                                <p class="card-text">Feb 2017</p>
+                            </div>
+                        </div>
+
+                        <div id="cshell" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">
+                                            Cshell
+                                            <p class="modal-desc">
+                                                A handmade terminal.
+                                                <br />
+                                                Tags : Academic
+                                            </p>
+                                        </h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="img/Cshell_about.png" class="modal-img"/>
+
+                                        A handmade terminal made in C. Developed as a part of Operating Systems course under Prof. Aurobinda Gupta.
+                                        <p>
+                                            Source : <a href="https://github.com/kaustubhhiware/Cshell" target="_blank">GitHub</a>
+                                        </p>
+                                        <p class="modal-closure">
+                                            Feb 2017
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- cShell -->
+
+                    <div class="col-md-3 col-xs-12 col-sm-12">
+                        <div class="card" data-toggle="modal" data-target="#netcheck">
+                            <img class="card-img-top" src="img/netcheck.png" alt="Card image cap">
+                            <div class="card-block">
+                                <h4 class="card-title">netcheck</h4>
+                                <br />
+                                <p class="card-text" style="margin-bottom: -5px">Ping application indicator</p>
+                                <p class="card-text">Jan 2017</p>
+                            </div>
+                        </div>
+
+                        <div id="netcheck" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">
+                                            netcheck
+                                            <p class="modal-desc">
+                                                Application indicator for ping.
+                                                <br />
+                                                Tags : Hobby
+                                            </p>
+                                        </h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="https://raw.githubusercontent.com/kaustubhhiware/netcheck/master/images/connect_demo.png" class="modal-img"/>
+
+                                        A libappindicator made in python to check ping. [WIP] Soon to support
+                                        download and upload speeds.
+                                        <p>
+                                            Source : <a href="https://github.com/kaustubhhiware/netcheck" target="_blank">GitHub</a>
+                                        </p>
+                                        <p class="modal-closure">
+                                            Jan 2017
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- netcheck -->
+
+                    <div class="col-md-3 col-xs-12 col-sm-12">
+                        <div class="card" data-toggle="modal" data-target="#wordabulary">
+                            <img class="card-img-top" src="img/wordabulary.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h4 class="card-title">Wordabulary</h4>
+                                <br />
+                                <p class="card-text" style="margin-bottom: -5px">Python module</p>
+                                <p class="card-text">Summer 2016</p>
+                            </div>
+                        </div>
+
+                        <div id="wordabulary" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom_modalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">
+                                            Wordabulary
+                                            <p class="modal-desc">
+                                                A pip module for grammar statistics.
+                                                <br />
+                                                Tags : Hobby
+                                            </p>
+                                        </h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="img/word_modal.jpg" class="modal-img"/>
+
+                                        A python pip module for grammar statistics. Support trivial document analysis (Most frequent, incorrect, support correction in the future). Developed as a module to validate Zipf's law.
+                                        <p>
+                                            Source : <a href="https://github.com/kaustubhhiware/Wordabulary" target="_blank">GitHub</a>
+                                        </p>
+                                        <p class="modal-closure">
+                                            Summer 2016
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Wordabulary -->
+
+                </div> <!-- row ends -->
 
             </div>
 
-            <!-- <div style="clear:both; padding-bottom:9.5%;"></div> -->
+            <div style="padding-bottom:6%;clear:left;"></div><!-- Temp -->
+        </div> <!-- wrapper end-->
+    </div>
+</div>
+<!-- Make sure quote in last parallax is visible -->
+<div id="contact" style="padding-top:-75%; height:24%;">
+
+</div>
+
+<!-- This is the last parallax. The last there ever will be, like the last of time lords :/ -->
+<section class="module parallax parallax-1" style="background-image:url('img/thedoctor.jpg');">
+</section>
+
+<!-- _________________________________________________________________________________________________________ -->
+<div id="contact1" class="idsection">
+    <!-- style="height:89% !important;"> -->
+    <div class="section_description">
+        <h1>Reach me</h1>
+        <hr class="liner"/>
+        <div style="padding-bottom:6%;"></div><!-- Temp -->
+        <div class="row">
+
+            <div class="col-sm-12 col-md-6 col-xs-12">
+                <div class="footer-c12levent">
+                    <form action="https://formspree.io/hiwarekaustubh@googlemail.com" method="POST">
+
+                        <div class="md-form">
+                           <i class="fa fa-user prefix grey-text"></i>
+                           <input type="text" name="name" class="form-control" id="namer" data-rule="maxlen:4" data-msg="Please enter at least 4 chars" />
+                           <label for="namer">Name</label>
+                           <div class="validation"></div>
+                       </div>
+
+                       <div class="md-form">
+                        <i class="fa fa-envelope prefix grey-text"></i>
+                        <input type="email" class="form-control" name="_replyto" id="email" data-rule="email" data-msg="Please enter a valid email" />
+                        <label for="_replyto">Email</label>
+                        <div class="validation"></div>
+                    </div>
+
+                    <div class="md-form">
+                       <i class="fa fa-tag prefix grey-text"></i> 
+                       <input type="text" class="form-control" name="subject" id="subject" data-rule="maxlen:4" data-msg="Please enter at least 8 chars of subject" />
+                       <label for="subject">Subject</label>
+                       <div class="validation"></div>
+                   </div>
+
+                   <div class="md-form">
+                    <i class="fa fa-pencil prefix grey-text"></i>
+                    <textarea type="text" id="msg" name="message" class="md-textarea form-control" data-rule="required" data-msg="Please write something for us"></textarea>
+                    <label for="msg">Message</label>
+                    <div class="validation"></div>
+                </div>
+
+                <input type="text" name="_gotcha" style="display:none" />
+                <input type="hidden" name="_next" value="submit.html" />
+                <input type="hidden" name="_cc" value="hiwarekaustubh@gmail.com" />
+                <div class="text-center">
+                    <input type="submit" value="Send" class="btn btn-primary"></button>
+                </div>
+
+            </form>
+            <!-- <br style="padding-bottom:4%;"/> -->
         </div>
     </div>
 
-    <!-- _________________________________________________________________________________________________________ -->
-    <!-- Formal footer -->
-    <div class="footer" id="whoami">
-        <div class="overlayer">
-            <div class="container">
-                <div class="row support">
-                    <div class="col-sm-3"></div>
-                    <div class="col-sm-2"></div>
+    <div class="col-sm-12 col-md-6 col-xs-12">
+        <div class="footer-c12levent">
+
+            <div class="widget-c12levent" id="contact-text">
+                <p>
+                    <i class="glyphicon glyphicon-map-marker locicon"></i>
+                    : C-123, Azad Hall of Residence,
+                    <a href="https://www.google.co.in/maps/dir//22.3181183,87.2983329/@22.3180953,87.2984053,21z" target="_blank">IIT Kharagpur.</a>
+                </p>
+                <p>
+                    <i class="glyphicon glyphicon-earphone locicon"></i>
+                    : +91 8768829567
+                </p>
+                <hr class="liner" />
+                <p style=   "padding-left:8%;">Find me on the social networks here</p>
+            </div>
+
+            <ul class="networks">
+                <li class="facebook extremenet">
+                    <a target="_blank" href="https://www.facebook.com/kaustubhhiware">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="github">
+                    <a target="_blank" href="https://github.com/kaustubhhiware">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </li>
+                <li class="linkedin">
+                    <a target="_blank" href="https://www.linkedin.com/in/kaustubhhiware">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </li>
+                <br />
+                <li class="google midnet">
+                    <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=hiwarekaustubh@gmail.com&amp" target="_blank" >
+                        <i class="fa fa-google"></i>
+                    </a>
+                </li>
+                <li class="reddit"><!-- :P --> 
+                    <a target="_blank" href="https://www.reddit.com/">
+                        <i class="fa fa-reddit"></i>
+                    </a>
+                </li>
+                <li class="twitter">
+                    <a href="https://twitter.com/kaustubhhiware" target="_blank" >
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="instagram">
+                    <a target="_blank" href="https://www.instagram.com/kaustubhhiware/">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </li>
+                <br />
+                <li class="quora extremenet">
+                    <a target="_blank" href="https://www.quora.com/profile/Kaustubh-Hiware">
+                        <!-- <span class="fa fa-fw"><strong>Q</strong></span> -->
+                        <i class="fa fa-quora"></i>
+                    </a>
+                </li>
+                <li class="medium">
+                    <a target="_blank" href="https://medium.com/@kaustubhhiware">
+                        <i class="fa fa-medium"></i>
+                    </a>
+                </li>
+                <li class="stumbleupon">
+                    <a target="_blank" href="https://www.stumbleupon.com/stumbler/kaustubhhiware">
+                        <i class="fa fa-stumbleupon"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<!-- <div style="clear:both; padding-bottom:9.5%;"></div> -->
+</div>
+</div>
+
+<!-- _________________________________________________________________________________________________________ -->
+<!-- Formal footer -->
+<div class="footer" id="whoami">
+    <div class="overlayer">
+        <div class="container">
+            <div class="row support">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-2"></div>
+            </div>
+            <!-- Div footer has background-image -->
+            <div class="row" style="margin-bottom:0px;">
+                <div class="credits">
+                    2018 Kaustubh Hiware, <span class="fa fa-code" style="font-size:20px;"></span> with <a href="https://www.youtube.com/watch?v=09m0B8RRiEE" target="_blank"><span class="fa fa-heart" style="font-size:20px;color:red;"></span></a> with
+                    <span class="fa fa-github" style="font-size:20px;"></span>.
                 </div>
-                <!-- Div footer has background-image -->
-                <div class="row" style="margin-bottom:0px;">
-                    <div class="credits">
-                        2017 Kaustubh Hiware, <span class="fa fa-code" style="font-size:20px;"></span> with <a href="https://www.youtube.com/watch?v=09m0B8RRiEE" target="_blank"><span class="fa fa-heart" style="font-size:20px;color:red;"></span></a> with
-                        <span class="fa fa-github" style="font-size:20px;"></span>.
-                    </div>
-                    <!-- What is love-->
-                </div>
+                <!-- What is love-->
             </div>
         </div>
     </div>
+</div>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-    <script src="js/myscript.js"></script>
-    <script src="js/bootstrap-tooltip.js"></script>
-    <!-- MD Bootstrap form -->
-    <script src="js/mdb.min.js"></script>
-    <!-- This shit here because myscript.js didn't work here-->
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+<script src="js/myscript.js"></script>
+<script src="js/bootstrap-tooltip.js"></script>
+<!-- MD Bootstrap form -->
+<script src="js/mdb.min.js"></script>
+<!-- This shit here because myscript.js didn't work here-->
     <!-- remove chart loading to reduce load time
     <script> // paint a canvas for all I care
         var ctx = document.getElementById("myChart");
@@ -1304,10 +1506,10 @@
             }
         });
     </script>
-    -->
-    <script>
+-->
+<script>
 
-        jQuery(document).ready(function($) {
+    jQuery(document).ready(function($) {
             // removing preloader due to speed :/
             //site preloader -- also uncomment the div in the header and the css style for #preloader
             // not exactly a preloader, just run once and exit
@@ -1332,9 +1534,9 @@
         });
 
         // mandir wahi banega ! upar aaja when refreshed
-        window.onbeforeunload = function () {
-          window.scrollTo(0, 0);
-        }
+        // window.onbeforeunload = function () {
+        //   window.scrollTo(0, 0);
+        // }
 
         // get me a canvas
         !function(a){var b="object"==typeof self&&self.self===self&&self||"object"==typeof global&&global.global===global&&global;"function"==typeof define&&define.amd?define(["exports"],function(c){b.ParticleNetwork=a(b,c)}):"object"==typeof module&&module.exports?module.exports=a(b,{}):b.ParticleNetwork=a(b,{})}(function(a,b){var c=function(a){this.canvas=a.canvas,this.g=a.g,this.particleColor=a.options.particleColor,this.x=Math.random()*this.canvas.width,this.y=Math.random()*this.canvas.height,this.velocity={x:(Math.random()-.5)*a.options.velocity,y:(Math.random()-.5)*a.options.velocity}};return c.prototype.update=function(){(this.x>this.canvas.width+20||this.x<-20)&&(this.velocity.x=-this.velocity.x),(this.y>this.canvas.height+20||this.y<-20)&&(this.velocity.y=-this.velocity.y),this.x+=this.velocity.x,this.y+=this.velocity.y},c.prototype.h=function(){this.g.beginPath(),this.g.fillStyle=this.particleColor,this.g.globalAlpha=.7,this.g.arc(this.x,this.y,1.5,0,2*Math.PI),this.g.fill()},b=function(a,b){this.i=a,this.i.size={width:this.i.offsetWidth,height:this.i.offsetHeight},b=void 0!==b?b:{},this.options={particleColor:void 0!==b.particleColor?b.particleColor:"#fff",background:void 0!==b.background?b.background:"#1a252f",interactive:void 0!==b.interactive?b.interactive:!0,velocity:this.setVelocity(b.speed),density:this.j(b.density)},this.init()},b.prototype.init=function(){if(this.k=document.createElement("div"),this.i.appendChild(this.k),this.l(this.k,{position:"absolute",top:0,left:0,bottom:0,right:0,"z-index":1}),/(^#[0-9A-F]{6}$)|(^#[0-9A-F]{3}$)/i.test(this.options.background))this.l(this.k,{background:this.options.background});else{if(!/\.(gif|jpg|jpeg|tiff|png)$/i.test(this.options.background))return console.error("Please specify a valid background image or hexadecimal color"),!1;this.l(this.k,{background:'url("'+this.options.background+'") no-repeat center',"background-size":"cover"})}if(!/(^#[0-9A-F]{6}$)|(^#[0-9A-F]{3}$)/i.test(this.options.particleColor))return console.error("Please specify a valid particleColor hexadecimal color"),!1;this.canvas=document.createElement("canvas"),this.i.appendChild(this.canvas),this.g=this.canvas.getContext("2d"),this.canvas.width=this.i.size.width,this.canvas.height=this.i.size.height,this.l(this.i,{position:"relative"}),this.l(this.canvas,{"z-index":"20",position:"relative"}),window.addEventListener("resize",function(){return this.i.offsetWidth===this.i.size.width&&this.i.offsetHeight===this.i.size.height?!1:(this.canvas.width=this.i.size.width=this.i.offsetWidth,this.canvas.height=this.i.size.height=this.i.offsetHeight,clearTimeout(this.m),void(this.m=setTimeout(function(){this.o=[];for(var a=0;a<this.canvas.width*this.canvas.height/this.options.density;a++)this.o.push(new c(this));this.options.interactive&&this.o.push(this.p),requestAnimationFrame(this.update.bind(this))}.bind(this),500)))}.bind(this)),this.o=[];for(var a=0;a<this.canvas.width*this.canvas.height/this.options.density;a++)this.o.push(new c(this));this.options.interactive&&(this.p=new c(this),this.p.velocity={x:0,y:0},this.o.push(this.p),this.canvas.addEventListener("mousemove",function(a){this.p.x=a.clientX-this.canvas.offsetLeft,this.p.y=a.clientY-this.canvas.offsetTop}.bind(this)),this.canvas.addEventListener("mouseup",function(a){this.p.velocity={x:(Math.random()-.5)*this.options.velocity,y:(Math.random()-.5)*this.options.velocity},this.p=new c(this),this.p.velocity={x:0,y:0},this.o.push(this.p)}.bind(this))),requestAnimationFrame(this.update.bind(this))},b.prototype.update=function(){this.g.clearRect(0,0,this.canvas.width,this.canvas.height),this.g.globalAlpha=1;for(var a=0;a<this.o.length;a++){this.o[a].update(),this.o[a].h();for(var b=this.o.length-1;b>a;b--){var c=Math.sqrt(Math.pow(this.o[a].x-this.o[b].x,2)+Math.pow(this.o[a].y-this.o[b].y,2));c>120||(this.g.beginPath(),this.g.strokeStyle=this.options.particleColor,this.g.globalAlpha=(120-c)/120,this.g.lineWidth=.7,this.g.moveTo(this.o[a].x,this.o[a].y),this.g.lineTo(this.o[b].x,this.o[b].y),this.g.stroke())}}0!==this.options.velocity&&requestAnimationFrame(this.update.bind(this))},b.prototype.setVelocity=function(a){return"fast"===a?1:"slow"===a?.33:"none"===a?0:.66},b.prototype.j=function(a){return"high"===a?5e3:"low"===a?2e4:isNaN(parseInt(a,10))?1e4:a},b.prototype.l=function(a,b){for(var c in b)a.style[c]=b[c]},b});
@@ -1348,22 +1550,22 @@
           interactive: true,
           speed: 'medium',
           density: 'high'
-        };
-        var particleCanvas = new ParticleNetwork(canvasDiv, options);
+      };
+      var particleCanvas = new ParticleNetwork(canvasDiv, options);
 
 
-        $("#menu-toggle").click(function(e) {
-            e.stopPropagation();
-            $("#wrapper").toggleClass("toggled");
-        });
+      $("#menu-toggle").click(function(e) {
+        e.stopPropagation();
+        $("#wrapper").toggleClass("toggled");
+    });
 
         // close sidemenu when body clicked
         $('body').click(function(e) {
           if ($('#wrapper').hasClass('toggled')) {
             $("#wrapper").toggleClass('toggled');
             $('#menu-toggle').removeClass('open');
-          }
-        });
+        }
+    });
         // For the navbar
         function sideBarTeleport(elem)
         {
@@ -1413,24 +1615,24 @@
         var scrollEventHandler = function()
         {
           window.scroll(0, window.pageYOffset)
-        }
-        window.addEventListener("scroll", scrollEventHandler, false);
+      }
+      window.addEventListener("scroll", scrollEventHandler, false);
 
-    </script>
-    <!-- Place this tag in your head or just before your close body tag. -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.isotope.min.js"></script>
-    <script src="js/jquery.localscroll-1.2.7-min.js"></script>
-    <script>
+  </script>
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.isotope.min.js"></script>
+  <script src="js/jquery.localscroll-1.2.7-min.js"></script>
+  <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
       ga('create', 'UA-98481315-1', 'auto');
       ga('send', 'pageview');
 
-    </script>
+  </script>
 </body>
 
 </html>
